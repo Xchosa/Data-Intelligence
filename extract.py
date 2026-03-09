@@ -1,6 +1,3 @@
-
-
-
 import sys
 import requests
 from dotenv import load_dotenv
@@ -21,20 +18,17 @@ class Parser():
     def fetch_data(self):
         """ fetch data from API """
         try:
-            full_url = f"{base_Url}{endpoint}"
-            response = requests.get({full_url}, headers=self.headers, timeout=5)
+            full_url = f"{self.base_Url}{self.endpoint}"
+            response = requests.get(full_url, headers=self.headers, timeout=5)
             print(response.status_code)
 
-
-           #with open("outfile.json", "w") as outfile:
-            #    json.dump(response.json(), outfile, indent=2)
+            with open("outfile.json", "w") as outfile:
+                json.dump(response.json(), outfile, indent=2)
+            print(response.json())
             return response.json()
         except requests.exceptions.RequestException as e:
             print(f"An error occurred while fetching data: {e}")
             return None
-
-
-
 
 
 class Visualizer():
@@ -43,14 +37,13 @@ class Visualizer():
         """ init visualizer """
         pass
 
-    
 
 class Manager():
-	
-	def __init__(self,* , parser: Parser ,visualizer: Visualizer) -> None:
-		""" init manager with components """
-		self.parser = parser
-		self.visualizer = visualizer
+    
+    def __init__(self, *, parser: Parser, visualizer: Visualizer) -> None:
+        """ init manager with components """
+        self.parser = parser
+        self.visualizer = visualizer
 
 
 
@@ -63,8 +56,9 @@ if __name__ == "__main__":
 
         manager.parser.fetch_data()
         print("hello")
+
         
 
     except Exception as e:
-        print(f"An error occurred: {e}")    
+        print(f"An error occurred: {e}")
 
