@@ -154,8 +154,20 @@ def jump_offset(endpoint: str, skipped_values: int) -> Optional[str]:
 
 def processing_Error(json_data: dict, meta_data_key: str) ->bool:
     
+    #if there is not the specific meta key eg. airlineResources 
+    # do a extra loop after time out 
+    # if "Internal Server Error or prosssing error "
+    if meta_data_key not in json_data:
+        print(f"Missing meta key: {meta_data_key}", file=sys.stderr)
+        save_json_locally(
+                    json_data=json_data,
+                    base_filename=f"{meta_data_key}error.json",
+                    local_folder="errorMessages",
+                    offset=0
+                )
+        return True
     if json_data.get(meta_data_key, {}) is None:
         return True
-    if json_data.get("ProcessingErrors", {}):
-        return True
+    #if json_data.get("ProcessingErrors", {}):
+    #    return True
     return False
