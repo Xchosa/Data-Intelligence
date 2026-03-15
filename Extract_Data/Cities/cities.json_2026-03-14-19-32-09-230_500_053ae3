@@ -1,0 +1,5635 @@
+{
+  "CityResource": {
+    "Cities": {
+      "City": [
+        {
+          "CityCode": "BCQ",
+          "CountryCode": "LY",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?at?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Brach"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Brach"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Tripoli",
+          "Airports": {
+            "AirportCode": "BCQ"
+          }
+        },
+        {
+          "CityCode": "BCR",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??a ?t? ???e"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Boca Do Acre"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Boca Do Acre"
+              }
+            ]
+          },
+          "UtcOffset": "-04:00",
+          "TimeZoneId": "America/Porto_Velho",
+          "Airports": {
+            "AirportCode": "BCR"
+          }
+        },
+        {
+          "CityCode": "BCS",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe? Sa?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Belle Chasse"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Belle Chasse"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "BCS"
+          }
+        },
+        {
+          "CityCode": "BCT",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??a ?at??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Boca Raton"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Boca Raton"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": [
+              "BCT",
+              "RRN"
+            ]
+          }
+        },
+        {
+          "CityCode": "BCU",
+          "CountryCode": "NG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa??ts?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bauchi"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bauchi"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Lagos",
+          "Airports": {
+            "AirportCode": "BCU"
+          }
+        },
+        {
+          "CityCode": "BCV",
+          "CountryCode": "BZ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Belmopan"
+            }
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Belize",
+          "Airports": {
+            "AirportCode": "BCV"
+          }
+        },
+        {
+          "CityCode": "BCW",
+          "CountryCode": "MZ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Benguerra Island"
+            }
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Maputo",
+          "Airports": {
+            "AirportCode": "BCW"
+          }
+        },
+        {
+          "CityCode": "BCX",
+          "CountryCode": "RU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Beloreck"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beloretsk"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beloreck"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beloreck"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beloreck"
+              }
+            ]
+          },
+          "UtcOffset": "+05:00",
+          "TimeZoneId": "Asia/Yekaterinburg",
+          "Airports": {
+            "AirportCode": "BCX"
+          }
+        },
+        {
+          "CityCode": "BCY",
+          "CountryCode": "ET",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???ts?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bulchi"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bulchi"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Africa/Addis_Ababa",
+          "Airports": {
+            "AirportCode": "BCY"
+          }
+        },
+        {
+          "CityCode": "BCZ",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??s?? ?p??e?t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bickerton Island"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bickerton Island"
+              }
+            ]
+          },
+          "UtcOffset": "+09:30",
+          "TimeZoneId": "Australia/Darwin",
+          "Airports": {
+            "AirportCode": "BCZ"
+          }
+        },
+        {
+          "CityCode": "BDA",
+          "CountryCode": "BM",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bermuda"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?e?µ??de?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bermuda"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bermudas"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bermudes"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bermuda"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Bermudy"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Bermuda"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bermuda"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "???"
+              }
+            ]
+          },
+          "UtcOffset": "-04:00",
+          "TimeZoneId": "Atlantic/Bermuda",
+          "Airports": {
+            "AirportCode": "BDA"
+          }
+        },
+        {
+          "CityCode": "BDB",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???taµpe???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bundaberg"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bundaberg"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Australia/Brisbane",
+          "Airports": {
+            "AirportCode": "BDB"
+          }
+        },
+        {
+          "CityCode": "BDC",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??a ?t? ????ta"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Barra Do Corda"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Barra Do Corda"
+              }
+            ]
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Sao_Paulo",
+          "Airports": {
+            "AirportCode": "BDC"
+          }
+        },
+        {
+          "CityCode": "BDD",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??s?? ?p??t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Badu Island"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Badu Island"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Australia/Brisbane",
+          "Airports": {
+            "AirportCode": "BDD"
+          }
+        },
+        {
+          "CityCode": "BDE",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??t?t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Baudette"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Baudette"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "BDE"
+          }
+        },
+        {
+          "CityCode": "BDF",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???tf???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bradford"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "BDF"
+          }
+        },
+        {
+          "CityCode": "BDG",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???t????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Blanding"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Blanding"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": "BDG"
+          }
+        },
+        {
+          "CityCode": "BDH",
+          "CountryCode": "IR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??ta? ?????e"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bandar Lengeh"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bandar Lengeh"
+              }
+            ]
+          },
+          "UtcOffset": "+03:30",
+          "TimeZoneId": "Asia/Tehran",
+          "Airports": {
+            "AirportCode": "BDH"
+          }
+        },
+        {
+          "CityCode": "BDI",
+          "CountryCode": "SC",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??s?? ?p???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bird Island"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bird Island"
+              }
+            ]
+          },
+          "UtcOffset": "+04:00",
+          "TimeZoneId": "Indian/Mahe",
+          "Airports": {
+            "AirportCode": "BDI"
+          }
+        },
+        {
+          "CityCode": "BDJ",
+          "CountryCode": "ID",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa?t?a?µas??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Banjarmasin"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Banjarmasin"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Makassar",
+          "Airports": {
+            "AirportCode": "BDJ"
+          }
+        },
+        {
+          "CityCode": "BDK",
+          "CountryCode": "CI",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??t?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bondoukou"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bondoukou"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Africa/Abidjan",
+          "Airports": {
+            "AirportCode": "BDK"
+          }
+        },
+        {
+          "CityCode": "BDM",
+          "CountryCode": "TR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa?t??µa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bandirma"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bandirma"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Europe/Istanbul",
+          "Airports": {
+            "AirportCode": "BDM"
+          }
+        },
+        {
+          "CityCode": "BDN",
+          "CountryCode": "PK",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Badin"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Badin"
+              }
+            ]
+          },
+          "UtcOffset": "+05:00",
+          "TimeZoneId": "Asia/Karachi",
+          "Airports": {
+            "AirportCode": "BDN"
+          }
+        },
+        {
+          "CityCode": "BDO",
+          "CountryCode": "ID",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa?t?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bandung"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bandung"
+              }
+            ]
+          },
+          "UtcOffset": "+07:00",
+          "TimeZoneId": "Asia/Pontianak",
+          "Airports": {
+            "AirportCode": "BDO"
+          }
+        },
+        {
+          "CityCode": "BDP",
+          "CountryCode": "NP",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa?t?ap???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bhadrapur"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bhadrapur"
+              }
+            ]
+          },
+          "UtcOffset": "+05:45",
+          "TimeZoneId": "Asia/Kathmandu",
+          "Airports": {
+            "AirportCode": "BDP"
+          }
+        },
+        {
+          "CityCode": "BDQ",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?a?t??t??a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Vadodara"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "BDQ"
+          }
+        },
+        {
+          "CityCode": "BDR",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??t?p??t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bridgeport"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bridgeport"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BDR"
+          }
+        },
+        {
+          "CityCode": "BDS",
+          "CountryCode": "IT",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????te??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Brindisi"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Rome",
+          "Airports": {
+            "AirportCode": "BDS"
+          }
+        },
+        {
+          "CityCode": "BDT",
+          "CountryCode": "CD",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "G?µpa?t???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Gbadolite"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Gbadolite"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Kinshasa",
+          "Airports": {
+            "AirportCode": "BDT"
+          }
+        },
+        {
+          "CityCode": "BDU",
+          "CountryCode": "NO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa??t??f??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bardufoss"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bardufoss"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Oslo",
+          "Airports": {
+            "AirportCode": "BDU"
+          }
+        },
+        {
+          "CityCode": "BDV",
+          "CountryCode": "CD",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µpa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Moba"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Moba"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Lubumbashi",
+          "Airports": {
+            "AirportCode": "BDV"
+          }
+        },
+        {
+          "CityCode": "BDW",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??tf???t ?t?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bedford Downs"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bedford Downs"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Australia/Perth",
+          "Airports": {
+            "AirportCode": "BDW"
+          }
+        },
+        {
+          "CityCode": "BDX",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p????t???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Broadus"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Broadus"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": "BDX"
+          }
+        },
+        {
+          "CityCode": "BDY",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa?t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bandon"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bandon"
+              }
+            ]
+          },
+          "UtcOffset": "-08:00",
+          "TimeZoneId": "America/Los_Angeles",
+          "Airports": {
+            "AirportCode": "BDY"
+          }
+        },
+        {
+          "CityCode": "BDZ",
+          "CountryCode": "PG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???t?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Baindoung"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Baindoung"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Pacific/Port_Moresby",
+          "Airports": {
+            "AirportCode": "BDZ"
+          }
+        },
+        {
+          "CityCode": "BEA",
+          "CountryCode": "PG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bereina"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bereina"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Pacific/Port_Moresby",
+          "Airports": {
+            "AirportCode": "BEA"
+          }
+        },
+        {
+          "CityCode": "BEB",
+          "CountryCode": "GB",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe?µpe????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Benbecula"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Benbecula"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Europe/London",
+          "Airports": {
+            "AirportCode": "BEB"
+          }
+        },
+        {
+          "CityCode": "BED",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??tf???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bedford"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BED"
+          }
+        },
+        {
+          "CityCode": "BEE",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???? ?p??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beagle Bay"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Beagle Bay"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Australia/Perth",
+          "Airports": {
+            "AirportCode": "BEE"
+          }
+        },
+        {
+          "CityCode": "BEF",
+          "CountryCode": "NI",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???f???t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bluefields"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bluefields"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Managua",
+          "Airports": {
+            "AirportCode": "BEF"
+          }
+        },
+        {
+          "CityCode": "BEG",
+          "CountryCode": "RS",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Belgrad"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Belgrad"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?e?????d?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Belgrade"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Belgrado"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Belgrade"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Belgrad"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Belgrade"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "???????"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Belgrade",
+          "Airports": {
+            "AirportCode": [
+              "BEG",
+              "BJY"
+            ]
+          }
+        },
+        {
+          "CityCode": "BEH",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??t?? ???µp??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Benton Harbor"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Benton Harbor"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BEH"
+          }
+        },
+        {
+          "CityCode": "BEI",
+          "CountryCode": "ET",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beica"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Beica"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Africa/Addis_Ababa",
+          "Airports": {
+            "AirportCode": "BEI"
+          }
+        },
+        {
+          "CityCode": "BEJ",
+          "CountryCode": "ID",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Berau"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Tanjung Redeb"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Berau"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Berau"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Berau"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Makassar"
+        },
+        {
+          "CityCode": "BEK",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Rae Bareli"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e ?pa????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bareilly"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Rae Bareli"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Rae Bareli"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Rae Bareli"
+              }
+            ]
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "BEK"
+          }
+        },
+        {
+          "CityCode": "BEL",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe??µ"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Belém"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "??"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Belém"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Belem"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "??"
+              }
+            ]
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Sao_Paulo",
+          "Airports": {
+            "AirportCode": "BEL"
+          }
+        },
+        {
+          "CityCode": "BEM",
+          "CountryCode": "MA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bossembele"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?seµp??e"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beni Mellal"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bossembele"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bossembele"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bossembele"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Africa/Casablanca",
+          "Airports": {
+            "AirportCode": "BEM"
+          }
+        },
+        {
+          "CityCode": "BEN",
+          "CountryCode": "LY",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bengasi"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?e?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Benghazi"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Benghazi"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Benghazi"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Benghazi"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bingazi"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Tripoli",
+          "Airports": {
+            "AirportCode": "BEN"
+          }
+        },
+        {
+          "CityCode": "BEP",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bellary"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bellary"
+              }
+            ]
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "BEP"
+          }
+        },
+        {
+          "CityCode": "BEQ",
+          "CountryCode": "GB",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bury St Edmunds"
+            }
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Europe/London",
+          "Airports": {
+            "AirportCode": "BEQ"
+          }
+        },
+        {
+          "CityCode": "BER",
+          "CountryCode": "DE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Berlin"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?e??????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Berlin"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Berlín"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Berlin"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Berlino"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Berlin"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Berlim"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Berlin"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "??"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Berlin",
+          "Airports": {
+            "AirportCode": [
+              "BER",
+              "GWW",
+              "QPP",
+              "QWB",
+              "QWC",
+              "QWE",
+              "SXF",
+              "THF",
+              "TXL"
+            ]
+          }
+        },
+        {
+          "CityCode": "BES",
+          "CountryCode": "FR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?est"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Brest"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Brest"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Paris",
+          "Airports": {
+            "AirportCode": "BES"
+          }
+        },
+        {
+          "CityCode": "BET",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bethel"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bethel"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bethel"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bethel"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bethel"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bethel"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": [
+              "BET",
+              "JBT"
+            ]
+          }
+        },
+        {
+          "CityCode": "BEU",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe?t????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bedourie"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bedourie"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Australia/Brisbane",
+          "Airports": {
+            "AirportCode": "BEU"
+          }
+        },
+        {
+          "CityCode": "BEV",
+          "CountryCode": "IL",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Beer Sheba"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?? S?µpa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beersheba"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beer Sheba"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beer Sheba"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beer Sheba"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Asia/Jerusalem",
+          "Airports": {
+            "AirportCode": "BEV"
+          }
+        },
+        {
+          "CityCode": "BEW",
+          "CountryCode": "MZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Beira"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "??"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Maputo",
+          "Airports": {
+            "AirportCode": "BEW"
+          }
+        },
+        {
+          "CityCode": "BEX",
+          "CountryCode": "GB",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??s??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Benson"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Benson"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Europe/London",
+          "Airports": {
+            "AirportCode": "BEX"
+          }
+        },
+        {
+          "CityCode": "BEY",
+          "CountryCode": "LB",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beyrouth"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Bejrut"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Beirute"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beirut"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beyrut"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "???"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Asia/Beirut",
+          "Airports": {
+            "AirportCode": "BEY"
+          }
+        },
+        {
+          "CityCode": "BEZ",
+          "CountryCode": "KI",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beru"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Beru"
+              }
+            ]
+          },
+          "UtcOffset": "+12:00",
+          "TimeZoneId": "Pacific/Tarawa",
+          "Airports": {
+            "AirportCode": "BEZ"
+          }
+        },
+        {
+          "CityCode": "BFA",
+          "CountryCode": "PY",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bahia Negra"
+            }
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Asuncion",
+          "Airports": {
+            "AirportCode": "BFA"
+          }
+        },
+        {
+          "CityCode": "BFB",
+          "CountryCode": "ES",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bilbao"
+            }
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Madrid"
+        },
+        {
+          "CityCode": "BFC",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bloomfield"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???µf???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bloomfield River"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bloomfield"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bloomfield"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bloomfield"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Australia/Brisbane",
+          "Airports": {
+            "AirportCode": "BFC"
+          }
+        },
+        {
+          "CityCode": "BFD",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???tf???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bradford"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bradford"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BFD"
+          }
+        },
+        {
+          "CityCode": "BFE",
+          "CountryCode": "DE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bielefeld"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??fe??t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bielefeld"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bielefeld"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bielefeld"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bielefeld"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bielefeld"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Berlin",
+          "Airports": {
+            "AirportCode": "BFE"
+          }
+        },
+        {
+          "CityCode": "BFF",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "S??tsµp?af"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Scottsbluff"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Scottsbluff"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": "BFF"
+          }
+        },
+        {
+          "CityCode": "BFG",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bullfrog Basin"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???f???? ?p??s??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Glen Canyon"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bullfrog Basin"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bullfrog Basin"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": "BFG"
+          }
+        },
+        {
+          "CityCode": "BFJ",
+          "CountryCode": "CN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Ba"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bijie"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ba"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ba"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ba"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Shanghai",
+          "Airports": {
+            "AirportCode": "BFJ"
+          }
+        },
+        {
+          "CityCode": "BFL",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???e?sf???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bakersfield"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bakersfield"
+              }
+            ]
+          },
+          "UtcOffset": "-08:00",
+          "TimeZoneId": "America/Los_Angeles",
+          "Airports": {
+            "AirportCode": "BFL"
+          }
+        },
+        {
+          "CityCode": "BFN",
+          "CountryCode": "ZA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??µf??t???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "???????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bloemfontein"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Johannesburg",
+          "Airports": {
+            "AirportCode": "BFN"
+          }
+        },
+        {
+          "CityCode": "BFO",
+          "CountryCode": "ZW",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Buffalo Range"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??fa?? ????t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Chiredzi"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Buffalo Range"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Buffalo Range"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Harare",
+          "Airports": {
+            "AirportCode": "BFO"
+          }
+        },
+        {
+          "CityCode": "BFP",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?ße? F???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beaver Falls"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Beaver Falls"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BFP"
+          }
+        },
+        {
+          "CityCode": "BFQ",
+          "CountryCode": "PA",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bahia Pina"
+            }
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/Panama",
+          "Airports": {
+            "AirportCode": "BFQ"
+          }
+        },
+        {
+          "CityCode": "BFR",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??tf???t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bedford"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bedford"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BFR"
+          }
+        },
+        {
+          "CityCode": "BFS",
+          "CountryCode": "GB",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Belfast city"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??fast"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Belfast"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Belfast"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Belfast"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Belfast"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Belfast"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Belfast e Belfast"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Belfast city"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "??????"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Europe/London",
+          "Airports": {
+            "AirportCode": [
+              "BFS",
+              "BHD"
+            ]
+          }
+        },
+        {
+          "CityCode": "BFT",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?f??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Beaufort"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Beaufort"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BFT"
+          }
+        },
+        {
+          "CityCode": "BFU",
+          "CountryCode": "CN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pe???µp??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bengbu"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bengbu"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Shanghai",
+          "Airports": {
+            "AirportCode": [
+              "BFU",
+              "BFY"
+            ]
+          }
+        },
+        {
+          "CityCode": "BFV",
+          "CountryCode": "TH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Buriram"
+            }
+          },
+          "UtcOffset": "+07:00",
+          "TimeZoneId": "Asia/Bangkok",
+          "Airports": {
+            "AirportCode": "BFV"
+          }
+        },
+        {
+          "CityCode": "BFW",
+          "CountryCode": "DZ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Sidi Bel Abbes"
+            }
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Algiers",
+          "Airports": {
+            "AirportCode": "BFW"
+          }
+        },
+        {
+          "CityCode": "BFX",
+          "CountryCode": "CM",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?paf??s?µ"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bafoussam"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bafoussam"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Douala",
+          "Airports": {
+            "AirportCode": "BFX"
+          }
+        },
+        {
+          "CityCode": "BFY",
+          "CountryCode": "CN",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bengbu"
+            }
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Shanghai"
+        },
+        {
+          "CityCode": "BGA",
+          "CountryCode": "CO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bucarmanga"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???a?µ????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bucarmanga"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "???????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bucarmanga"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bucaramanga"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "?????"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/Bogota",
+          "Airports": {
+            "AirportCode": "BGA"
+          }
+        },
+        {
+          "CityCode": "BGB",
+          "CountryCode": "GA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???e"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Booue"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Booue"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Libreville",
+          "Airports": {
+            "AirportCode": "BGB"
+          }
+        },
+        {
+          "CityCode": "BGC",
+          "CountryCode": "PT",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?a?????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Braganca"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Braganca"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Europe/Lisbon",
+          "Airports": {
+            "AirportCode": "BGC"
+          }
+        },
+        {
+          "CityCode": "BGD",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p????e?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Borger"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Borger"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "BGD"
+          }
+        },
+        {
+          "CityCode": "BGE",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???µp??t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bainbridge"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bainbridge"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BGE"
+          }
+        },
+        {
+          "CityCode": "BGF",
+          "CountryCode": "CF",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bangui"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bangui"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Bangui",
+          "Airports": {
+            "AirportCode": "BGF"
+          }
+        },
+        {
+          "CityCode": "BGG",
+          "CountryCode": "TR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bongouanou"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??????a???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bingol"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bongouanou"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bongouanou"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bongouanou"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Europe/Istanbul",
+          "Airports": {
+            "AirportCode": "BGG"
+          }
+        },
+        {
+          "CityCode": "BGH",
+          "CountryCode": "MR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Boghe"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p???e"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bogue"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Boghe"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Boghe"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Boghe"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Africa/Nouakchott",
+          "Airports": {
+            "AirportCode": "BGH"
+          }
+        },
+        {
+          "CityCode": "BGI",
+          "CountryCode": "BB",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bridgetown"
+            }
+          },
+          "UtcOffset": "-04:00",
+          "TimeZoneId": "America/Barbados",
+          "Airports": {
+            "AirportCode": "BGI"
+          }
+        },
+        {
+          "CityCode": "BGJ",
+          "CountryCode": "IS",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p????a?f????t??? ??st??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Borgarfjordur Eystri"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Borgarfjordur Eystri"
+              }
+            ]
+          },
+          "UtcOffset": "+00:00",
+          "TimeZoneId": "Atlantic/Reykjavik",
+          "Airports": {
+            "AirportCode": "BGJ"
+          }
+        },
+        {
+          "CityCode": "BGK",
+          "CountryCode": "BZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??? ????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Big Creek"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Big Creek"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Belize",
+          "Airports": {
+            "AirportCode": "BGK"
+          }
+        },
+        {
+          "CityCode": "BGL",
+          "CountryCode": "NP",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa????????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Baglung"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Baglung"
+              }
+            ]
+          },
+          "UtcOffset": "+05:45",
+          "TimeZoneId": "Asia/Kathmandu",
+          "Airports": {
+            "AirportCode": "BGL"
+          }
+        },
+        {
+          "CityCode": "BGM",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?????aµt??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Binghamton"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Binghamton"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BGM"
+          }
+        },
+        {
+          "CityCode": "BGN",
+          "CountryCode": "RU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Brüggen"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?????e?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Belaya Gora"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Brueggen"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Brueggen"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Brueggen"
+              }
+            ]
+          },
+          "UtcOffset": "+11:00",
+          "TimeZoneId": "Asia/Srednekolymsk",
+          "Airports": {
+            "AirportCode": "BGN"
+          }
+        },
+        {
+          "CityCode": "BGO",
+          "CountryCode": "NO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p????e?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bergen"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "???"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Oslo",
+          "Airports": {
+            "AirportCode": [
+              "BGO",
+              "QFV"
+            ]
+          }
+        },
+        {
+          "CityCode": "BGP",
+          "CountryCode": "GA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bongo"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bongo"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Libreville",
+          "Airports": {
+            "AirportCode": "BGP"
+          }
+        },
+        {
+          "CityCode": "BGQ",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?p??? ????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Big Lake"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Big Lake"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "BGQ"
+          }
+        },
+        {
+          "CityCode": "BGR",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Bangor"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?pa?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bangor"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bangor"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bangor"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bangor"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bangor"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "BGR"
+          }
+        },
+        {
+          "CityCode": "BGS",
+          "CountryCode": "RU",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boguchany"
+            }
+          },
+          "UtcOffset": "+07:00",
+          "TimeZoneId": "Asia/Tomsk",
+          "Airports": {
+            "AirportCode": "BGS"
+          }
+        },
+        {
+          "CityCode": "BGT",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?a?d?t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Bagdad"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Bagdat"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Bagdad"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Phoenix",
+          "Airports": {
+            "AirportCode": "BGT"
+          }
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=600",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=0",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=500",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=700",
+          "@Rel": "next"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=10800",
+          "@Rel": "last"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/airports/{airportCode}",
+          "@Rel": "related"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/countries/{countryCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 10836
+    }
+  }
+}

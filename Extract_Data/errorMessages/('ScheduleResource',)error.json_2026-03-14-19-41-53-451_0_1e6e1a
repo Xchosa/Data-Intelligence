@@ -1,0 +1,11 @@
+{
+  "ProcessingErrors": {
+    "ProcessingError": {
+      "@RetryIndicator": false,
+      "Type": "ResourceNotFound",
+      "Code": "3603",
+      "Description": "No flight matched the criteria.",
+      "InfoURL": "not supported yet: http://api.lufthansa.com/errorcodes/{processingError.Code}"
+    }
+  }
+}

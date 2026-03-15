@@ -64,11 +64,15 @@ offset =0
 
 #one domestic,Eu, international
 operations="operations"
-operation_type="schedule"
+operation_type="schedules"
 origin="FRA"
-destination="POR"
+destination="MUC"
 #todays date
-Date=datetime.now().strftime("%Y-%m-%d")
+Date="2026-03-12"
+meta_data_key="ScheduleResource"
+recordLimit=20
+offset=0
+#Date=datetime.now().strftime("%Y-%m-%d")
 
 get_flight_schedules.get_data_flight_Schedules(
     base_Url="https://lh-proxy.onrender.com",
@@ -79,7 +83,7 @@ get_flight_schedules.get_data_flight_Schedules(
     volume_name=volume_name,
 
     operations= operations,
-    operation_type="schedule",
+    operation_type=operation_type,
 
     recordLimit=recordLimit,
     offset=offset,
@@ -87,7 +91,7 @@ get_flight_schedules.get_data_flight_Schedules(
     save_on_Databricks=False,
     local_folder=f"flight_{operation_type}",
     
-    meta_data_key="ScheduleResource",
+    meta_data_key=meta_data_key,
 	origin=origin,
     destination=destination,
     Date=Date,

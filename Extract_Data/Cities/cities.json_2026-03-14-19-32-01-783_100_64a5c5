@@ -1,0 +1,6167 @@
+{
+  "CityResource": {
+    "Cities": {
+      "City": [
+        {
+          "CityCode": "AJL",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Aizawl"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Aizawl"
+              }
+            ]
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "AJL"
+          }
+        },
+        {
+          "CityCode": "AJN",
+          "CountryCode": "KM",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??t?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Anjouan"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Anjouan"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Indian/Comoro",
+          "Airports": {
+            "AirportCode": "AJN"
+          }
+        },
+        {
+          "CityCode": "AJO",
+          "CountryCode": "YE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????f"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Aljouf"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Aljouf"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Asia/Aden",
+          "Airports": {
+            "AirportCode": "AJO"
+          }
+        },
+        {
+          "CityCode": "AJR",
+          "CountryCode": "SE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??ß??t???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Arvidsjaur"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Arvidsjaur"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Stockholm",
+          "Airports": {
+            "AirportCode": "AJR"
+          }
+        },
+        {
+          "CityCode": "AJS",
+          "CountryCode": "MX",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Abreojos"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µp?e????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Punta Abreojos"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Abreojos"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Abreojos"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Abreojos"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Mazatlan",
+          "Airports": {
+            "AirportCode": "AJS"
+          }
+        },
+        {
+          "CityCode": "AJU",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??a?a???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Aracajú"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Aracaju"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Sao_Paulo"
+        },
+        {
+          "CityCode": "AJY",
+          "CountryCode": "NE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Agades"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????te?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Agadez"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Agades"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Agades"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Agades"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Niamey",
+          "Airports": {
+            "AirportCode": "AJY"
+          }
+        },
+        {
+          "CityCode": "AKA",
+          "CountryCode": "CN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ankang"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ankang"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Shanghai",
+          "Airports": {
+            "AirportCode": "AKA"
+          }
+        },
+        {
+          "CityCode": "AKB",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?t?a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Atka"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Atka"
+              }
+            ]
+          },
+          "UtcOffset": "-10:00",
+          "TimeZoneId": "America/Adak",
+          "Airports": {
+            "AirportCode": "AKB"
+          }
+        },
+        {
+          "CityCode": "AKD",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akola"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akola"
+              }
+            ]
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "AKD"
+          }
+        },
+        {
+          "CityCode": "AKE",
+          "CountryCode": "GA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akieni"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akieni"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Libreville",
+          "Airports": {
+            "AirportCode": "AKE"
+          }
+        },
+        {
+          "CityCode": "AKF",
+          "CountryCode": "LY",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Kufrah"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???f?a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Kufra"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Kufrah"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Kufrah"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Kufrah"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Tripoli",
+          "Airports": {
+            "AirportCode": "AKF"
+          }
+        },
+        {
+          "CityCode": "AKG",
+          "CountryCode": "PG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????????a???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Anguganak"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Anguganak"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Pacific/Port_Moresby",
+          "Airports": {
+            "AirportCode": "AKG"
+          }
+        },
+        {
+          "CityCode": "AKH",
+          "CountryCode": "SA",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Al Kharj"
+            }
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Asia/Riyadh"
+        },
+        {
+          "CityCode": "AKI",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akiak"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akiak"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "AKI"
+          }
+        },
+        {
+          "CityCode": "AKJ",
+          "CountryCode": "JP",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?sa?????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "??"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Asahikawa"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Asahikawa"
+              }
+            ]
+          },
+          "UtcOffset": "+09:00",
+          "TimeZoneId": "Asia/Tokyo",
+          "Airports": {
+            "AirportCode": "AKJ"
+          }
+        },
+        {
+          "CityCode": "AKK",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akhiok"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akhiok"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "AKK"
+          }
+        },
+        {
+          "CityCode": "AKL",
+          "CountryCode": "NZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???a?t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Auckland"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "???"
+              }
+            ]
+          },
+          "UtcOffset": "+12:00",
+          "TimeZoneId": "Pacific/Auckland",
+          "Airports": {
+            "AirportCode": [
+              "AKL",
+              "MHB",
+              "XNZ"
+            ]
+          }
+        },
+        {
+          "CityCode": "AKM",
+          "CountryCode": "TD",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?a???µa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Zakouma"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Zakouma"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Ndjamena",
+          "Airports": {
+            "AirportCode": "AKM"
+          }
+        },
+        {
+          "CityCode": "AKN",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????? S??µ??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "King Salmon"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "King Salmon"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "AKN"
+          }
+        },
+        {
+          "CityCode": "AKO",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akron"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akron"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": "AKO"
+          }
+        },
+        {
+          "CityCode": "AKP",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??a?t??ß??? ?a?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Anaktuvuk Pass"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Anaktuvuk Pass"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "AKP"
+          }
+        },
+        {
+          "CityCode": "AKQ",
+          "CountryCode": "ID",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Astraksetra"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?st?a??t?a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Menggala"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Astraksetra"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Astraksetra"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Astraksetra"
+              }
+            ]
+          },
+          "UtcOffset": "+07:00",
+          "TimeZoneId": "Asia/Pontianak",
+          "Airports": {
+            "AirportCode": "AKQ"
+          }
+        },
+        {
+          "CityCode": "AKR",
+          "CountryCode": "NG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????e"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akure"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akure"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Lagos",
+          "Airports": {
+            "AirportCode": "AKR"
+          }
+        },
+        {
+          "CityCode": "AKS",
+          "CountryCode": "SB",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Auki"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Auki"
+              }
+            ]
+          },
+          "UtcOffset": "+11:00",
+          "TimeZoneId": "Pacific/Guadalcanal",
+          "Airports": {
+            "AirportCode": "AKS"
+          }
+        },
+        {
+          "CityCode": "AKT",
+          "CountryCode": "CY",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????t???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akrotiri"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akrotiri"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Asia/Nicosia",
+          "Airports": {
+            "AirportCode": "AKT"
+          }
+        },
+        {
+          "CityCode": "AKU",
+          "CountryCode": "CN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Aksu"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Aksu"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Asia/Shanghai",
+          "Airports": {
+            "AirportCode": "AKU"
+          }
+        },
+        {
+          "CityCode": "AKV",
+          "CountryCode": "CA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??????ß??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Akulivik"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Akulivik"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/Toronto",
+          "Airports": {
+            "AirportCode": "AKV"
+          }
+        },
+        {
+          "CityCode": "AKW",
+          "CountryCode": "IR",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Aghajari"
+            }
+          },
+          "UtcOffset": "+03:30",
+          "TimeZoneId": "Asia/Tehran",
+          "Airports": {
+            "AirportCode": "AKW"
+          }
+        },
+        {
+          "CityCode": "AKX",
+          "CountryCode": "KZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "EL",
+                "$": "??t?µpe"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aktobe"
+              }
+            ]
+          },
+          "UtcOffset": "+05:00",
+          "TimeZoneId": "Asia/Qyzylorda",
+          "Airports": {
+            "AirportCode": "AKX"
+          }
+        },
+        {
+          "CityCode": "AKY",
+          "CountryCode": "MM",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "S?tße"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Sittwe"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Sittwe"
+              }
+            ]
+          },
+          "UtcOffset": "+06:30",
+          "TimeZoneId": "Asia/Yangon",
+          "Airports": {
+            "AirportCode": "AKY"
+          }
+        },
+        {
+          "CityCode": "ALA",
+          "CountryCode": "KZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µ?t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Alma Ata"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Almati"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Almaty"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+05:00",
+          "TimeZoneId": "Asia/Qyzylorda",
+          "Airports": {
+            "AirportCode": [
+              "ALA",
+              "BXJ"
+            ]
+          }
+        },
+        {
+          "CityCode": "ALB",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µpa??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": [
+              "ALB",
+              "ZLY"
+            ]
+          }
+        },
+        {
+          "CityCode": "ALC",
+          "CountryCode": "ES",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??????te"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alicante"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Madrid",
+          "Airports": {
+            "AirportCode": [
+              "ACQ",
+              "ALC"
+            ]
+          }
+        },
+        {
+          "CityCode": "ALD",
+          "CountryCode": "PE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????ta"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alerta"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alerta"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/Lima",
+          "Airports": {
+            "AirportCode": "ALD"
+          }
+        },
+        {
+          "CityCode": "ALE",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??p???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alpine"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alpine"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "ALE"
+          }
+        },
+        {
+          "CityCode": "ALF",
+          "CountryCode": "NO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??ta"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alta"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alta"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Oslo",
+          "Airports": {
+            "AirportCode": "ALF"
+          }
+        },
+        {
+          "CityCode": "ALG",
+          "CountryCode": "DZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Algier"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Argel"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alger"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Algeri"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Algier"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Argel"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Cezayir"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Algiers"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Algiers",
+          "Airports": {
+            "AirportCode": "ALG"
+          }
+        },
+        {
+          "CityCode": "ALH",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µpa??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Albany"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Albany"
+              }
+            ]
+          },
+          "UtcOffset": "+08:00",
+          "TimeZoneId": "Australia/Perth",
+          "Airports": {
+            "AirportCode": "ALH"
+          }
+        },
+        {
+          "CityCode": "ALI",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Alice"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alice"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alice"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alice"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alice"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alice"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "ALI"
+          }
+        },
+        {
+          "CityCode": "ALJ",
+          "CountryCode": "ZA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e???te? ?p??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alexander Bay"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alexander Bay"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Johannesburg",
+          "Airports": {
+            "AirportCode": "ALJ"
+          }
+        },
+        {
+          "CityCode": "ALK",
+          "CountryCode": "ET",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?s??a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Asela"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Asela"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Africa/Addis_Ababa",
+          "Airports": {
+            "AirportCode": "ALK"
+          }
+        },
+        {
+          "CityCode": "ALL",
+          "CountryCode": "IT",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µp????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Albenga"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Albenga"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Rome",
+          "Airports": {
+            "AirportCode": "ALL"
+          }
+        },
+        {
+          "CityCode": "ALM",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Alamogordo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??aµ?????d?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alamogordo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alamogordo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alamogordo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alamogordo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alamogordo"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": [
+              "ALM",
+              "HMN"
+            ]
+          }
+        },
+        {
+          "CityCode": "ALN",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alton"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alton"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "ALN"
+          }
+        },
+        {
+          "CityCode": "ALO",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?ate???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Waterloo"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Waterloo"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "ALO"
+          }
+        },
+        {
+          "CityCode": "ALP",
+          "CountryCode": "SY",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?a??p?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alep"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Aleppo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Halep"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "??????"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Asia/Damascus",
+          "Airports": {
+            "AirportCode": "ALP"
+          }
+        },
+        {
+          "CityCode": "ALQ",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e????te"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alegrete"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alegrete"
+              }
+            ]
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Sao_Paulo",
+          "Airports": {
+            "AirportCode": "ALQ"
+          }
+        },
+        {
+          "CityCode": "ALR",
+          "CountryCode": "NZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e???t?a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alexandra"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alexandra"
+              }
+            ]
+          },
+          "UtcOffset": "+12:00",
+          "TimeZoneId": "Pacific/Auckland",
+          "Airports": {
+            "AirportCode": "ALR"
+          }
+        },
+        {
+          "CityCode": "ALS",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??aµ??a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alamosa"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alamosa"
+              }
+            ]
+          },
+          "UtcOffset": "-07:00",
+          "TimeZoneId": "America/Denver",
+          "Airports": {
+            "AirportCode": "ALS"
+          }
+        },
+        {
+          "CityCode": "ALT",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alenquer"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alenquer"
+              }
+            ]
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Sao_Paulo",
+          "Airports": {
+            "AirportCode": "ALT"
+          }
+        },
+        {
+          "CityCode": "ALU",
+          "CountryCode": "SO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alula"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alula"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Africa/Mogadishu",
+          "Airports": {
+            "AirportCode": "ALU"
+          }
+        },
+        {
+          "CityCode": "ALV",
+          "CountryCode": "AD",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Andorra La Vella"
+            }
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Andorra",
+          "Airports": {
+            "AirportCode": "ALV"
+          }
+        },
+        {
+          "CityCode": "ALW",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "G????a G????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Walla Walla"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Walla Walla"
+              }
+            ]
+          },
+          "UtcOffset": "-08:00",
+          "TimeZoneId": "America/Los_Angeles",
+          "Airports": {
+            "AirportCode": "ALW"
+          }
+        },
+        {
+          "CityCode": "ALX",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e???te? S?t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alexander City"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alexander City"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "ALX"
+          }
+        },
+        {
+          "CityCode": "ALY",
+          "CountryCode": "EG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alexandria"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??e???d?e?a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alexandria"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Borg El Arab"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alessandria-Borg el Arab"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "????????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Aleksandria -Borg el Arab"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Alexandria"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "????-???-????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alexandria"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Borg el Arab"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Cairo",
+          "Airports": {
+            "AirportCode": "ALY"
+          }
+        },
+        {
+          "CityCode": "ALZ",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???t??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alitak"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alitak"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "ALZ"
+          }
+        },
+        {
+          "CityCode": "AMA",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Amarillo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µa????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amarillo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Amarillo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amarillo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amarillo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amarillo"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": [
+              "AMA",
+              "TDW"
+            ]
+          }
+        },
+        {
+          "CityCode": "AMB",
+          "CountryCode": "MG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µp???µp"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ambilobe"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ambilobe"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Indian/Antananarivo",
+          "Airports": {
+            "AirportCode": "AMB"
+          }
+        },
+        {
+          "CityCode": "AMC",
+          "CountryCode": "TD",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µ ??µ??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Am Timan"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Am Timan"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Ndjamena",
+          "Airports": {
+            "AirportCode": "AMC"
+          }
+        },
+        {
+          "CityCode": "AMD",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µe?taµp??t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Ahmadabad"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "?????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ahmedabad"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "?????"
+              }
+            ]
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "AMD"
+          }
+        },
+        {
+          "CityCode": "AME",
+          "CountryCode": "MZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??t? ?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alto Molocue"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alto Molocue"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Maputo",
+          "Airports": {
+            "AirportCode": "AME"
+          }
+        },
+        {
+          "CityCode": "AMF",
+          "CountryCode": "PG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ama"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ama"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Pacific/Port_Moresby",
+          "Airports": {
+            "AirportCode": "AMF"
+          }
+        },
+        {
+          "CityCode": "AMG",
+          "CountryCode": "PG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µp???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amboin"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Amboin"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Pacific/Port_Moresby",
+          "Airports": {
+            "AirportCode": "AMG"
+          }
+        },
+        {
+          "CityCode": "AMH",
+          "CountryCode": "ET",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Arba Mintch"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µpa ???t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Arba Minch"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Arba Minch"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Arba Minch"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Arba Mintch"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Africa/Addis_Ababa"
+        },
+        {
+          "CityCode": "AMI",
+          "CountryCode": "IN",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ambala"
+            }
+          },
+          "UtcOffset": "+05:30",
+          "TimeZoneId": "Asia/Kolkata",
+          "Airports": {
+            "AirportCode": "AMI"
+          }
+        },
+        {
+          "CityCode": "AMJ",
+          "CountryCode": "BR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µe???a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Almenara"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Almenara"
+              }
+            ]
+          },
+          "UtcOffset": "-03:00",
+          "TimeZoneId": "America/Sao_Paulo",
+          "Airports": {
+            "AirportCode": "AMJ"
+          }
+        },
+        {
+          "CityCode": "AML",
+          "CountryCode": "PA",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Puerto Armuellas"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????t? ??µ?????a?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Puerto Armuelles"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Puerto Armuellas"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Puerto Armuellas"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Puerto Armuellas"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/Panama",
+          "Airports": {
+            "AirportCode": "AML"
+          }
+        },
+        {
+          "CityCode": "AMM",
+          "CountryCode": "JO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Amman"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µµ??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amman"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ammán"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amman"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amman"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "??"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Amman"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Amã"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amman"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "??"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Asia/Amman",
+          "Airports": {
+            "AirportCode": [
+              "ADJ",
+              "AMM"
+            ]
+          }
+        },
+        {
+          "CityCode": "AMN",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??µa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Alma"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Alma"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "AMN"
+          }
+        },
+        {
+          "CityCode": "AMO",
+          "CountryCode": "TD",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Mao"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Mao"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Ndjamena",
+          "Airports": {
+            "AirportCode": "AMO"
+          }
+        },
+        {
+          "CityCode": "AMP",
+          "CountryCode": "MG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µpa????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ampanihy"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ampanihy"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Indian/Antananarivo",
+          "Airports": {
+            "AirportCode": "AMP"
+          }
+        },
+        {
+          "CityCode": "AMQ",
+          "CountryCode": "ID",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µp??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ambon"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ambon"
+              }
+            ]
+          },
+          "UtcOffset": "+09:00",
+          "TimeZoneId": "Asia/Jayapura",
+          "Airports": {
+            "AirportCode": "AMQ"
+          }
+        },
+        {
+          "CityCode": "AMS",
+          "CountryCode": "NL",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "?????????"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µste??taµ"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ámsterdam"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Amsterdam Schiphol"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "???????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Amesterdão"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "?????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amsterdam"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "?????????"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "?????"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Amsterdam",
+          "Airports": {
+            "AirportCode": [
+              "AMS",
+              "DJK",
+              "SPL"
+            ]
+          }
+        },
+        {
+          "CityCode": "AMT",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µ?ta"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amata"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Amata"
+              }
+            ]
+          },
+          "UtcOffset": "+09:30",
+          "TimeZoneId": "Australia/Adelaide",
+          "Airports": {
+            "AirportCode": "AMT"
+          }
+        },
+        {
+          "CityCode": "AMU",
+          "CountryCode": "PG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µa?aµp"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amanab"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Amanab"
+              }
+            ]
+          },
+          "UtcOffset": "+10:00",
+          "TimeZoneId": "Pacific/Port_Moresby",
+          "Airports": {
+            "AirportCode": "AMU"
+          }
+        },
+        {
+          "CityCode": "AMV",
+          "CountryCode": "RU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µ?t??µa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Amderma"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Amderma"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Europe/Moscow",
+          "Airports": {
+            "AirportCode": "AMV"
+          }
+        },
+        {
+          "CityCode": "AMW",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µe?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ames"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ames"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": "AMW"
+          }
+        },
+        {
+          "CityCode": "AMX",
+          "CountryCode": "AU",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µa???"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ammaroo"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ammaroo"
+              }
+            ]
+          },
+          "UtcOffset": "+09:30",
+          "TimeZoneId": "Australia/Darwin",
+          "Airports": {
+            "AirportCode": "AMX"
+          }
+        },
+        {
+          "CityCode": "AMY",
+          "CountryCode": "MG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µpat?µ??t?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ambatomainty"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ambatomainty"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Indian/Antananarivo",
+          "Airports": {
+            "AirportCode": "AMY"
+          }
+        },
+        {
+          "CityCode": "AMZ",
+          "CountryCode": "NZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???tµ??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ardmore"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Ardmore"
+              }
+            ]
+          },
+          "UtcOffset": "+12:00",
+          "TimeZoneId": "Pacific/Auckland",
+          "Airports": {
+            "AirportCode": "AMZ"
+          }
+        },
+        {
+          "CityCode": "ANA",
+          "CountryCode": "KE",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Maasai Mara"
+            }
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Africa/Nairobi",
+          "Airports": {
+            "AirportCode": "ANA"
+          }
+        },
+        {
+          "CityCode": "ANB",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Anniston"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???st??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anniston"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anniston"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anniston"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Anniston"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Anniston"
+              }
+            ]
+          },
+          "UtcOffset": "-06:00",
+          "TimeZoneId": "America/Chicago",
+          "Airports": {
+            "AirportCode": [
+              "ANB",
+              "QAW",
+              "RLI"
+            ]
+          }
+        },
+        {
+          "CityCode": "ANC",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????at?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Anchorge"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "????????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Anchorage"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "????"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": [
+              "ANC",
+              "EDF",
+              "FRN",
+              "MRI"
+            ]
+          }
+        },
+        {
+          "CityCode": "AND",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Anderson"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??te?s??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anderson"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anderson"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anderson"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Anderson"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Anderson"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "AND"
+          }
+        },
+        {
+          "CityCode": "ANE",
+          "CountryCode": "FR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????e??"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Angers"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Angers"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Paris",
+          "Airports": {
+            "AirportCode": [
+              "ANE",
+              "QXG"
+            ]
+          }
+        },
+        {
+          "CityCode": "ANF",
+          "CountryCode": "CL",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??t?fa???sta"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "???????????"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Antofagasta"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "??????"
+              }
+            ]
+          },
+          "UtcOffset": "-04:00",
+          "TimeZoneId": "America/Santiago",
+          "Airports": {
+            "AirportCode": "ANF"
+          }
+        },
+        {
+          "CityCode": "ANG",
+          "CountryCode": "FR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "????????µe"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Angouleme"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Angouleme"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Paris",
+          "Airports": {
+            "AirportCode": [
+              "ANG",
+              "XGL"
+            ]
+          }
+        },
+        {
+          "CityCode": "ANH",
+          "CountryCode": "SB",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Anuha Island Resort"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Anuha Island Resort"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Anuha Island"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????a ???a?t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Anuha Island Resort"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Anuha Island"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Anuha Island"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Anuha Island Resort"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Anuha Island Resort"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Anuha Island Resort"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Anuha Island Resort"
+              }
+            ]
+          },
+          "UtcOffset": "+11:00",
+          "TimeZoneId": "Pacific/Guadalcanal",
+          "Airports": {
+            "AirportCode": "ANH"
+          }
+        },
+        {
+          "CityCode": "ANI",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Aniak"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Aniak"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "ANI"
+          }
+        },
+        {
+          "CityCode": "ANJ",
+          "CountryCode": "CG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?a????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Zanaga"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Zanaga"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Brazzaville",
+          "Airports": {
+            "AirportCode": "ANJ"
+          }
+        },
+        {
+          "CityCode": "ANK",
+          "CountryCode": "TR",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Ankara"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Ankara"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Ankara Esenboga"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Ankara Esenboga"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Ankara"
+              },
+              {
+                "@LanguageCode": "JA",
+                "$": "????"
+              },
+              {
+                "@LanguageCode": "KO",
+                "$": "???"
+              },
+              {
+                "@LanguageCode": "PL",
+                "$": "Ankara"
+              },
+              {
+                "@LanguageCode": "PT",
+                "$": "Ancara"
+              },
+              {
+                "@LanguageCode": "RU",
+                "$": "??????"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Ankara"
+              },
+              {
+                "@LanguageCode": "ZH",
+                "$": "???"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Europe/Istanbul",
+          "Airports": {
+            "AirportCode": [
+              "ANK",
+              "ESB"
+            ]
+          }
+        },
+        {
+          "CityCode": "ANL",
+          "CountryCode": "AO",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??t????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Andulo"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Andulo"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Africa/Luanda",
+          "Airports": {
+            "AirportCode": "ANL"
+          }
+        },
+        {
+          "CityCode": "ANM",
+          "CountryCode": "MG",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??ta???a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Antalaha"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Antalaha"
+              }
+            ]
+          },
+          "UtcOffset": "+03:00",
+          "TimeZoneId": "Indian/Antananarivo",
+          "Airports": {
+            "AirportCode": "ANM"
+          }
+        },
+        {
+          "CityCode": "ANN",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???t ???a?t"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Annette Island"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Annette Island"
+              }
+            ]
+          },
+          "UtcOffset": "-09:00",
+          "TimeZoneId": "America/Anchorage",
+          "Airports": {
+            "AirportCode": "ANN"
+          }
+        },
+        {
+          "CityCode": "ANO",
+          "CountryCode": "MZ",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?????tse"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Angoche"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Angoche"
+              }
+            ]
+          },
+          "UtcOffset": "+02:00",
+          "TimeZoneId": "Africa/Maputo",
+          "Airports": {
+            "AirportCode": "ANO"
+          }
+        },
+        {
+          "CityCode": "ANP",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "???p????"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Annapolis"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Annapolis"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "ANP"
+          }
+        },
+        {
+          "CityCode": "ANQ",
+          "CountryCode": "US",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??????a"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Angola"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Angola"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/New_York",
+          "Airports": {
+            "AirportCode": "ANQ"
+          }
+        },
+        {
+          "CityCode": "ANR",
+          "CountryCode": "BE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "DE",
+                "$": "Antwerpen"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "?µß??sa"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Antwerp"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Antwerp"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Antwerp"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Antwerp"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Antwerp"
+              }
+            ]
+          },
+          "UtcOffset": "+01:00",
+          "TimeZoneId": "Europe/Brussels",
+          "Airports": {
+            "AirportCode": [
+              "ANR",
+              "ZAY",
+              "ZYZ"
+            ]
+          }
+        },
+        {
+          "CityCode": "ANS",
+          "CountryCode": "PE",
+          "Names": {
+            "Name": [
+              {
+                "@LanguageCode": "BG",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "CS",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "DE",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "EL",
+                "$": "??ta?????a?"
+              },
+              {
+                "@LanguageCode": "EN",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "ES",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "FR",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "HU",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "IT",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "RO",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "SV",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "TR",
+                "$": "Andahuaylas"
+              },
+              {
+                "@LanguageCode": "UK",
+                "$": "Andahuaylas"
+              }
+            ]
+          },
+          "UtcOffset": "-05:00",
+          "TimeZoneId": "America/Lima",
+          "Airports": {
+            "AirportCode": "ANS"
+          }
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=200",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=0",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=100",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=300",
+          "@Rel": "next"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/cities?limit=100&offset=10800",
+          "@Rel": "last"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/airports/{airportCode}",
+          "@Rel": "related"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/countries/{countryCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 10836
+    }
+  }
+}
