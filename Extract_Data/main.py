@@ -9,7 +9,7 @@ import uuid
 import time
 
 
-import get_all_Recources
+from get_all_Recources import get_data_all_Reference
 import get_flight_schedules
 import get_flight_route
 from utilis import is_databricks_notebook
@@ -44,7 +44,7 @@ local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
 
 #wworking
 for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
-   get_all_Recources.get_data_all_Reference(
+   get_data_all_Reference(
        base_Url="https://lh-proxy.onrender.com",
        headers=headers,
         
