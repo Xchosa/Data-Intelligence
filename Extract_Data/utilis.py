@@ -10,6 +10,14 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 
+
+def directory_exist(directory: str) -> bool:
+    try:
+        dbutilis.fs.ls(directory)
+        return True
+    except Exception:
+         return False      
+
 def is_databricks_notebook()->bool:
     try:
         dbutils  # noqa: F821
@@ -70,9 +78,12 @@ def save_json_locally(
     print(file_path)
     print(f"saved locally: {file_path}")
 
+
+
 def save_in_Notebooks(FileName_base: str,json_data: Any, offset:int ,directory: str )-> None:
     versioned_filename = versioning_fileNames(FileName_base, offset)
-    dbutils.fs.mkdirs(directory, exist_ok=True)
+    if directory_exist(directory):
+        dbutils.fs.mkdirs(directory)
     file_path = f"{directory}/{versioned_filename}"
     with open (file_path, "w") as file:
         json.dump(json_data, file, indent=2)

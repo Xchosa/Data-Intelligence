@@ -12,6 +12,7 @@ import sys
 
 from utilis import (
     is_databricks_notebook,
+    directory_exist,
     update_offset,
     timeout_api_restriction,
     versioning_fileNames,
