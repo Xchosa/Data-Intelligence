@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from pathlib import Path
 from typing import Dict, Any, List, Optional
@@ -10,6 +10,14 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 
+
+def get_past_date(time: int) -> str:
+    """ takes the time paramter as the starting time 
+    e.g. 
+    get_past_date(1) → "2026-03-16T01:00" (1 AM)
+    """
+    date = datetime.now().replace(hour=time, minute=0, second=0, microsecond=0)
+    return date.strftime("%Y-%m-%dT%H:%M")
 
 def directory_exist(directory: str) -> bool:
     try:

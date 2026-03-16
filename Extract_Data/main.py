@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from pathlib import Path
 from typing import Dict, Any, List, Optional
@@ -12,7 +12,9 @@ import time
 from get_all_Recources import get_data_all_Reference
 import get_flight_schedules
 import get_flight_route
-from utilis import is_databricks_notebook
+from utilis import is_databricks_notebook ,get_past_date
+
+from get_flight_departures import get_data_flight_depatures
 
 # password = dbutils.secrets.get(scope="lh-api", key="password")
 base_url = "https://lh-proxy.onrender.com"
@@ -23,16 +25,6 @@ schema_name = "bronze"
 volume_name = "bronze_volume"
     
     
-# Option 1: Fetch all reference data
-
-#reference_type = ["mds-reference", "Offers"]
-#Offers = [ "SeatMaps", "Lounges"]
-
-#SeatMaps = ["flightNumber", "origin", "destination", "departureDate", "cabinTypeCode"]
-#lounges = ["code", "cabinClassCode", "tierCode", "languageCode"]
-
-#recordLimit = 100
-#offset =11000
 
 recordLimit = 100
 offset =0
@@ -48,35 +40,37 @@ local_folder = ["Aircrafts"]
 
 
 #wworking
-for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
-   get_data_all_Reference(
-       base_Url="https://lh-proxy.onrender.com",
-       headers=headers,
+# for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
+#    get_data_all_Reference(
+#        base_Url="https://lh-proxy.onrender.com",
+#        headers=headers,
         
-       catalog_name=catalog_name,
-       schema_name=schema_name,
-       volume_name=volume_name,
-       mds_reference=ref,
-       recordLimit=recordLimit,
-       offset=offset,
+#        catalog_name=catalog_name,
+#        schema_name=schema_name,
+#        volume_name=volume_name,
+#        mds_reference=ref,
+#        recordLimit=recordLimit,
+#        offset=offset,
 
-       save_on_Databricks=save_on_Databricks,
-       meta_data_key=key,
-       local_folder=folder
-   )
+#        save_on_Databricks=save_on_Databricks,
+#        meta_data_key=key,
+#        local_folder=folder
+#    )
 
 
-#one domestic,Eu, international
-#operations="operations"
-#operation_type="schedules"
-#origin="FRA"
-#destination="MUC"
-##todays date
-#Date="2026-03-12"
-#meta_data_key="ScheduleResource"
-#recordLimit=20
-#offset=0
-#Date=datetime.now().strftime("%Y-%m-%d")
+
+
+
+# operations="operations"
+# operation_type="schedules"
+# origin="FRA"
+# destination="MUC"
+# #todays date
+# Date="2026-03-12"
+# meta_data_key="ScheduleResource"
+# recordLimit=20
+# offset=0
+# Date=datetime.now().strftime("%Y-%m-%d")
 
 
 
@@ -153,3 +147,43 @@ for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
 #     serviceType=serviceTye
 
 #     )
+
+
+operations="operations"
+operation_type="flightstatus"
+operation_subtype="departures"
+airport_code="FRA"
+#todays date
+Date=get_past_date(1)
+meta_data_key="FlightStatusResource"
+recordLimit=80
+offset=0
+#Date=datetime.now().strftime("%Y-%m-%d")
+
+serviceType="all"
+
+
+get_data_flight_depatures(
+    base_Url="https://lh-proxy.onrender.com",
+    headers=headers,
+        
+    catalog_name=catalog_name,
+    schema_name=schema_name,
+    volume_name=volume_name,
+
+    operations= operations,
+    operation_type=operation_type,
+    operation_subtype= operation_subtype,
+    recordLimit=recordLimit,
+    offset=offset,
+
+    save_on_Databricks=False,
+    local_folder=f"departure_{operation_type}",
+    
+    meta_data_key=meta_data_key,
+	airport_code=airport_code,
+    Date=Date,
+	
+    serviceType=serviceType
+
+    )
