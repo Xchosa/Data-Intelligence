@@ -8,14 +8,11 @@ from typing import Dict, Any, List, Optional
 import uuid
 import time
 
-import get_airports
-import get_countries
-import get_airlines
-import get_cities
-import get_aircrafts
+
 import get_all_Recources
 import get_flight_schedules
 import get_flight_route
+from utilis import is_databricks_notebook
 
 # password = dbutils.secrets.get(scope="lh-api", key="password")
 base_url = "https://lh-proxy.onrender.com"
