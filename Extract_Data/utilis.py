@@ -82,7 +82,7 @@ def save_json_locally(
 
 def save_in_Notebooks(FileName_base: str,json_data: Any, offset:int ,directory: str )-> None:
     versioned_filename = versioning_fileNames(FileName_base, offset)
-    if directory_exist(directory):
+    if not directory_exist(directory):
         dbutils.fs.mkdirs(directory)
     file_path = f"{directory}/{versioned_filename}"
     with open (file_path, "w") as file:
