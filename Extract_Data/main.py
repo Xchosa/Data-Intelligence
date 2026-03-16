@@ -38,9 +38,14 @@ recordLimit = 100
 offset =0
 # save_on_Databricks=True
 save_on_Databricks=is_databricks_notebook()
-mds_reference = ["countries", "cities", "airports","airlines", "aircrafts"]
+mds_reference = ["countries", "cities", "airports","airlines", "aircraft"]
 meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
 local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
+
+mds_reference = ["aircraft"]
+meta_data_key = ["AircraftResource"]
+local_folder = ["Aircrafts"]
+
 
 #wworking
 for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):

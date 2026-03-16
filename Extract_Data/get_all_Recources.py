@@ -48,7 +48,7 @@ def get_data_all_Reference(
     
     language = "EN"
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/"
-    FileName_base = f"{dic}/{mds_reference}.json"
+    FileName_base = f"{mds_reference}"
     endpoint = f"/v1/mds-references/{mds_reference}?limit={recordLimit}&offset={offset}"
     
     dummy_count = 0
@@ -98,7 +98,7 @@ def get_data_all_Reference(
             
             if(save_on_Databricks == True ):
                 save_in_Notebooks(
-                    FileName_base,
+                    mds_reference,
                     json_data,
                     offset,
                     dic)
