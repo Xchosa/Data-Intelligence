@@ -85,7 +85,8 @@ def get_data_all_Reference(
                 utilis.save_in_Notebooks(
                     FileName_base,
                     json_data,
-                    offset)
+                    offset,
+                    dic)
                 
             #endpoint_backup = endpoint
             offset = utilis.extract_offset_from_endpoint(endpoint)

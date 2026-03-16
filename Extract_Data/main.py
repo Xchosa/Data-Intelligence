@@ -39,7 +39,8 @@ volume_name = "bronze_volume"
 
 recordLimit = 100
 offset =0
-save_on_Databricks=True
+# save_on_Databricks=True
+save_on_Databricks=is_databricks_notebook()
 mds_reference = ["countries", "cities", "airports","airlines", "aircrafts"]
 meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
 local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]

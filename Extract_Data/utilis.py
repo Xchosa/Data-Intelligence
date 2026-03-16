@@ -10,6 +10,13 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 
+def is_databricks_notebook()->bool:
+    try:
+        dbutils  # noqa: F821
+        return True
+    except NameError:
+        return False
+
 def update_offset(recordLimit: int, offset: int, TotalCount: int)-> str: 
         if recordLimit < TotalCount:
             offset = offset + recordLimit
@@ -63,11 +70,13 @@ def save_json_locally(
     print(file_path)
     print(f"saved locally: {file_path}")
 
-def save_in_Notebooks(FileName_base,json_data, offset)-> None:
+def save_in_Notebooks(FileName_base: str,json_data: Any, offset:int ,directory: str )-> None:
     versioned_filename = versioning_fileNames(FileName_base, offset)
-    with open (versioned_filename, "w") as file:
+    dbutils.fs.mkdirs(directory, exist_ok=True)
+    file_path = f"{directory}/{versioned_filename}"
+    with open (file_path, "w") as file:
         json.dump(json_data, file, indent=2)
-    print(f"{versioned_filename} saved")
+    print(f"{file_path} saved")
 
 
 def get_next_endpoint_from_response(json_data: dict, meta_data_key: str) -> Optional[str]:
