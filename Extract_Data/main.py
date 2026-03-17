@@ -127,16 +127,15 @@ def get_single_flight_route()->None:
         
 
 def get_flights()->None:
-    try:
-        base_url = "https://lh-proxy.onrender.com"
-        if is_databricks_notebook():
-                headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
-        else:
-            headers_env = os.getenv('headers_env')
-            if not headers_env:
-                raise ValueError("headers_env not found in .env file")
-    except Exception as e:
-        print("Error: {e}")
+    
+    base_url = "https://lh-proxy.onrender.com"
+    if is_databricks_notebook():
+        headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
+    else:
+        headers_env = os.getenv('headers_env')
+        if not headers_env:
+            raise ValueError("headers_env not found in .env file")
+   
     catalog_name ="data_catalog"
     schema_name = "bronze"
     volume_name = "bronze_volume"
@@ -185,7 +184,10 @@ def get_flights()->None:
 
 
 if __name__ == "__main__":
-    get_References()
-    get_flights()
+    try:
+        get_References()
+        get_flights()
 
-    get_single_flight_route()
+        get_single_flight_route()
+    except Exception as e:
+        print(f"error {e}")
