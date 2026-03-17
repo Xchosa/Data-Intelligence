@@ -9,10 +9,10 @@ echo "Starting Mac-to-Windows/Linux transformation..."
 ###############################################################################
 # 1. KEYBOARD REPEAT RATES                                                    #
 ###############################################################################
-# 1 tick ≈ 15 ms
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 3
-defaults write -g ApplePressAndHoldEnabled -bool false
+# Reset to Mac standard defaults
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write -g ApplePressAndHoldEnabled -bool true
 
 ###############################################################################
 # 2. SWAP CTRL AND CMD                                                        #
