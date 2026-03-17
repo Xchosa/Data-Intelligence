@@ -24,7 +24,10 @@ from utilis import (
     find_href,
     extract_offset_from_endpoint,
     jump_offset,
-    processing_Error
+    processing_Error,
+    check_for_error_in_json,
+    save_api_error
+    
 )
 
          
@@ -76,20 +79,24 @@ def get_data_all_Reference(
             print("response.url =", response.url)
             json_data = response.json()
             
-            if processing_Error(json_data, meta_data_key):
+            #if processing_Error(json_data, meta_data_key):
+            #    if proxy_error is True:
+            #        raise BrokenPipeError
+            #    time.sleep(10)
+            #    proxy_error = True
+            #    continue
+            
+            if check_for_error_in_json(json_data, meta_data_key):
+                save_api_error(json_data,
+                            meta_data_key,
+                            dir)
                 if proxy_error is True:
                     raise BrokenPipeError
                 time.sleep(10)
                 proxy_error = True
                 continue
-            
 
-            # if check_for_error_in_json(json_data: dict, meta_data_key: str):
-            #     save_api_error(json_data: dict,
-            #           meta_data_key: str, 
-            #           directory: str)
-
-            if(save_on_Databricks == False):
+            if not save_on_Databricks:
                 save_json_locally(
                     json_data=json_data,
                     base_filename=FileName_base,
@@ -97,7 +104,7 @@ def get_data_all_Reference(
                     offset=offset
                 )
             
-            if(save_on_Databricks == True ):
+            if save_on_Databricks:
                 save_in_Notebooks(
                     mds_reference,
                     json_data,
