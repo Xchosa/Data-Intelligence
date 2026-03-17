@@ -1,0 +1,870 @@
+{
+  "AircraftResource": {
+    "AircraftSummaries": {
+      "AircraftSummary": [
+        {
+          "AircraftCode": "HEC",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Helio H-250 Courier / H-295 / 395 Super Courier"
+            }
+          },
+          "AirlineEquipCode": "COUR"
+        },
+        {
+          "AircraftCode": "HOV",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Surface Equipment-Hovercraft"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "HS7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (Hawker Siddeley) 748 / Andover"
+            }
+          },
+          "AirlineEquipCode": "A748"
+        },
+        {
+          "AircraftCode": "I14",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-114"
+            }
+          },
+          "AirlineEquipCode": "I114"
+        },
+        {
+          "AircraftCode": "I9F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-96 Freighter"
+            }
+          },
+          "AirlineEquipCode": "IL96"
+        },
+        {
+          "AircraftCode": "IL6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-62"
+            }
+          },
+          "AirlineEquipCode": "IL62"
+        },
+        {
+          "AircraftCode": "IL7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-76"
+            }
+          },
+          "AirlineEquipCode": "IL76"
+        },
+        {
+          "AircraftCode": "IL8",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-18"
+            }
+          },
+          "AirlineEquipCode": "IL18"
+        },
+        {
+          "AircraftCode": "IL9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-96 Passenger"
+            }
+          },
+          "AirlineEquipCode": "IL96"
+        },
+        {
+          "AircraftCode": "ILW",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Ilyushin Il-86"
+            }
+          },
+          "AirlineEquipCode": "IL86"
+        },
+        {
+          "AircraftCode": "J31",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems Jetstream 31"
+            }
+          },
+          "AirlineEquipCode": "JS31"
+        },
+        {
+          "AircraftCode": "J32",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems Jetstream 32"
+            }
+          },
+          "AirlineEquipCode": "JS32"
+        },
+        {
+          "AircraftCode": "J41",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems Jetstream 41"
+            }
+          },
+          "AirlineEquipCode": "JS41"
+        },
+        {
+          "AircraftCode": "JU5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Junkers Ju 52/3m"
+            }
+          },
+          "AirlineEquipCode": "JU52"
+        },
+        {
+          "AircraftCode": "L11",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Lockheed Martin L-1011 TriStar 1 / 50 / 100 / 150 / 200 / 250 Passenger"
+            }
+          },
+          "AirlineEquipCode": "L101"
+        },
+        {
+          "AircraftCode": "L15",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Lockheed Martin L-1011 TriStar 500 Passenger"
+            }
+          },
+          "AirlineEquipCode": "L101"
+        },
+        {
+          "AircraftCode": "L1F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Lockheed Martin L-1011 TriStar Freighter"
+            }
+          },
+          "AirlineEquipCode": "L101"
+        },
+        {
+          "AircraftCode": "L4F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Aircraft Industries (LET) 410 Freighter"
+            }
+          },
+          "AirlineEquipCode": "L410"
+        },
+        {
+          "AircraftCode": "L4T",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Aircraft Industries (LET) 410"
+            }
+          },
+          "AirlineEquipCode": "L410"
+        },
+        {
+          "AircraftCode": "LCH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Surface Equipment-Launch / Boat"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "LJA",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Light Jet Aircraft"
+            }
+          },
+          "AirlineEquipCode": "ZZZZ"
+        },
+        {
+          "AircraftCode": "LMO",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Surface Equipment-Limousine"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "LOE",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Lockheed Martin L-188 Electra"
+            }
+          },
+          "AirlineEquipCode": "L188"
+        },
+        {
+          "AircraftCode": "LOF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Lockheed Martin L-188 Electra Freighter"
+            }
+          },
+          "AirlineEquipCode": "L188"
+        },
+        {
+          "AircraftCode": "LOH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Lockheed Martin L-182 / L-282 / L-382 (L-100) Hercules"
+            }
+          },
+          "AirlineEquipCode": "C130"
+        },
+        {
+          "AircraftCode": "LRJ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Learjet"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "M11",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-11 Passenger"
+            }
+          },
+          "AirlineEquipCode": "MD11"
+        },
+        {
+          "AircraftCode": "M1F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-11 Freighter"
+            }
+          },
+          "AirlineEquipCode": "MD11"
+        },
+        {
+          "AircraftCode": "M1M",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-11 Mixed Configuration"
+            }
+          },
+          "AirlineEquipCode": "MD11"
+        },
+        {
+          "AircraftCode": "M2F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD82 Freighter"
+            }
+          },
+          "AirlineEquipCode": "MD82"
+        },
+        {
+          "AircraftCode": "M3F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD83 Freighter"
+            }
+          },
+          "AirlineEquipCode": "MD83"
+        },
+        {
+          "AircraftCode": "M81",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-81"
+            }
+          },
+          "AirlineEquipCode": "MD81"
+        },
+        {
+          "AircraftCode": "M82",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-82"
+            }
+          },
+          "AirlineEquipCode": "MD82"
+        },
+        {
+          "AircraftCode": "M83",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-83"
+            }
+          },
+          "AirlineEquipCode": "MD83"
+        },
+        {
+          "AircraftCode": "M87",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-87"
+            }
+          },
+          "AirlineEquipCode": "MD87"
+        },
+        {
+          "AircraftCode": "M88",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-88"
+            }
+          },
+          "AirlineEquipCode": "MD88"
+        },
+        {
+          "AircraftCode": "M8F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD88 Freighter"
+            }
+          },
+          "AirlineEquipCode": "MD88"
+        },
+        {
+          "AircraftCode": "M90",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) MD-90"
+            }
+          },
+          "AirlineEquipCode": "MD90"
+        },
+        {
+          "AircraftCode": "MA6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Xian Yunshuji MA-60/MA600"
+            }
+          },
+          "AirlineEquipCode": "AN24"
+        },
+        {
+          "AircraftCode": "MBH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eurocopter (MBB) BO105"
+            }
+          },
+          "AirlineEquipCode": "B105"
+        },
+        {
+          "AircraftCode": "MD9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "MD Helicopters Inc MD 900 Explorer"
+            }
+          },
+          "AirlineEquipCode": "EXPL"
+        },
+        {
+          "AircraftCode": "MIH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Mil Mi-8 / Mi-17 / Mi-171 / Mi-172"
+            }
+          },
+          "AirlineEquipCode": "MI8"
+        },
+        {
+          "AircraftCode": "MU2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Mitsubishi Aircraft Corporation MU-2"
+            }
+          },
+          "AirlineEquipCode": "MU2"
+        },
+        {
+          "AircraftCode": "NDC",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Aerospatiale SN601 Corvette"
+            }
+          },
+          "AirlineEquipCode": "S601"
+        },
+        {
+          "AircraftCode": "NDE",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eurocopter (Aerospatiale) AS350 Ecureuil / AS355 Ecureuil 2"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "NDH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eurocopter (Aerospatiale) SA365C / SA365N  Dauphin 2"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "P18",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Piaggio Aero P180 Avanti II"
+            }
+          },
+          "AirlineEquipCode": "P180"
+        },
+        {
+          "AircraftCode": "PA1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Piper (Light aircraft-single piston engine)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "PA2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Piper (Light aircraft-twin piston engines)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "PAT",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Piper (Light aircraft-twin turboprop engines)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "PL2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Pilatus PC-12"
+            }
+          },
+          "AirlineEquipCode": "PC12"
+        },
+        {
+          "AircraftCode": "PL6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Pilatus PC-6 Turbo Porter"
+            }
+          },
+          "AirlineEquipCode": "PC6T"
+        },
+        {
+          "AircraftCode": "PN6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Vulcanair (Partenavia) P.68"
+            }
+          },
+          "AirlineEquipCode": "P68"
+        },
+        {
+          "AircraftCode": "PR1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 390 Premier 1/1A"
+            }
+          },
+          "AirlineEquipCode": "PRM1"
+        },
+        {
+          "AircraftCode": "RFS",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Surface Equipment-Road Feeder Service (Truck)"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "S20",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Saab 2000"
+            }
+          },
+          "AirlineEquipCode": "SB20"
+        },
+        {
+          "AircraftCode": "S58",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Sikorsky S-58T"
+            }
+          },
+          "AirlineEquipCode": "S58T"
+        },
+        {
+          "AircraftCode": "S61",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Sikorsky S-61"
+            }
+          },
+          "AirlineEquipCode": "S61"
+        },
+        {
+          "AircraftCode": "S76",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Sikorsky S-76"
+            }
+          },
+          "AirlineEquipCode": "S76"
+        },
+        {
+          "AircraftCode": "SF3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Saab 340"
+            }
+          },
+          "AirlineEquipCode": "SF34"
+        },
+        {
+          "AircraftCode": "SFB",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Saab 340B"
+            }
+          },
+          "AirlineEquipCode": "SF34"
+        },
+        {
+          "AircraftCode": "SFF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Saab 340 Freighter"
+            }
+          },
+          "AirlineEquipCode": "SF34"
+        },
+        {
+          "AircraftCode": "SH3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Shorts 330 (SD3-30)"
+            }
+          },
+          "AirlineEquipCode": "SH33"
+        },
+        {
+          "AircraftCode": "SH6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Shorts 360 (SD3-60)"
+            }
+          },
+          "AirlineEquipCode": "SH36"
+        },
+        {
+          "AircraftCode": "SHS",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Shorts Skyvan (SC-7)"
+            }
+          },
+          "AirlineEquipCode": "SC7"
+        },
+        {
+          "AircraftCode": "SU7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Sukhoi Superjet 100-75"
+            }
+          },
+          "AirlineEquipCode": "ZZZZ"
+        },
+        {
+          "AircraftCode": "SU9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Sukhoi Superjet 100-95"
+            }
+          },
+          "AirlineEquipCode": "SU95"
+        },
+        {
+          "AircraftCode": "SWF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fairchild (Swearingen) SA226 Freighter"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "SWM",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fairchild (Swearingen) SA26 / SA226 / SA227 Merlin / Metro / Expediter"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "SY8",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Shaanxi Y-8"
+            }
+          },
+          "AirlineEquipCode": "AN12"
+        },
+        {
+          "AircraftCode": "T20",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Tupolev Tu-204 / Tu-214"
+            }
+          },
+          "AirlineEquipCode": "T204"
+        },
+        {
+          "AircraftCode": "T2F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Tupolev Tu-204 Freighter"
+            }
+          },
+          "AirlineEquipCode": "T204"
+        },
+        {
+          "AircraftCode": "T34",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Tupolev Tu-334"
+            }
+          },
+          "AirlineEquipCode": "T334"
+        },
+        {
+          "AircraftCode": "TBM",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "SOCATA TBM-700"
+            }
+          },
+          "AirlineEquipCode": "TBM7"
+        },
+        {
+          "AircraftCode": "TRN",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Train"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "TRS",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Train"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "TU3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Tupolev Tu-134"
+            }
+          },
+          "AirlineEquipCode": "T134"
+        },
+        {
+          "AircraftCode": "TU5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Tupolev Tu-154"
+            }
+          },
+          "AirlineEquipCode": "T154"
+        },
+        {
+          "AircraftCode": "WWP",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Israel Aerospace Industries 1124 Westwind"
+            }
+          },
+          "AirlineEquipCode": "WW24"
+        },
+        {
+          "AircraftCode": "YK2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Yakovlev Yak-42 / Yak-142"
+            }
+          },
+          "AirlineEquipCode": "YK42"
+        },
+        {
+          "AircraftCode": "YK4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Yakovlev Yak-40"
+            }
+          },
+          "AirlineEquipCode": "YK40"
+        },
+        {
+          "AircraftCode": "YN2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Harbin Yunshuji Y12"
+            }
+          },
+          "AirlineEquipCode": "Y12"
+        },
+        {
+          "AircraftCode": "YN7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Xian Yunshuji Y7"
+            }
+          },
+          "AirlineEquipCode": "AN24"
+        },
+        {
+          "AircraftCode": "YS1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "NAMC YS-11"
+            }
+          },
+          "AirlineEquipCode": "YS11"
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=300",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=0",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=200",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft/{aircraftCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 383
+    }
+  }
+}

@@ -35,12 +35,9 @@ def get_data_all_Reference(
     catalog_name: str,
     schema_name: str,
     volume_name: str,
-
     mds_reference: str,
-
     recordLimit: int, 
     offset: int,
-
     save_on_Databricks:bool,
     meta_data_key =str,
     local_folder = str,
@@ -85,8 +82,12 @@ def get_data_all_Reference(
                 time.sleep(10)
                 proxy_error = True
                 continue
+            
 
-
+            # if check_for_error_in_json(json_data: dict, meta_data_key: str):
+            #     save_api_error(json_data: dict,
+            #           meta_data_key: str, 
+            #           directory: str)
 
             if(save_on_Databricks == False):
                 save_json_locally(

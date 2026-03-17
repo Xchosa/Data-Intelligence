@@ -1,0 +1,1038 @@
+{
+  "AircraftResource": {
+    "AircraftSummaries": {
+      "AircraftSummary": [
+        {
+          "AircraftCode": "762",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-200 Passenger"
+            }
+          },
+          "AirlineEquipCode": "B762"
+        },
+        {
+          "AircraftCode": "763",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-300 Passenger"
+            }
+          },
+          "AirlineEquipCode": "B763"
+        },
+        {
+          "AircraftCode": "764",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-400 Passenger"
+            }
+          },
+          "AirlineEquipCode": "B764"
+        },
+        {
+          "AircraftCode": "76V",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-300 (winglets) Freighter"
+            }
+          },
+          "AirlineEquipCode": "B763"
+        },
+        {
+          "AircraftCode": "76W",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-300 (winglets) Passenger"
+            }
+          },
+          "AirlineEquipCode": "B763"
+        },
+        {
+          "AircraftCode": "76X",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-200 Freighter"
+            }
+          },
+          "AirlineEquipCode": "B762"
+        },
+        {
+          "AircraftCode": "76Y",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 767-300 Freighter"
+            }
+          },
+          "AirlineEquipCode": "B763"
+        },
+        {
+          "AircraftCode": "772",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777-200/ 200ER"
+            }
+          },
+          "AirlineEquipCode": "B77L"
+        },
+        {
+          "AircraftCode": "773",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777-300"
+            }
+          },
+          "AirlineEquipCode": "B773"
+        },
+        {
+          "AircraftCode": "779",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777-900"
+            }
+          },
+          "AirlineEquipCode": "B779"
+        },
+        {
+          "AircraftCode": "77F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777 Freighter"
+            }
+          },
+          "AirlineEquipCode": "B77F"
+        },
+        {
+          "AircraftCode": "77L",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777-200LR"
+            }
+          },
+          "AirlineEquipCode": "B772"
+        },
+        {
+          "AircraftCode": "77W",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777-300ER"
+            }
+          },
+          "AirlineEquipCode": "B77W"
+        },
+        {
+          "AircraftCode": "77X",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 777-200F Freighter"
+            }
+          },
+          "AirlineEquipCode": "B772"
+        },
+        {
+          "AircraftCode": "783",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 787-3"
+            }
+          },
+          "AirlineEquipCode": "B783"
+        },
+        {
+          "AircraftCode": "788",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 787-8"
+            }
+          },
+          "AirlineEquipCode": "B788"
+        },
+        {
+          "AircraftCode": "789",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 787-9"
+            }
+          },
+          "AirlineEquipCode": "B789"
+        },
+        {
+          "AircraftCode": "7M8",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 737 Max 8"
+            }
+          },
+          "AirlineEquipCode": "B38M"
+        },
+        {
+          "AircraftCode": "A22",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-22"
+            }
+          },
+          "AirlineEquipCode": "AN22"
+        },
+        {
+          "AircraftCode": "A26",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-26"
+            }
+          },
+          "AirlineEquipCode": "AN26"
+        },
+        {
+          "AircraftCode": "A28",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-28 / PZL Mielec M-28 Skytruck"
+            }
+          },
+          "AirlineEquipCode": "AN28"
+        },
+        {
+          "AircraftCode": "A30",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-30"
+            }
+          },
+          "AirlineEquipCode": "AN30"
+        },
+        {
+          "AircraftCode": "A32",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-32"
+            }
+          },
+          "AirlineEquipCode": "AN32"
+        },
+        {
+          "AircraftCode": "A38",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-38"
+            }
+          },
+          "AirlineEquipCode": "AN38"
+        },
+        {
+          "AircraftCode": "A40",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-140"
+            }
+          },
+          "AirlineEquipCode": "A140"
+        },
+        {
+          "AircraftCode": "A4F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-124 Ruslan"
+            }
+          },
+          "AirlineEquipCode": "A124"
+        },
+        {
+          "AircraftCode": "A58",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-158"
+            }
+          },
+          "AirlineEquipCode": "ZZZZ"
+        },
+        {
+          "AircraftCode": "A5F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-225"
+            }
+          },
+          "AirlineEquipCode": "A225"
+        },
+        {
+          "AircraftCode": "A81",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov AN148-100"
+            }
+          },
+          "AirlineEquipCode": "A148"
+        },
+        {
+          "AircraftCode": "AB4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Airbus A300B2 / A300B4 Passenger"
+            }
+          },
+          "AirlineEquipCode": "A30B"
+        },
+        {
+          "AircraftCode": "AB6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Airbus A300-600 Passenger"
+            }
+          },
+          "AirlineEquipCode": "A306"
+        },
+        {
+          "AircraftCode": "ABB",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Airbus A300-600ST Beluga Freighter"
+            }
+          },
+          "AirlineEquipCode": "A3ST"
+        },
+        {
+          "AircraftCode": "ABX",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Airbus A300B4 / A300C4 / A300F4 Freighter"
+            }
+          },
+          "AirlineEquipCode": "A30B"
+        },
+        {
+          "AircraftCode": "ABY",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Airbus A300-600 Freighter"
+            }
+          },
+          "AirlineEquipCode": "A306"
+        },
+        {
+          "AircraftCode": "ACP",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Twin Commander Aircraft"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "ACT",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Twin (Aero) Turbo Commander / Jetprop Commander"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "AGH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "AgustaWestland A109"
+            }
+          },
+          "AirlineEquipCode": "A109"
+        },
+        {
+          "AircraftCode": "AN4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-24"
+            }
+          },
+          "AirlineEquipCode": "AN24"
+        },
+        {
+          "AircraftCode": "AN7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-72 / An-74"
+            }
+          },
+          "AirlineEquipCode": "AN72"
+        },
+        {
+          "AircraftCode": "ANF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Antonov An-12"
+            }
+          },
+          "AirlineEquipCode": "AN12"
+        },
+        {
+          "AircraftCode": "APF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems  ATP Freighter"
+            }
+          },
+          "AirlineEquipCode": "ZZZZ"
+        },
+        {
+          "AircraftCode": "APH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eurocopter (Aerospatiale) SA330 Puma / AS332 Super Puma"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "AR1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Avro RJ100"
+            }
+          },
+          "AirlineEquipCode": "RJ1H"
+        },
+        {
+          "AircraftCode": "AR7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Avro RJ70"
+            }
+          },
+          "AirlineEquipCode": "RJ70"
+        },
+        {
+          "AircraftCode": "AR8",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Avro RJ85"
+            }
+          },
+          "AirlineEquipCode": "RJ85"
+        },
+        {
+          "AircraftCode": "AT4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "ATR 42-300 / 320"
+            }
+          },
+          "AirlineEquipCode": "AT43"
+        },
+        {
+          "AircraftCode": "AT7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "ATR 72"
+            }
+          },
+          "AirlineEquipCode": "AT72"
+        },
+        {
+          "AircraftCode": "ATF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "ATR 72 Freighter"
+            }
+          },
+          "AirlineEquipCode": "AT72"
+        },
+        {
+          "AircraftCode": "ATP",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems  ATP"
+            }
+          },
+          "AirlineEquipCode": "ATP"
+        },
+        {
+          "AircraftCode": "ATZ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "ATR 42 Freighter"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "AWH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "AgustaWestland AW139"
+            }
+          },
+          "AirlineEquipCode": "A139"
+        },
+        {
+          "AircraftCode": "AWZ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Augusta Westland 200"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "B12",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (BAC) One-Eleven 200"
+            }
+          },
+          "AirlineEquipCode": "BA11"
+        },
+        {
+          "AircraftCode": "B13",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (BAC) One-Eleven 300"
+            }
+          },
+          "AirlineEquipCode": "BA11"
+        },
+        {
+          "AircraftCode": "B14",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (BAC) One-Eleven 400 / 475"
+            }
+          },
+          "AirlineEquipCode": "BA11"
+        },
+        {
+          "AircraftCode": "B15",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (BAC) One-Eleven 500 / RomBac One-Eleven 560"
+            }
+          },
+          "AirlineEquipCode": "BA11"
+        },
+        {
+          "AircraftCode": "B72",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing 720-020B"
+            }
+          },
+          "AirlineEquipCode": "B720"
+        },
+        {
+          "AircraftCode": "BE2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft (Light aircraft-twin piston engines)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "BE4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 400 Beechjet/400A/400XP/400T"
+            }
+          },
+          "AirlineEquipCode": "BE40"
+        },
+        {
+          "AircraftCode": "BE9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft C99 Airliner"
+            }
+          },
+          "AirlineEquipCode": "BE99"
+        },
+        {
+          "AircraftCode": "BEF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft 1900 Freighter"
+            }
+          },
+          "AirlineEquipCode": "B190"
+        },
+        {
+          "AircraftCode": "BEH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft 1900D Airliner"
+            }
+          },
+          "AirlineEquipCode": "B190"
+        },
+        {
+          "AircraftCode": "BEP",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft (Light aircraft-single piston engine)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "BES",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft 1900C Airliner"
+            }
+          },
+          "AirlineEquipCode": "B190"
+        },
+        {
+          "AircraftCode": "BET",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker Beechcraft (Light aircraft-twin turboprop engines)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "BH2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bell (Helicopters)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "BNI",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Britten-Norman BN-2A / BN-2B Islander"
+            }
+          },
+          "AirlineEquipCode": "BN2P"
+        },
+        {
+          "AircraftCode": "BNT",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Britten-Norman BN-2A Mk.III Trislander"
+            }
+          },
+          "AirlineEquipCode": "TRIS"
+        },
+        {
+          "AircraftCode": "BTA",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Business Turbo-Prop Aircraft"
+            }
+          },
+          "AirlineEquipCode": "ZZZZ"
+        },
+        {
+          "AircraftCode": "BUS",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bus"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "C27",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Comac ARJ21-700"
+            }
+          },
+          "AirlineEquipCode": "AJ27"
+        },
+        {
+          "AircraftCode": "CCJ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) CL-600 / 601 / 604 / 605 Challenger"
+            }
+          },
+          "AirlineEquipCode": "CL60"
+        },
+        {
+          "AircraftCode": "CCW",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bombardier BD-700 Global 5000"
+            }
+          },
+          "AirlineEquipCode": "GL5T"
+        },
+        {
+          "AircraftCode": "CCX",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bombardier BD-700 Global Express"
+            }
+          },
+          "AirlineEquipCode": "GLEX"
+        },
+        {
+          "AircraftCode": "CD2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gippsland Aeronautics N22B / N24A Nomad"
+            }
+          },
+          "AirlineEquipCode": "NOMA"
+        },
+        {
+          "AircraftCode": "CJ1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 500/ 501/ 525 Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CJ2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 550/ 551/ 552 Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CJ5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 560 Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CJ6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 650 Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CJ8",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 680 Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CJL",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 560 XL/XLS Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CJM",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 510 Mustang Citation"
+            }
+          },
+          "AirlineEquipCode": "C510"
+        },
+        {
+          "AircraftCode": "CJX",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 750 Citation X"
+            }
+          },
+          "AirlineEquipCode": "C750"
+        },
+        {
+          "AircraftCode": "CL3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Bombardier Challenger 300"
+            }
+          },
+          "AirlineEquipCode": "CL30"
+        },
+        {
+          "AircraftCode": "CN1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna (Light aircraft-single piston engine)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CN2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna (Light aircraft-twin piston engines)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CNC",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna (Light aircraft-single turboprop engine)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CNF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna 208B Freighter"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CNJ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna Citation"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CNT",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Cessna (Light aircraft-twin turboprop engines)"
+            }
+          },
+          "AirlineEquipCode": "*"
+        },
+        {
+          "AircraftCode": "CR1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet 100"
+            }
+          },
+          "AirlineEquipCode": "CRJ1"
+        },
+        {
+          "AircraftCode": "CR2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet 200"
+            }
+          },
+          "AirlineEquipCode": "CRJ2"
+        },
+        {
+          "AircraftCode": "CR7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet 700 and Challenger 870"
+            }
+          },
+          "AirlineEquipCode": "CRJ7"
+        },
+        {
+          "AircraftCode": "CR9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet 900 and Challenger 890"
+            }
+          },
+          "AirlineEquipCode": "CRJ9"
+        },
+        {
+          "AircraftCode": "CRA",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet 705"
+            }
+          },
+          "AirlineEquipCode": "CRJ9"
+        },
+        {
+          "AircraftCode": "CRF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet Freighter"
+            }
+          },
+          "AirlineEquipCode": "ZZZZ"
+        },
+        {
+          "AircraftCode": "CRK",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Canadair (Bombardier) Regional Jet 1000"
+            }
+          },
+          "AirlineEquipCode": "CRJX"
+        },
+        {
+          "AircraftCode": "CS2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "CASA / lAe 212 Aviocar"
+            }
+          },
+          "AirlineEquipCode": "C212"
+        },
+        {
+          "AircraftCode": "CS5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "CASA / lAe CN-235"
+            }
+          },
+          "AirlineEquipCode": "CN35"
+        },
+        {
+          "AircraftCode": "CS9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "CASA / lAe C-295"
+            }
+          },
+          "AirlineEquipCode": "C295"
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=100",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=0",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=0",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=200",
+          "@Rel": "next"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=300",
+          "@Rel": "last"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft/{aircraftCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 383
+    }
+  }
+}

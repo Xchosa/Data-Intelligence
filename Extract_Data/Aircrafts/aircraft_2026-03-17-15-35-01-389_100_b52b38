@@ -1,0 +1,1038 @@
+{
+  "AircraftResource": {
+    "AircraftSummaries": {
+      "AircraftSummary": [
+        {
+          "AircraftCode": "CV2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Convair 240 Passenger"
+            }
+          },
+          "AirlineEquipCode": "CVLP"
+        },
+        {
+          "AircraftCode": "CV4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Convair 440 Metropolitan Passenger"
+            }
+          },
+          "AirlineEquipCode": "CVLP"
+        },
+        {
+          "AircraftCode": "CV5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Convair 580 Passenger"
+            }
+          },
+          "AirlineEquipCode": "CVLT"
+        },
+        {
+          "AircraftCode": "CVV",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Convair 240 Freighter"
+            }
+          },
+          "AirlineEquipCode": "CVLP"
+        },
+        {
+          "AircraftCode": "CVX",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Convair 340 / 440 Freighter"
+            }
+          },
+          "AirlineEquipCode": "CVLP"
+        },
+        {
+          "AircraftCode": "CVY",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Convair 580 / 5800 / 600 / 640 Freighter"
+            }
+          },
+          "AirlineEquipCode": "CVLT"
+        },
+        {
+          "AircraftCode": "CWC",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Curtiss C-46 Commando"
+            }
+          },
+          "AirlineEquipCode": "C46"
+        },
+        {
+          "AircraftCode": "D11",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-10-10 / 15 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC10"
+        },
+        {
+          "AircraftCode": "D1C",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-10-30 / 40 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC10"
+        },
+        {
+          "AircraftCode": "D1M",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-10-30 Mixed Configuration"
+            }
+          },
+          "AirlineEquipCode": "DC10"
+        },
+        {
+          "AircraftCode": "D1X",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-10-10 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC10"
+        },
+        {
+          "AircraftCode": "D1Y",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-10-30 / 40 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC10"
+        },
+        {
+          "AircraftCode": "D20",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 2000/2000DX"
+            }
+          },
+          "AirlineEquipCode": "F2TH"
+        },
+        {
+          "AircraftCode": "D28",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fairchild Dornier 228"
+            }
+          },
+          "AirlineEquipCode": "D228"
+        },
+        {
+          "AircraftCode": "D2L",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 2000EX/EASY/LX"
+            }
+          },
+          "AirlineEquipCode": "F2TH"
+        },
+        {
+          "AircraftCode": "D38",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fairchild Dornier 328-100"
+            }
+          },
+          "AirlineEquipCode": "D328"
+        },
+        {
+          "AircraftCode": "D3F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-3 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC3"
+        },
+        {
+          "AircraftCode": "D42",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Diamond Aircraft DA42 Twin Star"
+            }
+          },
+          "AirlineEquipCode": "DA42"
+        },
+        {
+          "AircraftCode": "D4X",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-8-400 Dash 8Q Freighter"
+            }
+          },
+          "AirlineEquipCode": "DH8D"
+        },
+        {
+          "AircraftCode": "D6F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-6A / DC-6B / DC-6C Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC6"
+        },
+        {
+          "AircraftCode": "D8L",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-8-62 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC86"
+        },
+        {
+          "AircraftCode": "D8M",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-8-62 Mixed Configuration"
+            }
+          },
+          "AirlineEquipCode": "DC86"
+        },
+        {
+          "AircraftCode": "D8Q",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-8-72 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC87"
+        },
+        {
+          "AircraftCode": "D8T",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-8-50 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC85"
+        },
+        {
+          "AircraftCode": "D8X",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-8-61 / 62 / 63 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC86"
+        },
+        {
+          "AircraftCode": "D8Y",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-8-71 / 72 / 73 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC87"
+        },
+        {
+          "AircraftCode": "D91",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-10 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC91"
+        },
+        {
+          "AircraftCode": "D92",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-20 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC92"
+        },
+        {
+          "AircraftCode": "D93",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-30 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC93"
+        },
+        {
+          "AircraftCode": "D94",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-40 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC94"
+        },
+        {
+          "AircraftCode": "D95",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-50 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC95"
+        },
+        {
+          "AircraftCode": "D9C",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-30 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC93"
+        },
+        {
+          "AircraftCode": "D9D",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-40 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC94"
+        },
+        {
+          "AircraftCode": "D9L",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 900LX"
+            }
+          },
+          "AirlineEquipCode": "F900"
+        },
+        {
+          "AircraftCode": "D9X",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-9-10 Freighter"
+            }
+          },
+          "AirlineEquipCode": "DC91"
+        },
+        {
+          "AircraftCode": "DC3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-3 Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC3"
+        },
+        {
+          "AircraftCode": "DC4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-4"
+            }
+          },
+          "AirlineEquipCode": "DC4"
+        },
+        {
+          "AircraftCode": "DC6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Boeing (Douglas) DC-6B Passenger"
+            }
+          },
+          "AirlineEquipCode": "DC6"
+        },
+        {
+          "AircraftCode": "DF1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 10 / 100"
+            }
+          },
+          "AirlineEquipCode": "FA10"
+        },
+        {
+          "AircraftCode": "DF2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 20 / 200"
+            }
+          },
+          "AirlineEquipCode": "FA20"
+        },
+        {
+          "AircraftCode": "DF5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 50 / 50EX"
+            }
+          },
+          "AirlineEquipCode": "FA50"
+        },
+        {
+          "AircraftCode": "DF7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 7X"
+            }
+          },
+          "AirlineEquipCode": "FA7X"
+        },
+        {
+          "AircraftCode": "DF9",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Dassault Falcon 900/900B/900C/900DX/900EX/EASY"
+            }
+          },
+          "AirlineEquipCode": "F900"
+        },
+        {
+          "AircraftCode": "DH1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-8-100 Dash 8 / 8Q"
+            }
+          },
+          "AirlineEquipCode": "DH8A"
+        },
+        {
+          "AircraftCode": "DH2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-8-200 Dash 8 / 8Q"
+            }
+          },
+          "AirlineEquipCode": "DH8B"
+        },
+        {
+          "AircraftCode": "DH3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-8-300 Dash 8 / 8Q"
+            }
+          },
+          "AirlineEquipCode": "DH8C"
+        },
+        {
+          "AircraftCode": "DH4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-8-400 Dash 8Q"
+            }
+          },
+          "AirlineEquipCode": "DH8D"
+        },
+        {
+          "AircraftCode": "DH7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-7 Dash 7"
+            }
+          },
+          "AirlineEquipCode": "DHC7"
+        },
+        {
+          "AircraftCode": "DHC",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-4 Caribou"
+            }
+          },
+          "AirlineEquipCode": "DHC4"
+        },
+        {
+          "AircraftCode": "DHD",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (De Havilland) 104 Dove"
+            }
+          },
+          "AirlineEquipCode": "DOVE"
+        },
+        {
+          "AircraftCode": "DHF",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-8 Freighter"
+            }
+          },
+          "AirlineEquipCode": "0000"
+        },
+        {
+          "AircraftCode": "DHH",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "BAE Systems (De Havilland) 114 Heron"
+            }
+          },
+          "AirlineEquipCode": "HERN"
+        },
+        {
+          "AircraftCode": "DHL",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-3 Turbo Otter"
+            }
+          },
+          "AirlineEquipCode": "DH3T"
+        },
+        {
+          "AircraftCode": "DHP",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-2 Beaver"
+            }
+          },
+          "AirlineEquipCode": "DHC2"
+        },
+        {
+          "AircraftCode": "DHR",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-2 Turbo Beaver"
+            }
+          },
+          "AirlineEquipCode": "DH2T"
+        },
+        {
+          "AircraftCode": "DHS",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-3 Otter"
+            }
+          },
+          "AirlineEquipCode": "DHC3"
+        },
+        {
+          "AircraftCode": "DHT",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "De Havilland (Bombardier) DHC-6 Twin Otter"
+            }
+          },
+          "AirlineEquipCode": "DHC6"
+        },
+        {
+          "AircraftCode": "E70",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer 170"
+            }
+          },
+          "AirlineEquipCode": "E170"
+        },
+        {
+          "AircraftCode": "E75",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer 175"
+            }
+          },
+          "AirlineEquipCode": "E75L"
+        },
+        {
+          "AircraftCode": "E90",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer 190"
+            }
+          },
+          "AirlineEquipCode": "E190"
+        },
+        {
+          "AircraftCode": "E95",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer 195 and Legacy 1000"
+            }
+          },
+          "AirlineEquipCode": "E190"
+        },
+        {
+          "AircraftCode": "EA5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eclipse 500"
+            }
+          },
+          "AirlineEquipCode": "EA50"
+        },
+        {
+          "AircraftCode": "EC3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eurocopter EC130"
+            }
+          },
+          "AirlineEquipCode": "EC30"
+        },
+        {
+          "AircraftCode": "EC5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Eurocopter EC155"
+            }
+          },
+          "AirlineEquipCode": "EC55"
+        },
+        {
+          "AircraftCode": "EM2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer 120 Brasilia"
+            }
+          },
+          "AirlineEquipCode": "E120"
+        },
+        {
+          "AircraftCode": "EMB",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer 110 Bandeirante"
+            }
+          },
+          "AirlineEquipCode": "E110"
+        },
+        {
+          "AircraftCode": "EP1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer EMB-500 Phenom 100"
+            }
+          },
+          "AirlineEquipCode": "E50P"
+        },
+        {
+          "AircraftCode": "EP3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer EMB-505 Phenom 300"
+            }
+          },
+          "AirlineEquipCode": "E55P"
+        },
+        {
+          "AircraftCode": "ER3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer RJ135 and Legacy 600/650"
+            }
+          },
+          "AirlineEquipCode": "E135"
+        },
+        {
+          "AircraftCode": "ER4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer RJ145"
+            }
+          },
+          "AirlineEquipCode": "E145"
+        },
+        {
+          "AircraftCode": "ERD",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Embraer RJ140"
+            }
+          },
+          "AirlineEquipCode": "E135"
+        },
+        {
+          "AircraftCode": "F21",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker F28 Fellowship 1000"
+            }
+          },
+          "AirlineEquipCode": "F28"
+        },
+        {
+          "AircraftCode": "F22",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker F28 Fellowship 2000"
+            }
+          },
+          "AirlineEquipCode": "F28"
+        },
+        {
+          "AircraftCode": "F23",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker F28 Fellowship 3000"
+            }
+          },
+          "AirlineEquipCode": "F28"
+        },
+        {
+          "AircraftCode": "F24",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker F28 Fellowship 4000"
+            }
+          },
+          "AirlineEquipCode": "F28"
+        },
+        {
+          "AircraftCode": "F27",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker F27 Friendship / Fairchild Industries F-27"
+            }
+          },
+          "AirlineEquipCode": "F27"
+        },
+        {
+          "AircraftCode": "F50",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker 50"
+            }
+          },
+          "AirlineEquipCode": "F50"
+        },
+        {
+          "AircraftCode": "F5F",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker 50 Freighter"
+            }
+          },
+          "AirlineEquipCode": "F50"
+        },
+        {
+          "AircraftCode": "F70",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fokker 70"
+            }
+          },
+          "AirlineEquipCode": "F70"
+        },
+        {
+          "AircraftCode": "FK7",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fairchild Industries FH-227"
+            }
+          },
+          "AirlineEquipCode": "F27"
+        },
+        {
+          "AircraftCode": "FRJ",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Fairchild Dornier 328JET"
+            }
+          },
+          "AirlineEquipCode": "J328"
+        },
+        {
+          "AircraftCode": "G2B",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-1159 Gulfstream IIB"
+            }
+          },
+          "AirlineEquipCode": "GLF2"
+        },
+        {
+          "AircraftCode": "G2S",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-1159 Gulfstream IISP"
+            }
+          },
+          "AirlineEquipCode": "GLF2"
+        },
+        {
+          "AircraftCode": "GA8",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gippsland Aeronautics GA8 Airvan"
+            }
+          },
+          "AirlineEquipCode": "GA8"
+        },
+        {
+          "AircraftCode": "GJ2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-1159 Gulfstream II"
+            }
+          },
+          "AirlineEquipCode": "GLF2"
+        },
+        {
+          "AircraftCode": "GJ3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-1159A Gulfstream III"
+            }
+          },
+          "AirlineEquipCode": "GLF3"
+        },
+        {
+          "AircraftCode": "GJ4",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace IV (G300/G350/G400/G450/IVSP)"
+            }
+          },
+          "AirlineEquipCode": "GLF4"
+        },
+        {
+          "AircraftCode": "GJ5",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace V (G500/G550)"
+            }
+          },
+          "AirlineEquipCode": "GLF5"
+        },
+        {
+          "AircraftCode": "GJ6",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G650"
+            }
+          },
+          "AirlineEquipCode": "GLF6"
+        },
+        {
+          "AircraftCode": "GR1",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-100/G-150 (Astra SPX)"
+            }
+          },
+          "AirlineEquipCode": "G150"
+        },
+        {
+          "AircraftCode": "GR2",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-200 (Galaxy)"
+            }
+          },
+          "AirlineEquipCode": "GALX"
+        },
+        {
+          "AircraftCode": "GR3",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Gulfstream Aerospace G-280"
+            }
+          },
+          "AirlineEquipCode": "G280"
+        },
+        {
+          "AircraftCode": "GRG",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Grumman G-21 Goose (Amphibian)"
+            }
+          },
+          "AirlineEquipCode": "G21"
+        },
+        {
+          "AircraftCode": "GRM",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Grumman G-73 Turbo Mallard (Amphibian)"
+            }
+          },
+          "AirlineEquipCode": "G73T"
+        },
+        {
+          "AircraftCode": "H20",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 200"
+            }
+          },
+          "AirlineEquipCode": "PRM1"
+        },
+        {
+          "AircraftCode": "H21",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 1000"
+            }
+          },
+          "AirlineEquipCode": "H25C"
+        },
+        {
+          "AircraftCode": "H24",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 4000"
+            }
+          },
+          "AirlineEquipCode": "HA4T"
+        },
+        {
+          "AircraftCode": "H25",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 750/800/800XP/800SP"
+            }
+          },
+          "AirlineEquipCode": "H25B"
+        },
+        {
+          "AircraftCode": "H28",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 850XP/900"
+            }
+          },
+          "AirlineEquipCode": "H25B"
+        },
+        {
+          "AircraftCode": "H29",
+          "Names": {
+            "Name": {
+              "@LanguageCode": "EN",
+              "$": "Hawker 900XP"
+            }
+          },
+          "AirlineEquipCode": "H25B"
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=200",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=0",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=100",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=300",
+          "@Rel": "next"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft?limit=100&offset=300",
+          "@Rel": "last"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/aircraft/{aircraftCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 383
+    }
+  }
+}

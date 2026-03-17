@@ -224,21 +224,47 @@ def jump_offset(endpoint: str, skipped_values: int) -> Optional[str]:
     return f"{parsed.path}?limit={limit_value}&offset={new_offset}"
 
 def processing_Error(json_data: dict, meta_data_key: str) ->bool:
-    
-    #if there is not the specific meta key eg. airlineResources 
-    # do a extra loop after time out 
-    # if "Internal Server Error or prosssing error "
+    """if "Internal Server Error or prosssing error """
+
     if meta_data_key not in json_data:
         print(f"Missing meta key: {meta_data_key}", file=sys.stderr)
+
         save_json_locally(
-                    json_data=json_data,
-                    base_filename=f"{meta_data_key}error.json",
-                    local_folder="errorMessages",
-                    offset=0
-                )
+            json_data=json_data,
+            base_filename=f"{meta_data_key}error.json",
+            local_folder="errorMessages",
+            offset=0
+                    )
         return True
     if json_data.get(meta_data_key, {}) is None:
         return True
     #if json_data.get("ProcessingErrors", {}):
     #    return True
     return False
+
+def check_for_error_in_json(json_data: dict, meta_data_key: str) ->bool:
+    if meta_data_key not in json_data:
+        print(f"Missing meta key: {meta_data_key}", file=sys.stderr)
+        return True,
+    if json_data.get(meta_data_key, {}) is None:
+        return True
+    return False
+
+def save_api_error(json_data: dict,
+                      meta_data_key: str, 
+                      directory: str) -> None:
+    """Save API error response locally or to Databricks"""
+    if is_databricks_notebook():
+        save_in_Notebooks(
+            FileName_base=f"{meta_data_key}error.json",
+            json_data=json_data,
+            offset=0,
+            directory=directory,
+        )
+    else:
+        save_json_locally(
+            json_data=json_data,
+            base_filename=f"{meta_data_key}error.json",
+            local_folder="errorMessages",
+            offset=0
+        )
