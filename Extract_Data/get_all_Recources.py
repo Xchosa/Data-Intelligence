@@ -46,7 +46,7 @@ def get_data_all_Reference(
     local_folder = str,
     ):
     
-    language = "EN"
+    
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/"
     FileName_base = f"{mds_reference}"
     endpoint = f"/v1/mds-references/{mds_reference}?limit={recordLimit}&offset={offset}"
@@ -91,7 +91,7 @@ def get_data_all_Reference(
             if(save_on_Databricks == False):
                 save_json_locally(
                     json_data=json_data,
-                    base_filename=f"{mds_reference}.json",
+                    base_filename=FileName_base,
                     local_folder=local_folder,
                     offset=offset
                 )

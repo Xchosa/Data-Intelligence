@@ -25,7 +25,8 @@ from utilis import (
     find_href,
     extract_offset_from_endpoint,
     jump_offset,
-    processing_Error
+    processing_Error,
+    get_next_endpoint_from_response_flightoperations
 )
 
 #goal: get delays of lufthansa depatures  , to see parters between Airlines 
@@ -63,7 +64,7 @@ def get_data_flight_depatures(
     """ Get FRA departures only """
 
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{Date}/"
-    FileName_base = f"{operation_type}"
+    FileName_base = f"{operation_subtype}_{airport_code}"
     endpoint = f"/v1/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{Date}?serviceType={serviceType}"
     dummy_count = 0
     
@@ -107,7 +108,7 @@ def get_data_flight_depatures(
                 if(save_on_Databricks == False):
                     save_json_locally(
                         json_data=json_data,
-                        base_filename=f"{operation_type}.json",
+                        base_filename=FileName_base,
                         local_folder=local_folder,
                         offset=offset
                     )
@@ -121,7 +122,7 @@ def get_data_flight_depatures(
                     
                 #endpoint_backup = endpoint
                 offset = extract_offset_from_endpoint(endpoint)
-                endpoint =get_next_endpoint_from_response(json_data, meta_data_key)
+                endpoint =get_next_endpoint_from_response_flightoperations(json_data, meta_data_key)
                 
                 if endpoint == "Done":
                     return f"all files successfuly saved"

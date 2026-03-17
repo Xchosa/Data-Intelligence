@@ -16,7 +16,7 @@ def get_past_date(time: int) -> str:
     e.g. 
     get_past_date(1) → "2026-03-16T01:00" (1 AM)
     """
-    date = datetime.now().replace(hour=time, minute=0, second=0, microsecond=0)
+    date = (datetime.now() - timedelta(1)).replace(hour=time, minute=0, second=0, microsecond=0)
     return date.strftime("%Y-%m-%dT%H:%M")
 
 def directory_exist(directory: str) -> bool:
@@ -101,6 +101,45 @@ def save_in_Notebooks(FileName_base: str,
         json.dump(json_data, file, indent=2)
     print(f"{file_path} saved")
 
+
+
+
+def get_next_endpoint_from_response_flightoperations(json_data: dict, meta_data_key: str) -> Optional[str]:
+    """
+    read api respond json file for link @Rel == 'next' and
+    changes it to a Endpoint for proxy 
+
+    config for flightoperations -> has more hrefs
+    """
+    counter = 0
+    airport_resource = json_data.get(meta_data_key, {})
+    meta = airport_resource.get("Meta", {})
+    links = meta.get("Link", [])
+
+    # if Link is a object not an array 
+    if isinstance(links, dict):
+        links = [links]
+
+    for link in links:
+        counter +=1
+        if link.get("@Rel") == "next":
+            next_href = link.get("@Href")
+            if next_href.startswith("https://api.lufthansa.com"):
+                return next_href.replace("https://api.lufthansa.com", "")
+            
+        
+        elif link.get("@Rel") == "nextRange":
+            next_href = link.get("@Href")
+            if next_href.startswith("https://api.lufthansa.com"):
+                return next_href.replace("https://api.lufthansa.com", "")
+    if counter == 6:
+        return "Done"
+        #if next and last is missing only 4 links are available
+            #"@Href": "https://api.lufthansa.com/v1/mds-references/airports?limit=100&offset=1500",
+            #"@Rel": "next"
+            
+
+    return None
 
 def get_next_endpoint_from_response(json_data: dict, meta_data_key: str) -> Optional[str]:
     """
