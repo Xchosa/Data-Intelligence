@@ -1,0 +1,1298 @@
+{
+  "FlightStatusResource": {
+    "Flights": {
+      "Flight": [
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:05"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:05Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:06"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:06Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "B25"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "LHR",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:45"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:45Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:02"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T10:02Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Name": "2"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "902"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "902"
+          },
+          "Equipment": {
+            "AircraftCode": "32N",
+            "AircraftRegistration": "DAIJC"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:35"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:35Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "B07"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "BER",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:15"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:15Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:51"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:51Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Name": "1"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "DE",
+            "FlightNumber": "4087"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "DE",
+            "FlightNumber": "4087"
+          },
+          "Equipment": {
+            "AircraftCode": "320",
+            "AircraftRegistration": "DAICT"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:12"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:12Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A54"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "DUS",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:55"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:55Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:05"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:05Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Gate": "A63"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "074"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "074"
+          },
+          "Equipment": {
+            "AircraftCode": "319",
+            "AircraftRegistration": "DAIBJ"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:12"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:12Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A66"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "NUE",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:55"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:55Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:47"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:47Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "142"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "142"
+          },
+          "Equipment": {
+            "AircraftCode": "319",
+            "AircraftRegistration": "DAILH"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:12"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:12Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A25"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "GOT",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:50"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:50Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:47"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:47Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "814"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "814"
+          },
+          "Equipment": {
+            "AircraftCode": "32A",
+            "AircraftRegistration": "DAIUJ"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:18"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:18Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A30"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "CDG",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:31"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:31Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "065"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "1030"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "1030"
+          },
+          "Equipment": {
+            "AircraftCode": "321",
+            "AircraftRegistration": "DAIRS"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:21"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:21Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A11"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "ZRH",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:19"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:19Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Gate": "A64"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LX",
+            "FlightNumber": "1069"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LX",
+            "FlightNumber": "1069"
+          },
+          "Equipment": {
+            "AircraftCode": "321",
+            "AircraftRegistration": "HBIOM"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:15"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:15Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:19"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:19Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A13"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "MUC",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:14"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:14Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "2",
+              "Gate": "G20"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "098"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "098"
+          },
+          "Equipment": {
+            "AircraftCode": "321",
+            "AircraftRegistration": "DAIRT"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:15"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:15Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:25"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:25Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "QZX",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T20:15"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T20:15Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T21:25"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T21:25Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7386A"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7386A"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS",
+            "AircraftRegistration": "KJOHA"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:20"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:20Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:34"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:34Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A24"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "VIE",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:45"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:45Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:46"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:46Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "3",
+              "Gate": "F31A"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "OS",
+            "FlightNumber": "202"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "OS",
+            "FlightNumber": "202"
+          },
+          "Equipment": {
+            "AircraftCode": "321",
+            "AircraftRegistration": "OELBB"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:42"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:42Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A20"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "STR",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:10Z"
+            },
+            "EstimatedTimeLocal": {
+              "DateTime": "2026-03-16T10:31"
+            },
+            "EstimatedTimeUTC": {
+              "DateTime": "2026-03-16T09:31Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:14"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:14Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Name": "3"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "128"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "128"
+          },
+          "Equipment": {
+            "AircraftCode": "319",
+            "AircraftRegistration": "DAILE"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:33"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:33Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A02"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "DRS",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:25"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:25Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "206"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "206"
+          },
+          "Equipment": {
+            "AircraftCode": "CR9",
+            "AircraftRegistration": "DACNW"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:36"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:36Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A69"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "LIS",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T11:35"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T11:35Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T11:42"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T11:42Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "1166"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "1166"
+          },
+          "Equipment": {
+            "AircraftCode": "32Q",
+            "AircraftRegistration": "DAIEM"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:25"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:25Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "QZX",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T20:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T20:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T20:25"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T20:25Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7984H"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7984H"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS",
+            "AircraftRegistration": "ZETPL"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:10Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:31"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:31Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "CTU",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-17T02:15"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T18:15Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-17T02:49"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T18:49Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "8412"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "8412"
+          },
+          "Equipment": {
+            "AircraftCode": "77X",
+            "AircraftRegistration": "DALFH"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:34"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:34Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A22"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "MXP",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:45"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:45Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:42"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:42Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            },
+            "Terminal": {
+              "Name": "1"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "248"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "248"
+          },
+          "Equipment": {
+            "AircraftCode": "32V",
+            "AircraftRegistration": "DAIWK"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:32"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:32Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A05"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "BRE",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:30"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:30Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "352"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "352"
+          },
+          "Equipment": {
+            "AircraftCode": "319",
+            "AircraftRegistration": "DAILI"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:20"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:20Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "QZX",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T20:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T20:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T21:20"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T21:20Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7614A"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7614A"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS",
+            "AircraftRegistration": "GEORG"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:49"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:49Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "B05"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "ZAG",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:50"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:50Z"
+            },
+            "EstimatedTimeLocal": {
+              "DateTime": "2026-03-16T11:21"
+            },
+            "EstimatedTimeUTC": {
+              "DateTime": "2026-03-16T10:21Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T11:02"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T10:02Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            },
+            "Terminal": {
+              "Gate": "A10"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "OU",
+            "FlightNumber": "417"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "OU",
+            "FlightNumber": "417"
+          },
+          "Equipment": {
+            "AircraftCode": "221",
+            "AircraftRegistration": "9ACAO"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T09:35"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T08:35Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:40"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:40Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            },
+            "Terminal": {
+              "Name": "1",
+              "Gate": "A64"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "TLL",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T12:55"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T10:55Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T12:53"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T10:53Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "880"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "880"
+          },
+          "Equipment": {
+            "AircraftCode": "32N",
+            "AircraftRegistration": "DAINX"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Passenger"
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T08:00?serviceType=all&offset=60&limit=20",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T04:00?serviceType=all&offset=0&limit=20",
+          "@Rel": "previousRange"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T08:00?serviceType=all&offset=0&limit=20",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T08:00?serviceType=all&offset=40&limit=20",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T08:00?serviceType=all&offset=80&limit=20",
+          "@Rel": "next"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T08:00?serviceType=all&offset=180&limit=20",
+          "@Rel": "last"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T12:00?serviceType=all&offset=0&limit=20",
+          "@Rel": "nextRange"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/airports/{airportCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 192
+    }
+  }
+}

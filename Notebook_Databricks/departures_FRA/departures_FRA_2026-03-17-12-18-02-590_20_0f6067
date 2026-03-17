@@ -1,0 +1,411 @@
+{
+  "FlightStatusResource": {
+    "Flights": {
+      "Flight": [
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T04:44"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T03:44Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "BRU",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:25"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:25Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T11:05"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T10:05Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7684A"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7684A"
+          },
+          "Equipment": {
+            "AircraftCode": "RFC",
+            "AircraftRegistration": "KOINE"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T03:54"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T02:54Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "BSL",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T08:30"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T07:30Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T07:23"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T06:23Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7594S"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7594S"
+          },
+          "Equipment": {
+            "AircraftCode": "RFC",
+            "AircraftRegistration": "KRETZ"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:35"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:35Z"
+            },
+            "TimeStatus": {
+              "Code": "NO",
+              "Definition": "No status"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "SXB",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T08:15"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T07:15Z"
+            },
+            "TimeStatus": {
+              "Code": "NO",
+              "Definition": "No status"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7670Y"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7670Y"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS"
+          },
+          "FlightStatus": {
+            "Code": "CD",
+            "Definition": "Flight Cancelled"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:40"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:40Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T04:23"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T03:23Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "STR",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T07:10"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T06:10Z"
+            },
+            "EstimatedTimeLocal": {
+              "DateTime": "2026-03-16T07:38"
+            },
+            "EstimatedTimeUTC": {
+              "DateTime": "2026-03-16T06:38Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7200I"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7200I"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS",
+            "AircraftRegistration": "HENKY"
+          },
+          "FlightStatus": {
+            "Code": "DP",
+            "Definition": "Flight Departed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:45"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:45Z"
+            },
+            "TimeStatus": {
+              "Code": "NO",
+              "Definition": "No status"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "SXB",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T08:50"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T07:50Z"
+            },
+            "TimeStatus": {
+              "Code": "NO",
+              "Definition": "No status"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7672Y"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7672Y"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS"
+          },
+          "FlightStatus": {
+            "Code": "CD",
+            "Definition": "Flight Cancelled"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:50"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:50Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T05:00"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T04:00Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "BSL",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T08:50"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T07:50Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T09:07"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T08:07Z"
+            },
+            "TimeStatus": {
+              "Code": "DL",
+              "Definition": "Flight Delayed"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7586A"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7586A"
+          },
+          "Equipment": {
+            "AircraftCode": "RFS",
+            "AircraftRegistration": "KOINE"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        },
+        {
+          "Departure": {
+            "AirportCode": "FRA",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T03:55"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T02:55Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T03:55"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T02:55Z"
+            },
+            "TimeStatus": {
+              "Code": "OT",
+              "Definition": "Flight On Time"
+            }
+          },
+          "Arrival": {
+            "AirportCode": "BRU",
+            "ScheduledTimeLocal": {
+              "DateTime": "2026-03-16T10:55"
+            },
+            "ScheduledTimeUTC": {
+              "DateTime": "2026-03-16T09:55Z"
+            },
+            "ActualTimeLocal": {
+              "DateTime": "2026-03-16T10:40"
+            },
+            "ActualTimeUTC": {
+              "DateTime": "2026-03-16T09:40Z"
+            },
+            "TimeStatus": {
+              "Code": "FE",
+              "Definition": "Flight Early"
+            }
+          },
+          "MarketingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7684B"
+          },
+          "OperatingCarrier": {
+            "AirlineID": "LH",
+            "FlightNumber": "7684B"
+          },
+          "Equipment": {
+            "AircraftCode": "RFC",
+            "AircraftRegistration": "GEORG"
+          },
+          "FlightStatus": {
+            "Code": "LD",
+            "Definition": "Flight Landed"
+          },
+          "ServiceType": "Cargo"
+        }
+      ]
+    },
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T00:00?serviceType=all&offset=40&limit=20",
+          "@Rel": "self"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-15T20:00?serviceType=all&offset=0&limit=20",
+          "@Rel": "previousRange"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T00:00?serviceType=all&offset=0&limit=20",
+          "@Rel": "first"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T00:00?serviceType=all&offset=20&limit=20",
+          "@Rel": "previous"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/operations/flightstatus/departures/FRA/2026-03-16T04:00?serviceType=all&offset=0&limit=20",
+          "@Rel": "nextRange"
+        },
+        {
+          "@Href": "https://api.lufthansa.com/v1/mds-references/airports/{airportCode}",
+          "@Rel": "related"
+        }
+      ],
+      "TotalCount": 47
+    }
+  }
+}
