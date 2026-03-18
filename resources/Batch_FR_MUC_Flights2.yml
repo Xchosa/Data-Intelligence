@@ -1,0 +1,16 @@
+resources:
+  jobs:
+    Batch_FR_MUC_Flights:
+      name: Batch_FR_MUC_Flights2
+      schedule:
+        quartz_cron_expression: 7 37 4 * * ?
+        timezone_id: Europe/Berlin
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: Batch_all_depatures_FR_MUC
+          notebook_task:
+            notebook_path: /Workspace/Users/paul.overbeck95@gmail.com/Data-Intelligence/Notebook_Databricks/batch_flight_data
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
