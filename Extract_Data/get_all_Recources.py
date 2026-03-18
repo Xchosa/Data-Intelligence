@@ -63,7 +63,7 @@ def get_data_all_Reference(
     proxy_error = False
 
     while True:
-        print(f"sending request {dummy_count}")
+        #print(f"sending request {dummy_count}")
         dummy_count += 1
         print(f"{base_Url}{endpoint}")
         try:
@@ -82,17 +82,19 @@ def get_data_all_Reference(
             
             timeout_rounds = reset_timeout_rounds(timeout_rounds)
             if response.status_code != 200:
+                write_log(log_file, f"ERROR | new error code: {response.status_code}")
                 raise Exception(f"new error code: {response.status_code}")
             
-            print("response.url =", response.url)
+            # print("response.url =", response.url)
             json_data = response.json()
             
             if check_for_error_in_json(json_data, meta_data_key):
-                write_log(log_file, "API returned JSON error payload")
+                write_log(log_file, "API returned JSON error payload, Retry one time ")
                 save_api_error(json_data,
                             meta_data_key,
                             dir)
                 if proxy_error is True:
+                    write_log(log_file, f"ERROR | missing meta key {meta_data_key}")
                     raise BrokenPipeError
                 time.sleep(10)
                 proxy_error = True

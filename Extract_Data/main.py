@@ -44,10 +44,6 @@ def get_References()->None:
     meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
 
-    mds_reference = ["aircraft"]
-    meta_data_key = ["AircraftResource"]
-    local_folder = ["Aircrafts"]
-
 
 
     for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
