@@ -73,7 +73,7 @@ def get_single_flight_route()->None:
             headers_env = os.getenv('headers_env')
             if not headers_env:
                 raise ValueError("headers_env not found in .env file")
-        headers = json.loads(headers_env)
+            headers = json.loads(headers_env)
         catalog_name ="data_catalog"
         schema_name = "bronze"
         volume_name = "bronze_volume"
@@ -131,6 +131,7 @@ def get_flights()->None:
         headers_env = os.getenv('headers_env')
         if not headers_env:
             raise ValueError("headers_env not found in .env file")
+        headers = json.loads(headers_env)
    
     catalog_name ="data_catalog"
     schema_name = "bronze"

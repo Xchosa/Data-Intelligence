@@ -97,7 +97,7 @@ def save_in_Notebooks(FileName_base: str,
     if not directory_exist(directory):
         dbutils.fs.mkdirs(directory)
     file_path = f"{directory}/{versioned_filename}"
-    with open (file_path, "w") as file:
+    with open (file_path+ ".json", "w") as file:
         json.dump(json_data, file, indent=2)
     print(f"{file_path} saved")
 
