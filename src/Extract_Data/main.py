@@ -9,10 +9,10 @@ import time
 from dotenv import load_dotenv
 
 from get_all_Recources import get_data_all_Reference
-import get_flight_schedules
-import get_flight_route
+# import get_flight_schedules
+# import get_flight_route
 from utilis import is_databricks_notebook ,get_past_date
-from get_flight_route import get_data_flight_route
+# from get_flight_route import get_data_flight_route
 from get_flight_departures import get_data_flight_depatures
 
 # Load .env from parent directory
