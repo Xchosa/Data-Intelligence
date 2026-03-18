@@ -26,10 +26,11 @@ from utilis import (
     jump_offset,
     processing_Error,
     check_for_error_in_json,
-    save_api_error
-    
+    save_api_error,
+    #create_logfile_path,
+    #write_log
 )
-
+from utilis_logs import create_logfile_path, write_log
          
 
 def get_data_all_Reference(
@@ -50,6 +51,12 @@ def get_data_all_Reference(
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/"
     FileName_base = f"{mds_reference}"
     endpoint = f"/v1/mds-references/{mds_reference}?limit={recordLimit}&offset={offset}"
+
+  
+    log_file = create_logfile_path(catalog_name, schema_name, volume_name, mds_reference)
+    write_log(log_file, f"START function call | mds_reference={mds_reference} | initial_endpoint={endpoint}")
+
+
     
     dummy_count = 0
     timeout_rounds = 0
@@ -65,10 +72,11 @@ def get_data_all_Reference(
                 headers=headers,
                 timeout=10
             )
-
+            write_log(log_file, f"Response received | status_code={response.status_code} | url={response.url}")
             if response.status_code in (503, 504, 429):
                 timeout_rounds = timeout_api_restriction(response.status_code)
                 if timeout_rounds == 5:
+                    write_log(log_file, "ERROR | infinite loop protection triggered after 5 timeout rounds")
                     raise Exception("infinite Loop")
                 continue
             
@@ -79,14 +87,8 @@ def get_data_all_Reference(
             print("response.url =", response.url)
             json_data = response.json()
             
-            #if processing_Error(json_data, meta_data_key):
-            #    if proxy_error is True:
-            #        raise BrokenPipeError
-            #    time.sleep(10)
-            #    proxy_error = True
-            #    continue
-            
             if check_for_error_in_json(json_data, meta_data_key):
+                write_log(log_file, "API returned JSON error payload")
                 save_api_error(json_data,
                             meta_data_key,
                             dir)
@@ -110,8 +112,7 @@ def get_data_all_Reference(
                     json_data,
                     offset,
                     dic)
-                
-            #endpoint_backup = endpoint
+
             offset = extract_offset_from_endpoint(endpoint)
             endpoint =get_next_endpoint_from_response(json_data, meta_data_key)
             
@@ -121,4 +122,5 @@ def get_data_all_Reference(
         except Exception as e:
             print(f"{mds_reference}: api called failed \n \
                    last api endpoint {endpoint} {e}", file=sys.stderr)
+            write_log(log_file, f"ERROR | {e}")
             return

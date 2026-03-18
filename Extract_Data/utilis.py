@@ -268,3 +268,4 @@ def save_api_error(json_data: dict,
             local_folder="errorMessages",
             offset=0
         )
+
