@@ -12,6 +12,14 @@ import sys
 
 from databricks.sdk.runtime import dbutils
 
+
+from utilis_logs import (
+    add_log_line,
+    write_log_event,
+    write_final_log,
+    create_log_run_paths,
+    delete_tmp_logs
+)
 from utilis import (
     
     update_offset,
@@ -50,10 +58,18 @@ def get_data_all_Reference(
     
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/"
     endpoint = f"/v1/mds-references/{mds_reference}?limit={recordLimit}&offset={offset}"
-  
-    log_file = create_logfile_path(catalog_name, schema_name, volume_name, mds_reference)
-    write_log(log_file, f"START function call | mds_reference={mds_reference} | initial_endpoint={endpoint}")
 
+    log_paths = create_log_run_paths(catalog_name, schema_name, volume_name, mds_reference)
+    tmp_dir = log_paths["tmp_dir"]
+    final_log_file = log_paths["final_log_file"]
+    log_buffer: list[str] = []
+    log_counter = 1
+
+    def log(message: str) -> None:
+        nonlocal log_counter
+        line = add_log_line(log_buffer, message)
+        write_log_event(tmp_dir, log_counter, line)
+        log_counter += 1
 
     
     dummy_count = 0
@@ -61,37 +77,32 @@ def get_data_all_Reference(
     proxy_error = False
 
     while True:
-        #print(f"sending request {dummy_count}")
-        dummy_count += 1
         print(f" called api:{base_Url}{endpoint}")
-        write_log(log_file, f" called api: {base_Url}{endpoint}")
+        log(f"START function call | mds_reference={mds_reference} | initial_endpoint={endpoint}")
         try:
             response = requests.get(
                 base_Url + endpoint,
                 headers=headers,
                 timeout=10
             )
-            write_log(log_file, f"Response received | status_code={response.status_code} | url={response.url}")
+            log(f"Response received | status_code={response.status_code} | url={response.url}")
             if response.status_code in (503, 504, 429):
                 timeout_rounds = timeout_api_restriction(response.status_code)
                 if timeout_rounds == 5:
-                    write_log(log_file, "ERROR | infinite loop protection triggered after 5 timeout rounds")
-                    raise Exception("infinite Loop")
+                    raise Exception("ERROR | infinite loop protection triggered after 5 timeout rounds")
                 continue
             
             timeout_rounds = reset_timeout_rounds(timeout_rounds)
             if response.status_code != 200:
-                write_log(log_file, f"ERROR | new error code: {response.status_code}")
                 raise Exception(f"new error code: {response.status_code}")
             
-            # print("response.url =", response.url)
+            
             json_data = response.json()
             
             if check_for_error_in_json(json_data, meta_data_key):
-                write_log(f"{log_file}, API returned JSON error payload, Retry one time , did not get {meta_data_key}")
+                log(f"API returned JSON error payload, Retry one time , did not get {meta_data_key}")
                 if proxy_error is True:
-                    write_log(log_file, f"ERROR | missing meta key {meta_data_key}")
-                    raise BrokenPipeError
+                    raise BrokenPipeError (f"ERROR | missing meta key {meta_data_key}")
                 time.sleep(10)
                 proxy_error = True
                 continue
@@ -105,7 +116,8 @@ def get_data_all_Reference(
                 return f"all files successfuly saved"
             
         except Exception as e:
-            print(f"{mds_reference}: api called failed \n \
+            log(f"{mds_reference}: api called failed \n \
                    last api endpoint {endpoint} {e}", file=sys.stderr)
-            write_log(log_file, f"ERROR | {e}")
+            write_final_log(final_log_file, log_buffer)
+            delete_tmp_logs(tmp_dir)
             return
