@@ -162,11 +162,6 @@ def get_flights()->None:
             operations= operations,
             operation_type=operation_type,
             operation_subtype= operation_subtype,
-            recordLimit=recordLimit,
-            offset=offset,
-
-            save_on_Databricks=False,
-            local_folder=local_folder,
             
             meta_data_key=meta_data_key,
             airport_code=airport,
@@ -175,12 +170,14 @@ def get_flights()->None:
             serviceType=serviceType
 
             )
+        
+
 
 
 if __name__ == "__main__":
     try:
-        get_References()
-        #get_flights()
+        #get_References()
+        get_flights()
 
        # get_single_flight_route()
     except Exception as e:

@@ -11,23 +11,30 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 
-from utilis import (
 
+from utilis_logs import (
+    add_log_line,
+    write_log_event,
+    write_final_log,
+    create_log_run_paths,
+    delete_tmp_logs
+)
+
+from utilis import (
+    
     update_offset,
     timeout_api_restriction,
     versioning_fileNames,
     loop_until_data_pool_finished,
     reset_timeout_rounds,
-
     save_in_Notebooks,
     get_next_endpoint_from_response,
     find_href,
     extract_offset_from_endpoint,
     jump_offset,
     processing_Error,
-    get_next_endpoint_from_response_flightoperations
+    check_for_error_in_json,
 )
-
 #goal: get delays of lufthansa depatures  , to see parters between Airlines 
 #GET /operations/flightstatus/departures/{airportCode}/{fromDateTime}?serviceType={serviceType}
 
@@ -63,57 +70,66 @@ def get_data_flight_depatures(
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{Date}/"
     FileName_base = f"{operation_subtype}_{airport_code}"
     endpoint = f"/v1/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{Date}?serviceType={serviceType}"
-    dummy_count = 0
     
+
+    log_paths = create_log_run_paths(catalog_name, schema_name, volume_name,operation_subtype)
+    tmp_dir = log_paths["tmp_dir"]
+    final_log_file = log_paths["final_log_file"]
+    log_buffer: list[str] = []
+    log_counter = 1
+
+    def log(message: str) -> None:
+        nonlocal log_counter
+        line = add_log_line(log_buffer, message)
+        write_log_event(tmp_dir, log_counter, line)
+        log_counter += 1
+
+
     timeout_rounds = 0
     proxy_error = False
-    Server_error = 0
 
     while True:
-            print(f"sending request {dummy_count}")
-            dummy_count += 1
-            print(f"{base_Url}{endpoint}")
-            try:
-                response = requests.get(
-                    base_Url + endpoint,
-                    headers=headers,
-                    timeout=10
-                )
+        print(f" called api:{base_Url}{endpoint}")
+        log(f"START function call | operationse={operation_subtype} | initial_endpoint={endpoint}")
+        try:
+            response = requests.get(
+                base_Url + endpoint,
+                headers=headers,
+                timeout=10
+            )
+            log(f"Response received | status_code={response.status_code} | url={response.url}")
+            if response.status_code in (503, 504, 429):
+                timeout_rounds = timeout_api_restriction(response.status_code)
+                if timeout_rounds == 5:
+                    raise Exception("ERROR | infinite loop protection triggered after 5 timeout rounds")
+                continue
+            
+            timeout_rounds = reset_timeout_rounds(timeout_rounds)
+            if response.status_code != 200:
+                raise Exception(f"new error code: {response.status_code}")
+            
+            
+            json_data = response.json()
+            
+            if check_for_error_in_json(json_data, meta_data_key):
+                log(f"API returned JSON error payload, Retry one time , did not get {meta_data_key}")
+                if proxy_error is True:
+                    raise BrokenPipeError (f"ERROR | missing meta key {meta_data_key}")
+                time.sleep(10)
+                proxy_error = True
+                continue
+            
+            save_in_Notebooks(FileName_base, json_data, offset, dic)
 
-                if response.status_code in (503, 504, 429):
-                    timeout_rounds = timeout_api_restriction(response.status_code)
-                    if timeout_rounds == 5:
-                        raise Exception("infinite Loop")
-                    continue
-                
-                timeout_rounds = reset_timeout_rounds(timeout_rounds)
-                if response.status_code != 200:
-                    raise Exception(f"new error code: {response.status_code}")
-                
-                print("response.url =", response.url)
-                json_data = response.json()
-                
-                if processing_Error(json_data, meta_data_key):
-                    if proxy_error is True:
-                        raise BrokenPipeError
-                    time.sleep(10)
-                    proxy_error = True
-                    continue
-                
-                save_in_Notebooks(
-                    operation_type,
-                    json_data,
-                    offset,
-                    dic)
-                    
-                #endpoint_backup = endpoint
-                offset = extract_offset_from_endpoint(endpoint)
-                endpoint =get_next_endpoint_from_response_flightoperations(json_data, meta_data_key)
-                
-                if endpoint == "Done":
-                    return f"all files successfuly saved"
-                
-            except Exception as e:
-                print(f"{operation_type}: api called failed \n \
-                    last api endpoint {endpoint} {e}", file=sys.stderr)
-                return
+            offset = extract_offset_from_endpoint(endpoint)
+            endpoint =get_next_endpoint_from_response(json_data, meta_data_key)
+            
+            if endpoint == "Done":
+                return f"all files successfuly saved"
+            
+        except Exception as e:
+            log(f"{operation_subtype}: api called failed \n \
+                   last api endpoint {endpoint} {e}")
+            write_final_log(final_log_file, log_buffer)
+            delete_tmp_logs(tmp_dir)
+            return

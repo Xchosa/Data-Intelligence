@@ -68,8 +68,6 @@ def get_data_all_Reference(
         write_log_event(tmp_dir, log_counter, line)
         log_counter += 1
 
-    
-    dummy_count = 0
     timeout_rounds = 0
     proxy_error = False
 

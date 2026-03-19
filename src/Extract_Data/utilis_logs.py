@@ -54,6 +54,8 @@ def create_log_run_paths(
     }
 
 
+
+
 def write_log_event(tmp_dir: str, counter: int, message: str) -> str:
     timestamp = datetime.now().isoformat(sep="_", timespec="seconds")
     file_name = f"{counter:04d}_{timestamp}.log"
