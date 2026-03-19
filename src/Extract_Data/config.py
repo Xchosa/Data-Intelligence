@@ -3,17 +3,6 @@ import os
 from databricks.sdk import WorkspaceClient
 from dataclasses import dataclass
 
-@dataclass(frozen=True)
-class Config_obj:
-    catalog_name ="data_catalog"
-    schema_name = "bronze"
-    volume_name = "bronze_volume"
-    base_url: str = "https://lh-proxy.onrender.com"
-    record_limit: int = 100
-    offset = 0
-
-
-
 def get_lufthansa_secret() -> str:
     try:
         w = WorkspaceClient()
@@ -21,4 +10,32 @@ def get_lufthansa_secret() -> str:
     except Exception:
         print("No secret found")
         pass
+
+@dataclass(frozen=True)
+class Config:
+    catalog_name ="data_catalog"
+    schema_name = "bronze"
+    volume_name = "bronze_volume"
+    base_url: str = "https://lh-proxy.onrender.com"
+    record_limit: int = 100
+    offset: int = 0
+    mds_reference = ["countries", "cities", "airports","airlines", "aircraft"]
+    meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
+    local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
+    
+    
+    
+    operations="operations"
+    operation_type="flightstatus"
+    operation_subtype="departures"
+    airport_code=["FRA", "MUC"]
+    meta_data_key_flight="FlightStatusResource"
+    airport_code=["FRA", "MUC"]
+    serviceType="all"
+    headers = {"password": get_lufthansa_secret()}
+
+
+
+
+config = Config()
 
