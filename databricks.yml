@@ -1,8 +1,8 @@
 # This is a Databricks asset bundle definition for Lufthansa_Data.
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
-  name: Lufthansa_Data
-  uuid: f44a81d2-9f12-4e22-84e3-815e8a969566
+  name: data_lufthansa
+  uuid: 1dc40737-cb24-4735-b0c6-4d8bcda8b992
 
 include:
   - resources/*.yml
@@ -31,7 +31,7 @@ targets:
     workspace:
       host: https://dbc-1f1ceac5-9ef0.cloud.databricks.com
     variables:
-      catalog: lufthansa_data
+      catalog: data_lufthansa
       schema: ${workspace.current_user.short_name}
   prod:
     mode: production
@@ -40,7 +40,7 @@ targets:
       # We explicitly deploy to /Workspace/Users/paul.overbeck95@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Users/paul.overbeck95@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
-      catalog: lufthansa_data
+      catalog: data_catalog
       schema: prod
     permissions:
       - user_name: paul.overbeck95@gmail.com
