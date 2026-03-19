@@ -10,10 +10,9 @@ import time
 
 from get_all_Recources import get_data_all_Reference
 from utilis import get_past_date
-from get_flight_operations import get_flight_route 
 from get_flight_departures import get_data_flight_depatures
 
-import config
+from config import config, get_lufthansa_secret
 
 
 from databricks.sdk import WorkspaceClient
@@ -22,14 +21,10 @@ from databricks.sdk import WorkspaceClient
 def get_References()->None:
     
 
-    base_url = "https://lh-proxy.onrender.com"
-    headers = {"password": config.get_lufthansa_secret()}
+
+    headers = {"password": get_lufthansa_secret()}
     #headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
 
-    catalog_name ="data_catalog"
-    schema_name = "bronze"
-    volume_name = "bronze_volume"
-        
         
 
     recordLimit = 100
@@ -44,17 +39,17 @@ def get_References()->None:
 
     for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
         get_data_all_Reference(
-            base_Url=base_url,
+            base_Url=confg.base_url,
             headers=headers,
                 
-            catalog_name=catalog_name,
-            schema_name=schema_name,
-            volume_name=volume_name,
+            catalog_name=config.catalog_name,
+            schema_name=config.schema_name,
+            volume_name=config.volume_name,
             mds_reference=ref,
             recordLimit=recordLimit,
             offset=offset,
 
-            save_on_Databricks=save_on_Databricks,
+            save_on_Databricks=True,
             meta_data_key=key,
             local_folder=folder
         )
