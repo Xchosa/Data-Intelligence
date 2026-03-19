@@ -10,7 +10,7 @@ resources:
         - task_key: Batch_all_depatures_FR_MUC
           spark_python_task:
             python_file: ../../src/Extract_Data/getterResource.py
-            source: WORKSPACE
+          environment_key: Default
       queue:
         enabled: true
       environments:

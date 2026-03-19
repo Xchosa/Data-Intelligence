@@ -1,24 +1,3 @@
-# resources:
-#   jobs:
-#     Batch_reference_Data:
-#       name: Batch_reference_Data2
-#       schedule:
-#         quartz_cron_expression: 56 33 3 18 * ?
-#         timezone_id: Europe/Berlin
-#         pause_status: UNPAUSED
-#       tasks:
-#         - task_key: Batch_reference_Data
-#           spark_python_task:
-#             python_file: ../../src/Extract_Data/getterDepartures.py
-#             source: WORKSPACE
-#           max_retries: 3
-#           min_retry_interval_millis: 3600000
-#           disable_auto_optimization: false
-#       queue:
-#         enabled: true
-#       performance_target: PERFORMANCE_OPTIMIZED
-
-
 resources:
   jobs:
     get_Reference_data:
@@ -31,7 +10,7 @@ resources:
         - task_key: get_Reference_data_python
           spark_python_task:
             python_file: ../../src/Extract_Data/getterDepartures.py
-          environment_key: WORKSPACE
+          environment_key: Default
       queue:
         enabled: true
       environments:
