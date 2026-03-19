@@ -1,0 +1,15 @@
+resources:
+  jobs:
+    bronze_ingest_pipeline:
+      name: bronze-ingest-pipeline
+      queue:
+        enabled: true
+      libraries:
+        - workspace:
+            path: Data-Intelligence/src/transformations/recource_table.py
+      target: data_catalog.bronze
+      continuous: false
+      development: true
+      serverless: true
+
+
