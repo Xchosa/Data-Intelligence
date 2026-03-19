@@ -8,6 +8,7 @@ import uuid
 import time
 
 
+
 from get_all_Recources import get_data_all_Reference
 # import get_flight_schedules
 # import get_flight_route
@@ -15,13 +16,21 @@ from utilis import is_databricks_notebook ,get_past_date
 from get_flight_operations import get_flight_route 
 from get_flight_departures import get_data_flight_depatures
 
+import config
+
+
+from databricks.sdk import WorkspaceClient
+
 # Load .env from parent directory
 
 # password = dbutils.secrets.get(scope="lh-api", key="password")
 
 def get_References()->None:
+    
+
     base_url = "https://lh-proxy.onrender.com"
-    headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
+    headers = {"password": config.get_lufthansa_secret()}
+    #headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
 
     catalog_name ="data_catalog"
     schema_name = "bronze"
@@ -118,7 +127,7 @@ def get_References()->None:
 def get_flights()->None:
     
     base_url = "https://lh-proxy.onrender.com"
-    headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
+    headers = {"password": config.get_lufthansa_secret()}
     
    
     catalog_name ="data_catalog"
