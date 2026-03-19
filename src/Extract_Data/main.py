@@ -12,7 +12,7 @@ import time
 from get_all_Recources import get_data_all_Reference
 # import get_flight_schedules
 # import get_flight_route
-from utilis import is_databricks_notebook ,get_past_date
+from utilis import get_past_date
 from get_flight_operations import get_flight_route 
 from get_flight_departures import get_data_flight_depatures
 
@@ -41,7 +41,7 @@ def get_References()->None:
     recordLimit = 100
     offset =0
     # save_on_Databricks=True
-    save_on_Databricks=is_databricks_notebook()
+    save_on_Databricks=True
     mds_reference = ["countries", "cities", "airports","airlines", "aircraft"]
     meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
@@ -180,7 +180,7 @@ def get_flights()->None:
 if __name__ == "__main__":
     try:
         get_References()
-        get_flights()
+        #get_flights()
 
        # get_single_flight_route()
     except Exception as e:

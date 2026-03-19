@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 
 def write_log(log_file: str, message: str) -> None:
-    Path(log_file).parent.mkdir(parent=True, exit_ok=True)
+    Path(log_file).parent.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().isoformat(sep='_', timespec='seconds')
     with open(log_file, "a", encoding="utf-8") as file:
         file.write(f"{timestamp} | {message}\n")

@@ -12,14 +12,13 @@ from urllib.parse import urlparse, parse_qs
 import sys
 
 from utilis import (
-    is_databricks_notebook,
-    directory_exist,
+
     update_offset,
     timeout_api_restriction,
     versioning_fileNames,
     loop_until_data_pool_finished,
     reset_timeout_rounds,
-    save_json_locally,
+
     save_in_Notebooks,
     get_next_endpoint_from_response,
     find_href,
@@ -58,8 +57,6 @@ def get_data_flight_depatures(
     serviceType=str
 
     ):
-
-
 
     """ Get FRA departures only """
 
@@ -102,23 +99,12 @@ def get_data_flight_depatures(
                     time.sleep(10)
                     proxy_error = True
                     continue
-
-
-
-                if(save_on_Databricks == False):
-                    save_json_locally(
-                        json_data=json_data,
-                        base_filename=FileName_base,
-                        local_folder=local_folder,
-                        offset=offset
-                    )
                 
-                if(save_on_Databricks == True ):
-                    save_in_Notebooks(
-                        operation_type,
-                        json_data,
-                        offset,
-                        dic)
+                save_in_Notebooks(
+                    operation_type,
+                    json_data,
+                    offset,
+                    dic)
                     
                 #endpoint_backup = endpoint
                 offset = extract_offset_from_endpoint(endpoint)

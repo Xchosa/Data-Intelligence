@@ -7,4 +7,5 @@ def get_lufthansa_secret() -> str:
         w = WorkspaceClient()
         return w.dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")
     except Exception:
+        print("No secret found")
         pass
