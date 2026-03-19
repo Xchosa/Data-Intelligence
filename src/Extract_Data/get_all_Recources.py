@@ -34,11 +34,8 @@ from utilis import (
     jump_offset,
     processing_Error,
     check_for_error_in_json,
-    # save_api_error,
-    #create_logfile_path,
-    #write_log
 )
-from utilis_logs import create_logfile_path, write_log
+
          
 
 def get_data_all_Reference(
@@ -117,7 +114,7 @@ def get_data_all_Reference(
             
         except Exception as e:
             log(f"{mds_reference}: api called failed \n \
-                   last api endpoint {endpoint} {e}", file=sys.stderr)
+                   last api endpoint {endpoint} {e}")
             write_final_log(final_log_file, log_buffer)
             delete_tmp_logs(tmp_dir)
             return

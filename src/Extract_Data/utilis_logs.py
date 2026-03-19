@@ -38,7 +38,7 @@ def create_log_run_paths(
     log_date = datetime.now().strftime("%Y-%m-%d")
     run_id = f"run_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:6]}"
 
-    base_dir = Path(f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/logs")
+    base_dir = Path(f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}_logs")
     run_dir = base_dir / log_date / run_id
     tmp_dir = run_dir / "tmp_logs"
     final_log_file = run_dir / f"{mds_reference}_final.log"
