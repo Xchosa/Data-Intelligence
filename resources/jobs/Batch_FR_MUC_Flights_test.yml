@@ -13,4 +13,10 @@ resources:
             source: WORKSPACE
       queue:
         enabled: true
+      environments:
+        - environment_key: Default
+          spec:
+            environment_version: "4"
       performance_target: PERFORMANCE_OPTIMIZED
+
+
