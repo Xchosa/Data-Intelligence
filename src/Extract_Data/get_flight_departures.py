@@ -51,17 +51,11 @@ def get_data_flight_depatures(
     operation_type: str,
     operation_subtype: str,
 
-    recordLimit: int, 
-    offset: int,
-
-    save_on_Databricks: bool,
-    local_folder: str,
-    
 	meta_data_key:str,
 	airport_code:str,
-    Date=str,
-	
-    serviceType=str
+    Date:str,
+	offset:int,
+    serviceType:str
 
     ):
 
@@ -110,7 +104,6 @@ def get_data_flight_depatures(
             
             
             json_data = response.json()
-            
             if check_for_error_in_json(json_data, meta_data_key):
                 log(f"API returned JSON error payload, Retry one time , did not get {meta_data_key}")
                 if proxy_error is True:
@@ -119,7 +112,7 @@ def get_data_flight_depatures(
                 proxy_error = True
                 continue
             
-            save_in_Notebooks(FileName_base, json_data, offset, dic)
+            save_in_Notebooks(mds_reference, json_data, offset, dic)
 
             offset = extract_offset_from_endpoint(endpoint)
             endpoint =get_next_endpoint_from_response(json_data, meta_data_key)

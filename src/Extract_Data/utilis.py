@@ -21,7 +21,7 @@ def get_past_date(from_time_block: int) -> str:
     get_past_date(1) → "2026-03-16T01:00" (1 AM)
     """
     date = (datetime.now() - timedelta(1)).replace(hour=from_time_block, minute=0, second=0, microsecond=0)
-    return date.strftime("%Y-%m-%d_%H:%M")
+    return date.strftime("%Y-%m-%dT%H:%M")
    
 
 
@@ -196,19 +196,10 @@ def processing_Error(json_data: dict, meta_data_key: str) ->bool:
     """if "Internal Server Error or prosssing error """
 
     if meta_data_key not in json_data:
-        print(f"Missing meta key: {meta_data_key}", file=sys.stderr)
-
-        save_json_locally(
-            json_data=json_data,
-            base_filename=f"{meta_data_key}error.json",
-            local_folder="errorMessages",
-            offset=0
-                    )
+        print(f"Missing meta key: {meta_data_key}")
         return True
     if json_data.get(meta_data_key, {}) is None:
         return True
-    #if json_data.get("ProcessingErrors", {}):
-    #    return True
     return False
 
 def check_for_error_in_json(json_data: dict, meta_data_key: str) ->bool:
@@ -220,22 +211,4 @@ def check_for_error_in_json(json_data: dict, meta_data_key: str) ->bool:
         return True
     return False
 
-# def save_api_error(json_data: dict,
-#                       meta_data_key: str, 
-#                       directory: str) -> None:
-#     """Save API error response locally or to Databricks"""
-#     if is_databricks_notebook():
-#         save_in_Notebooks(
-#             FileName_base=f"{meta_data_key}error.json",
-#             json_data=json_data,
-#             offset=0,
-#             directory=directory,
-#         )
-#     else:
-#         save_json_locally(
-#             json_data=json_data,
-#             base_filename=f"{meta_data_key}error.json",
-#             local_folder="errorMessages",
-#             offset=0
-#         )
 
