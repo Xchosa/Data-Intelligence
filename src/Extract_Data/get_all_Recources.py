@@ -10,15 +10,15 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 
+from databricks.sdk.runtime import dbutils
+
 from utilis import (
-    is_databricks_notebook,
-    directory_exist,
+    
     update_offset,
     timeout_api_restriction,
     versioning_fileNames,
     loop_until_data_pool_finished,
     reset_timeout_rounds,
-    save_json_locally,
     save_in_Notebooks,
     get_next_endpoint_from_response,
     find_href,
@@ -49,9 +49,7 @@ def get_data_all_Reference(
     
     
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/"
-    FileName_base = f"{mds_reference}"
     endpoint = f"/v1/mds-references/{mds_reference}?limit={recordLimit}&offset={offset}"
-
   
     log_file = create_logfile_path(catalog_name, schema_name, volume_name, mds_reference)
     write_log(log_file, f"START function call | mds_reference={mds_reference} | initial_endpoint={endpoint}")
@@ -90,10 +88,7 @@ def get_data_all_Reference(
             json_data = response.json()
             
             if check_for_error_in_json(json_data, meta_data_key):
-                write_log(log_file, "API returned JSON error payload, Retry one time ")
-                save_api_error(json_data,
-                            meta_data_key,
-                            dir)
+                write_log(f"{log_file}, API returned JSON error payload, Retry one time , did not get {meta_data_key}")
                 if proxy_error is True:
                     write_log(log_file, f"ERROR | missing meta key {meta_data_key}")
                     raise BrokenPipeError
@@ -101,12 +96,7 @@ def get_data_all_Reference(
                 proxy_error = True
                 continue
             
-            if save_on_Databricks:
-                save_in_Notebooks(
-                    mds_reference,
-                    json_data,
-                    offset,
-                    dic)
+            save_in_Notebooks(mds_reference, json_data, offset, dic)
 
             offset = extract_offset_from_endpoint(endpoint)
             endpoint =get_next_endpoint_from_response(json_data, meta_data_key)

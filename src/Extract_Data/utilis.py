@@ -1,6 +1,6 @@
 import requests
 import json
-import os
+
 from datetime import datetime, timedelta
 
 from pathlib import Path
@@ -9,29 +9,21 @@ import uuid
 import time
 from urllib.parse import urlparse, parse_qs
 import sys
+from pathlib import Path
+
+from databricks.sdk import WorkspaceClient
 
 
-def get_past_date(time: int) -> str:
+
+def get_past_date(from_time_block: int) -> str:
     """ takes the time paramter as the starting time 
     e.g. 
     get_past_date(1) → "2026-03-16T01:00" (1 AM)
     """
-    date = (datetime.now() - timedelta(1)).replace(hour=time, minute=0, second=0, microsecond=0)
-    return date.strftime("%Y-%m-%dT%H:%M")
+    date = (datetime.now() - timedelta(1)).replace(hour=from_time_block, minute=0, second=0, microsecond=0)
+    return date.strftime("%Y-%m-%d_%H:%M")
+   
 
-def directory_exist(directory: str) -> bool:
-    try:
-        dbutilis.fs.ls(directory)
-        return True
-    except Exception:
-         return False      
-
-def is_databricks_notebook()->bool:
-    try:
-        dbutils  # noqa: F821
-        return True
-    except NameError:
-        return False
 
 def update_offset(recordLimit: int, offset: int, TotalCount: int)-> str: 
         if recordLimit < TotalCount:
@@ -63,30 +55,6 @@ def reset_timeout_rounds(timeout_rounds:int)->int:
     timeout_rounds = 0
     return timeout_rounds
 
-def save_json_locally(
-    json_data: Any,
-    base_filename: str,
-    offset: int,
-    local_folder: Optional[str] = None,
-    ) -> None:
-    """
-    save json localy 
-    """
-    versioned_filename = versioning_fileNames(base_filename, offset)
-
-    if local_folder is not None:
-        os.makedirs(local_folder, exist_ok=True)
-        file_path = os.path.join(local_folder, versioned_filename)
-    else:
-        file_path = versioned_filename
-
-    with open(file_path, "w", encoding="utf-8") as file:
-        json.dump(json_data, file, indent=2, ensure_ascii=False)
-
-    print(file_path)
-    print(f"saved locally: {file_path}")
-
-
 
 def save_in_Notebooks(FileName_base: str,
                       json_data: Any,
@@ -94,11 +62,12 @@ def save_in_Notebooks(FileName_base: str,
                       directory: str 
     )-> None:
     versioned_filename = versioning_fileNames(FileName_base, offset)
-    if not directory_exist(directory):
-        dbutils.fs.mkdirs(directory)
+    Path(directory).parent.mkdir(parents=True, exist_ok=True)
+         
     file_path = f"{directory}/{versioned_filename}"
     with open (file_path+ ".json", "w") as file:
         json.dump(json_data, file, indent=2)
+    
     print(f"{file_path} saved")
 
 
@@ -251,22 +220,22 @@ def check_for_error_in_json(json_data: dict, meta_data_key: str) ->bool:
         return True
     return False
 
-def save_api_error(json_data: dict,
-                      meta_data_key: str, 
-                      directory: str) -> None:
-    """Save API error response locally or to Databricks"""
-    if is_databricks_notebook():
-        save_in_Notebooks(
-            FileName_base=f"{meta_data_key}error.json",
-            json_data=json_data,
-            offset=0,
-            directory=directory,
-        )
-    else:
-        save_json_locally(
-            json_data=json_data,
-            base_filename=f"{meta_data_key}error.json",
-            local_folder="errorMessages",
-            offset=0
-        )
+# def save_api_error(json_data: dict,
+#                       meta_data_key: str, 
+#                       directory: str) -> None:
+#     """Save API error response locally or to Databricks"""
+#     if is_databricks_notebook():
+#         save_in_Notebooks(
+#             FileName_base=f"{meta_data_key}error.json",
+#             json_data=json_data,
+#             offset=0,
+#             directory=directory,
+#         )
+#     else:
+#         save_json_locally(
+#             json_data=json_data,
+#             base_filename=f"{meta_data_key}error.json",
+#             local_folder="errorMessages",
+#             offset=0
+#         )
 
