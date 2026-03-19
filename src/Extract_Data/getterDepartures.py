@@ -19,47 +19,6 @@ import config
 from databricks.sdk import WorkspaceClient
 
 
-def get_References()->None:
-    
-
-    base_url = "https://lh-proxy.onrender.com"
-    headers = {"password": config.get_lufthansa_secret()}
-    #headers ={"password": dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")}
-
-    catalog_name ="data_catalog"
-    schema_name = "bronze"
-    volume_name = "bronze_volume"
-        
-        
-
-    recordLimit = 100
-    offset =0
-    # save_on_Databricks=True
-    save_on_Databricks=True
-    mds_reference = ["countries", "cities", "airports","airlines", "aircraft"]
-    meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
-    local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
-
-
-
-    for ref, key, folder in zip(mds_reference, meta_data_key, local_folder):
-        get_data_all_Reference(
-            base_Url=base_url,
-            headers=headers,
-                
-            catalog_name=catalog_name,
-            schema_name=schema_name,
-            volume_name=volume_name,
-            mds_reference=ref,
-            recordLimit=recordLimit,
-            offset=offset,
-
-            save_on_Databricks=save_on_Databricks,
-            meta_data_key=key,
-            local_folder=folder
-        )
-
-        
 
 def get_flights()->None:
     
@@ -108,14 +67,3 @@ def get_flights()->None:
            
             )
         
-
-
-
-if __name__ == "__main__":
-    try:
-        get_References()
-        get_flights()
-
-       # get_single_flight_route()
-    except Exception as e:
-        print(f"error {e}")

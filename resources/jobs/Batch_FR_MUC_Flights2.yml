@@ -8,9 +8,8 @@ resources:
         pause_status: UNPAUSED
       tasks:
         - task_key: Batch_all_depatures_FR_MUC
-          notebook_task:
-            notebook_path: /Workspace/Users/paul.overbeck95@gmail.com/Data-Intelligence/Notebook_Databricks/batch_flight_data
-            #python ../../src/Extract_Data/main.py
+          spark_python_task:
+            python_file: ../../src/Extract_Data/getterResource.py
             source: WORKSPACE
       queue:
         enabled: true
