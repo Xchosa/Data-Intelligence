@@ -120,7 +120,7 @@ def get_flights()->None:
 if __name__ == "__main__":
     try:
         get_References()
-        # get_flights()
+        get_flights()
 
        # get_single_flight_route()
     except Exception as e:

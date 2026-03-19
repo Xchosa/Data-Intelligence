@@ -56,21 +56,25 @@ def reset_timeout_rounds(timeout_rounds:int)->int:
     return timeout_rounds
 
 
-def save_in_Notebooks(FileName_base: str,
-                      json_data: Any,
-                      offset:int ,
-                      directory: str 
-    )-> None:
-    versioned_filename = versioning_fileNames(FileName_base, offset)
-    Path(directory).parent.mkdir(parents=True, exist_ok=True)
+# def save_in_Notebooks(FileName_base: str,
+#                       json_data: Any,
+#                       offset:int ,
+#                       directory: str 
+#     )-> None:
+#     versioned_filename = versioning_fileNames(FileName_base, offset)
+#     Path(directory).parent.mkdir(parents=True, exist_ok=True)
          
-    file_path = f"{directory}/{versioned_filename}"
-    with open (file_path+ ".json", "w") as file:
-        json.dump(json_data, file, indent=2)
+#     file_path = f"{directory}/{versioned_filename}"
+#     with open (file_path+ ".json", "w") as file:
+#         json.dump(json_data, file, indent=2)
     
-    print(f"{file_path} saved")
+#     print(f"{file_path} saved")
 
-
+def save_in_Notebooks(file_name, json_data, offset, dic):
+    file_path = Path(dic) / f"{file_name}_{offset}_{uuid.uuid4().hex}.json"
+    file_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(json_data, f)
 
 
 def get_next_endpoint_from_response_flightoperations(json_data: dict, meta_data_key: str) -> Optional[str]:

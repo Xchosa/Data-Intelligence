@@ -111,9 +111,8 @@ def get_data_flight_depatures(
                 time.sleep(10)
                 proxy_error = True
                 continue
-            
-            save_in_Notebooks(mds_reference, json_data, offset, dic)
-
+        
+            save_in_Notebooks(FileName_base, json_data, offset, dic)
             offset = extract_offset_from_endpoint(endpoint)
             endpoint =get_next_endpoint_from_response(json_data, meta_data_key)
             
