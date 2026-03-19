@@ -65,7 +65,8 @@ def get_data_all_Reference(
     while True:
         #print(f"sending request {dummy_count}")
         dummy_count += 1
-        print(f"{base_Url}{endpoint}")
+        print(f" called api:{base_Url}{endpoint}")
+        write_log(log_file, f" called api: {base_Url}{endpoint}")
         try:
             response = requests.get(
                 base_Url + endpoint,
@@ -99,14 +100,6 @@ def get_data_all_Reference(
                 time.sleep(10)
                 proxy_error = True
                 continue
-
-            if not save_on_Databricks:
-                save_json_locally(
-                    json_data=json_data,
-                    base_filename=FileName_base,
-                    local_folder=local_folder,
-                    offset=offset
-                )
             
             if save_on_Databricks:
                 save_in_Notebooks(
