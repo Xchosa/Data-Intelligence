@@ -9,7 +9,8 @@ resources:
       tasks:
         - task_key: Batch_reference_Data
           notebook_task:
-            notebook_path: /Workspace/Users/paul.overbeck95@gmail.com/Data-Intelligence/Notebook_Databricks/Batch_reference_data
+            #notebook_path: /Workspace/Users/paul.overbeck95@gmail.com/Data-Intelligence/Notebook_Databricks/Batch_reference_data
+            notebook_path: ./src/Extract_Data/Batch_reference_data
             source: WORKSPACE
           max_retries: 3
           min_retry_interval_millis: 3600000
