@@ -10,7 +10,7 @@ import time
 
 from get_all_Recources import get_data_all_Reference
 from utilis import get_past_date
-from get_flight_operations import get_flight_route 
+
 from get_flight_departures import get_data_flight_depatures
 
 import config
@@ -66,4 +66,13 @@ def get_flights()->None:
             serviceType=serviceType,
            
             )
+        
+if __name__ == "__main__":
+    try:
+        get_flights()
+
+       # get_single_flight_route()
+    except Exception as e:
+        print(f"error {e}")
+
         
