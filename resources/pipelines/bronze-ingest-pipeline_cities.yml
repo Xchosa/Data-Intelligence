@@ -3,12 +3,17 @@ resources:
     bronze_ingest_pipeline:
       name: bronze-ingest-pipeline
       libraries:
-        - notebook:
+        - file:
             path: ../../src/transformations/bronze_table_cities.py
       schema: bronze
       catalog: data_catalog
       continuous: false
-      development: true
+      development: true # false for production , true for developement
       serverless: true
 
-
+# in databricks.yml
+targets: 
+  dev:
+    default: true
+  prod:
+    mode: production

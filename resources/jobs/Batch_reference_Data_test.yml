@@ -2,6 +2,9 @@ resources:
   jobs:
     get_Reference_data:
       name: get_Reference_data
+      # email_notifications: 
+      #   on_failure:
+      #   paul.overbeck95@gmail.com
       schedule:
         quartz_cron_expression: 49 45 23 * * ?
         timezone_id: Europe/Berlin
@@ -10,6 +13,14 @@ resources:
         - task_key: get_Reference_data_python
           spark_python_task:
             python_file: ../../src/Extract_Data/getterResource.py
+            # parameters:
+            #   - -- catalog
+            #   - ${var.catalog}
+            #   - -- schema
+            #   -  ${var.schema}
+            #   - --volume
+            #   -  ${var.volume}
+
           environment_key: Default
       queue:
         enabled: true
@@ -18,3 +29,5 @@ resources:
           spec:
             environment_version: "4"
       performance_target: PERFORMANCE_OPTIMIZED
+
+
