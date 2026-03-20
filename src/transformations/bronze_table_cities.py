@@ -1,7 +1,7 @@
 
 from pyspark import pipelines as dp
 from pyspark.sql.functions import col
-from pyspark.sql.functions import current_timestamp, input_file_name
+from pyspark.sql.functions import current_timestamp
 
 
 
@@ -27,7 +27,7 @@ if src_root not in sys.path:
 # Now you can import your utils
 
 
-
+from Extract_Data.config import config
 
 path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/cities"
 #together a part of a pipile 

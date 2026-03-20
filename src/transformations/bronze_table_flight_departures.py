@@ -20,6 +20,8 @@ src_root = os.path.abspath(os.path.join(current_dir, '..'))
 
 if src_root not in sys.path:
     sys.path.append(src_root)
+    
+from Extract_Data.config import config
 
 path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/cities"
 path_countries = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/countries"
