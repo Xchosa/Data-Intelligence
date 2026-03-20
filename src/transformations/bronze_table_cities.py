@@ -3,7 +3,7 @@ from pyspark import pipelines as dp
 from pyspark.sql.functions import col
 from pyspark.sql.functions import current_timestamp, input_file_name
 
-from src.Extract_Data.config import config
+
 
 import sys
 import os
