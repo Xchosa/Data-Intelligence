@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    bronze_ingest_pipeline:
+      name: bronze-ingest-pipeline
+      libraries:
+        - notebook:
+            path: ../../src/transformations/bronze_table_cities.py
+      schema: bronze
+      catalog: data_catalog
+      continuous: false
+      development: true
+      serverless: true
+
+

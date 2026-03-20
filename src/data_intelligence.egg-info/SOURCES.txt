@@ -14,5 +14,5 @@ src/data_intelligence.egg-info/SOURCES.txt
 src/data_intelligence.egg-info/dependency_links.txt
 src/data_intelligence.egg-info/requires.txt
 src/data_intelligence.egg-info/top_level.txt
-src/transformations/sample_trips_data_lufthansa.py
-src/transformations/sample_zones_data_lufthansa.py
+src/transformations/bronze_table_cities.py
+src/transformations/resource_table.py

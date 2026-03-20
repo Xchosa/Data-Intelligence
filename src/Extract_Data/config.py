@@ -38,6 +38,12 @@ class Config:
     headers = {"password": get_lufthansa_secret()}
 
 
+    path_cities = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/cities"
+    path_countries = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/countries"
+    path_airports = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/airports"
+    path_airlines = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/airlines"
+    path_aircraft = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/aircraft"
+
 
 
 config = Config()

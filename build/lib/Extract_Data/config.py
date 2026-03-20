@@ -16,6 +16,9 @@ class Config:
     catalog_name ="data_catalog"
     schema_name = "bronze"
     volume_name = "bronze_volume"
+    table_name_1 = "sample_cities"
+
+
     base_url: str = "https://lh-proxy.onrender.com"
     record_limit: int = 100
     offset: int = 0
@@ -34,6 +37,12 @@ class Config:
     serviceType="all"
     headers = {"password": get_lufthansa_secret()}
 
+
+    path_cities = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/cities"
+    path_countries = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/countries"
+    path_airports = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/airports"
+    path_airlines = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/airlines"
+    path_aircraft = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/aircraft"
 
 
 
