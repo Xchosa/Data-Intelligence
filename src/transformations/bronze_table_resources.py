@@ -55,7 +55,7 @@ def register_bronze_table(table_name: str, input_path: str, source_name: str):
         comment=f"Raw {source_name} JSON from Lufthansa landing volume",
         table_properties={"quality": "bronze"},
     )
-    def _table(input_path=input_path):
+    def _table():
         return (
             spark.readStream
             .format("cloudFiles")
@@ -116,4 +116,4 @@ for spec in TABLE_SPECS:
 #             # .toTable("cities_bronze")
 #     )
 
-    
+
