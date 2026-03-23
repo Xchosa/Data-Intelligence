@@ -11,6 +11,7 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 
+from config import config
 
 from utilis_logs import (
     add_log_line,
@@ -62,7 +63,7 @@ def get_data_flight_depatures(
     """ Get FRA departures only """
 
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{Date}/"
-    FileName_base = f"{operation_subtype}_{airport_code}"
+    FileName_base = f"{operation_subtype}_{airport_code}_{config.blocktime}"
     endpoint = f"/v1/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{Date}?serviceType={serviceType}"
     
 

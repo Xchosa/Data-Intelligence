@@ -4,53 +4,9 @@ import time
 from datetime import datetime
 from databricks.sdk import WorkspaceClient
 from dataclasses import dataclass
-from utilis import get_past_date, get_current_date
+import utilis
 
-def get_lufthansa_secret() -> str:
-    try:
-        w = WorkspaceClient()
-        return w.dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")
-    except Exception:
-        print("No secret found")
-        pass
 
-def config_time() -> str:
-    current_time = datetime.now()
-    return current_time.strftime("%H:%M")
-
-def config_departure_time_blocks() -> str:
-    """
-    Returns the current time rounded down to the nearest 4-hour block.
-    Examples:
-    - 03:45 AM -> 00:00
-    - 07:30 AM -> 04:00
-    - 08:15 AM -> 08:00
-    - 15:45 PM -> 12:00
-    - 23:30 PM -> 20:00
-    """
-    current_time = datetime.now()
-    hour = current_time.hour
-    
-    # Round down to nearest 4-hour block
-    block_hour = (hour // 4) * 4
-    return f"{block_hour:02d}:00"
-
-def config_time_blocks() -> int:
-    """
-    Returns the current time rounded down to the nearest 4-hour block.
-    Examples:
-    - 03:45 AM -> 00:00
-    - 07:30 AM -> 04:00
-    - 08:15 AM -> 08:00
-    - 15:45 PM -> 12:00
-    - 23:30 PM -> 20:00
-    """
-    current_time = datetime.now()
-    hour = current_time.hour
-    
-    # Round down to nearest 4-hour block
-    block_hour = (hour // 4) * 4
-    return block_hour
 
 
 @dataclass(frozen=True)
@@ -68,8 +24,8 @@ class Config:
     meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
     
-    Date=get_current_date(config_time_blocks())
-    Time=config_time()
+    Date=utilis.get_current_date(utilis.config_departure_time_blocks())
+    Time=utilis.config_time()
     
     operations="operations"
     operation_type="flightstatus"
@@ -79,7 +35,7 @@ class Config:
     #analyzed airports a, b 
     airport_code=["FRA", "MUC"]
     serviceType="all"
-    headers = {"password": get_lufthansa_secret()}
+    headers = {"password": utilis.get_lufthansa_secret()}
 
 
     path_cities = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/cities"
@@ -96,7 +52,7 @@ class Config:
 
     bronze_table_dep_a=f"bronze_table_depatures_FRA" 
     bronze_table_dep_b=f"bronze_table_depatures_MUC" 
-    blocktime=config_depature_time_blocks()
+    blocktime=utilis.config_time_blocks()
     airport_code_a="FRA"
     airport_code_b="MUC"
     # path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{airport_code_a}_{Date}_{blocktime}"

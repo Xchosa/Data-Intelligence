@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 from databricks.sdk import WorkspaceClient
 from dataclasses import dataclass
-from utilis import get_past_date
+from utilis import get_past_date, get_current_date
 
 def get_lufthansa_secret() -> str:
     try:
@@ -18,7 +18,7 @@ def config_time() -> str:
     current_time = datetime.now()
     return current_time.strftime("%H:%M")
 
-def config_depature_time_blocks() -> str:
+def config_departure_time_blocks() -> str:
     """
     Returns the current time rounded down to the nearest 4-hour block.
     Examples:
@@ -34,6 +34,23 @@ def config_depature_time_blocks() -> str:
     # Round down to nearest 4-hour block
     block_hour = (hour // 4) * 4
     return f"{block_hour:02d}:00"
+
+def config_time_blocks() -> int:
+    """
+    Returns the current time rounded down to the nearest 4-hour block.
+    Examples:
+    - 03:45 AM -> 00:00
+    - 07:30 AM -> 04:00
+    - 08:15 AM -> 08:00
+    - 15:45 PM -> 12:00
+    - 23:30 PM -> 20:00
+    """
+    current_time = datetime.now()
+    hour = current_time.hour
+    
+    # Round down to nearest 4-hour block
+    block_hour = (hour // 4) * 4
+    return block_hour
 
 
 @dataclass(frozen=True)
@@ -51,7 +68,7 @@ class Config:
     meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
     
-    Date=get_past_date(from_time_block=0)
+    Date=get_current_date(config_time_blocks())
     Time=config_time()
     
     operations="operations"
