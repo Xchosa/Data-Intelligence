@@ -3,8 +3,10 @@ import os
 import time
 from datetime import datetime
 from databricks.sdk import WorkspaceClient
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import utilis
+
+
 
 
 
@@ -14,7 +16,7 @@ class Config:
     catalog_name ="data_catalog"
     schema_name = "bronze"
     volume_name = "bronze_volume"
-    meta_valume= "volume"
+    meta_valume= "autoload_metadata"
 
 
     base_url: str = "https://lh-proxy.onrender.com"
@@ -25,6 +27,7 @@ class Config:
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
     
     Date=utilis.get_current_date(utilis.config_time_blocks())
+    departure_Date = utilis.get_flight_departure_date()
     Time=utilis.config_time()
     
     operations="operations"
@@ -68,6 +71,45 @@ class Config:
 
     silver_table_dep_a= f"silver_table_departures_FRA"
     silver_table_dep_b= f"silver_table_depatures_MUC"
+
+
+    table_specs: list = field(default_factory=lambda: [
+        {
+            "name": "countries_bronze",
+            "config_name": "bronze_table_countries",
+            "path": "/Volumes/data_catalog/bronze/bronze_volume/countries",
+            "reference": "countries",
+            "comment": "Raw countries JSON from Lufthansa landing volume",
+        },
+        {
+            "name": "cities_bronze",
+            "config_name": "bronze_table_cities",
+            "path": "/Volumes/data_catalog/bronze/bronze_volume/cities",
+            "reference": "cities",
+            "comment": "Raw cities JSON from Lufthansa landing volume",
+        },
+        {
+            "name": "airports_bronze",
+            "config_name": "bronze_table_airports",
+            "path": "/Volumes/data_catalog/bronze/bronze_volume/airports",
+            "reference": "airports",
+            "comment": "Raw airports JSON from Lufthansa landing volume",
+        },
+        {
+            "name": "airlines_bronze",
+            "config_name": "bronze_table_airlines",
+            "path": "/Volumes/data_catalog/bronze/bronze_volume/airlines",
+            "reference": "airlines",
+            "comment": "Raw airlines JSON from Lufthansa landing volume",
+        },
+        {
+            "name": "aircraft_bronze",
+            "config_name": "bronze_table_aircrafts",
+            "path": "/Volumes/data_catalog/bronze/bronze_volume/aircraft",
+            "reference": "aircraft",
+            "comment": "Raw aircraft JSON from Lufthansa landing volume",
+        },
+    ])
 
 config = Config()
 

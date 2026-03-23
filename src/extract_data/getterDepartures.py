@@ -36,7 +36,7 @@ def get_flights()->None:
             
             meta_data_key=config.meta_data_key_flight,
             airport_code=airport,
-            Date=config.Date,
+            Date=config.departure_Date,
             offset=config.offset,
             serviceType=config.serviceType,
            

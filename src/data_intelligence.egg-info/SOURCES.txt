@@ -13,7 +13,6 @@ src/data_intelligence.egg-info/SOURCES.txt
 src/data_intelligence.egg-info/dependency_links.txt
 src/data_intelligence.egg-info/requires.txt
 src/data_intelligence.egg-info/top_level.txt
-src/extract_data/bronze_table_cities.py
 src/extract_data/bronze_table_flight_departures.py
 src/extract_data/bronze_table_resources.py
 src/extract_data/config.py

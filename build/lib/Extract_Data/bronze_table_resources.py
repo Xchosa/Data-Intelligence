@@ -18,145 +18,154 @@ import os
 # if src_root not in sys.path:
 #     sys.path.append(src_root)
 
-from config import config
+# from config import config
 
-# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
-# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};"),
-# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};"),
-# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};"),
-# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};"),
+# ["countries", "cities", "airports","airlines", "aircraft"]
 
-@dp.table(
-    # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
-    name=config.bronze_table_cities,
-    comment="Raw countries JSON from Lufthansa landing volume",
-    table_properties={"quality": "bronze"},
-)
-def countries_bronze():
+
+# def build_schema_location(reference:str) -> str:
+#     return (
+#         f"/Volumes/{config.catalog_name}/"
+#         f"{config.schema_name}/"
+#         f"{config.meta_valume}/"
+#         f"{reference}/"
+#         f"schema"
+#         )
+
+
+
+# @dp.table(
+#     # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
+#     name=config.bronze_table_countries,
+#     comment="Raw countries JSON from Lufthansa landing volume",
+#     table_properties={"quality": "bronze"},
+# )
+# def countries_bronze():
+#     schema_location = build_schema_location(config.mds_reference[1])
+#     df = (
+#         spark.readStream
+#         .format("cloudFiles")
+#         .option("cloudFiles.format", "json")
+
+#         .option("multiLine", "true") # only here
+#         .option("cloudFiles.inferColumnTypes", "true")
+#         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+        
+#         .option("cloudFiles.schemaLocation", schema_location)
+#         .load(config.path_cities)
+#         .withColumn("_source_file", col("_metadata.file_path"))
+#         .withColumn("_ingested_at", current_timestamp())
+#     )
+
+#     # add country-specific transformations here
+#     # df = df.withColumn(...)
+
+#     return df
+
+
+
+
+# @dp.table(
+#     # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};"),
+#     name=config.bronze_table_countries,
+#     comment="Raw cities JSON from Lufthansa landing volume",
+#     table_properties={"quality": "bronze"},
+# )
+# def cities_bronze():
     
-    df = (
-        spark.readStream
-        .format("cloudFiles")
-        .option("cloudFiles.format", "json")
+#     df = (
+#         spark.readStream
+#         .format("cloudFiles")
+#         .option("cloudFiles.format", "json")
 
-        .option("multiLine", "true") # only here
-        .option("cloudFiles.inferColumnTypes", "true")
-        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-        # .option("cloudFiles.schemaHints", "time str")
-        .load(config.path_cities)
-        .withColumn("_source_file", col("_metadata.file_path"))
-        .withColumn("_ingested_at", current_timestamp())
-    )
+#         .option("multiLine", "true")
+#         .option("cloudFiles.inferColumnTypes", "true")
+#         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+#         .load(config.path_countries)
+#         .withColumn("_source_file", col("_metadata.file_path"))
+#         .withColumn("_ingested_at", current_timestamp())
+#     )
 
-    # add country-specific transformations here
-    # df = df.withColumn(...)
+#     # add city-specific transformations here
+#     # df = df.withColumn(...)
 
-    return df
-
+#     return df
 
 
+# @dp.table(
+#     # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};"),
+#     name=config.bronze_table_airports,
+#     comment="Raw airports JSON from Lufthansa landing volume",
+#     table_properties={"quality": "bronze"},
+# )
+# def airports_bronze():
+#     df = (
+#         spark.readStream
+#         .format("cloudFiles")
+#         .option("cloudFiles.format", "json")
+#         .option("multiLine", "true")
+#         .option("cloudFiles.inferColumnTypes", "true")
+#         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+#         .load(config.path_airports)
+#         .withColumn("_source_file", col("_metadata.file_path"))
+#         .withColumn("_ingested_at", current_timestamp())
+#     )
 
-@dp.table(
-    # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};"),
-    name=config.bronze_table_countries,
-    comment="Raw cities JSON from Lufthansa landing volume",
-    table_properties={"quality": "bronze"},
-)
-def cities_bronze():
-    
-    df = (
-        spark.readStream
-        .format("cloudFiles")
-        .option("cloudFiles.format", "json")
+#     # add airport-specific transformations here
+#     # df = df.withColumn(...)
 
-        .option("multiLine", "true")
-        .option("cloudFiles.inferColumnTypes", "true")
-        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-        .load(config.path_countries)
-        .withColumn("_source_file", col("_metadata.file_path"))
-        .withColumn("_ingested_at", current_timestamp())
-    )
-
-    # add city-specific transformations here
-    # df = df.withColumn(...)
-
-    return df
+#     return df
 
 
-@dp.table(
-    # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};"),
-    name=config.bronze_table_airports,
-    comment="Raw airports JSON from Lufthansa landing volume",
-    table_properties={"quality": "bronze"},
-)
-def airports_bronze():
-    df = (
-        spark.readStream
-        .format("cloudFiles")
-        .option("cloudFiles.format", "json")
-        .option("multiLine", "true")
-        .option("cloudFiles.inferColumnTypes", "true")
-        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-        .load(config.path_airports)
-        .withColumn("_source_file", col("_metadata.file_path"))
-        .withColumn("_ingested_at", current_timestamp())
-    )
+# @dp.table(
+#     # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};"),
+#     name=config.bronze_table_airlines,
+#     comment="Raw airlines JSON from Lufthansa landing volume",
+#     table_properties={"quality": "bronze"},
+# )
+# def airlines_bronze():
+#     df = (
+#         spark.readStream
+#         .format("cloudFiles")
+#         .option("cloudFiles.format", "json")
+#         .option("multiLine", "true")
+#         .option("cloudFiles.interColumnTypes", "true")
+#         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+#         .load(config.path_airlines)
+#         .withColumn("_source_file", col("_metadata.file_path"))
+#         .withColumn("_ingested_at", current_timestamp())
+#     )
 
-    # add airport-specific transformations here
-    # df = df.withColumn(...)
+#     # add airline-specific transformations here
+#     # df = df.withColumn(...)
 
-    return df
-
-
-@dp.table(
-    # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};"),
-    name=config.bronze_table_airlines,
-    comment="Raw airlines JSON from Lufthansa landing volume",
-    table_properties={"quality": "bronze"},
-)
-def airlines_bronze():
-    df = (
-        spark.readStream
-        .format("cloudFiles")
-        .option("cloudFiles.format", "json")
-        .option("multiLine", "true")
-        .option("cloudFiles.interColumnTypes", "true")
-        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-        .load(config.path_airlines)
-        .withColumn("_source_file", col("_metadata.file_path"))
-        .withColumn("_ingested_at", current_timestamp())
-    )
-
-    # add airline-specific transformations here
-    # df = df.withColumn(...)
-
-    return df
+#     return df
 
 
-@dp.table(
-    # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};"),
-    name=config.bronze_table_aircrafts,
-    comment="Raw aircraft JSON from Lufthansa landing volume",
-    table_properties={"quality": "bronze"},
-)
-def aircraft_bronze():
-    df = (
-        spark.readStream
-        .format("cloudFiles")
-        .option("cloudFiles.format", "json")
+# @dp.table(
+#     # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};"),
+#     name=config.bronze_table_aircrafts,
+#     comment="Raw aircraft JSON from Lufthansa landing volume",
+#     table_properties={"quality": "bronze"},
+# )
+# def aircraft_bronze():
+#     df = (
+#         spark.readStream
+#         .format("cloudFiles")
+#         .option("cloudFiles.format", "json")
 
-        .option("multiLine", "true")
-        .option("cloudFiles.inferColumnTypes", "true")
-        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-        .load(config.path_aircraft)
-        .withColumn("_source_file", col("_metadata.file_path"))
-        .withColumn("_ingested_at", current_timestamp())
-    )
+#         .option("multiLine", "true")
+#         .option("cloudFiles.inferColumnTypes", "true")
+#         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+#         .load(config.path_aircraft)
+#         .withColumn("_source_file", col("_metadata.file_path"))
+#         .withColumn("_ingested_at", current_timestamp())
+#     )
 
-    # add aircraft-specific transformations here
-    # df = df.withColumn(...)
+#     # add aircraft-specific transformations here
+#     # df = df.withColumn(...)
 
-    return df
+#     return df
 
 # spark.sql(f"""
 # CREATE TABLE current_employees_ctas
@@ -196,3 +205,89 @@ def aircraft_bronze():
 #     )
 
 
+
+from pyspark import pipelines as dp
+from pyspark.sql.functions import col, current_timestamp
+
+from config import config
+
+
+# Define table specifications
+# TABLE_SPECS = [
+#     {
+#         "name": "countries_bronze",
+#         "config_name": "bronze_table_countries",
+#         "path": config.path_countries,
+#         "reference": "countries",
+#         "comment": "Raw countries JSON from Lufthansa landing volume",
+#     },
+#     {
+#         "name": "cities_bronze",
+#         "config_name": "bronze_table_cities",
+#         "path": config.path_cities,
+#         "reference": "cities",
+#         "comment": "Raw cities JSON from Lufthansa landing volume",
+#     },
+#     {
+#         "name": "airports_bronze",
+#         "config_name": "bronze_table_airports",
+#         "path": config.path_airports,
+#         "reference": "airports",
+#         "comment": "Raw airports JSON from Lufthansa landing volume",
+#     },
+#     {
+#         "name": "airlines_bronze",
+#         "config_name": "bronze_table_airlines",
+#         "path": config.path_airlines,
+#         "reference": "airlines",
+#         "comment": "Raw airlines JSON from Lufthansa landing volume",
+#     },
+#     {
+#         "name": "aircraft_bronze",
+#         "config_name": "bronze_table_aircrafts",
+#         "path": config.path_aircraft,
+#         "reference": "aircraft",
+#         "comment": "Raw aircraft JSON from Lufthansa landing volume",
+#     },
+# ]
+
+
+def build_schema_location(reference: str) -> str:
+    """Build schema location for a given reference type"""
+    return (
+        f"/Volumes/{config.catalog_name}/"
+        f"{config.schema_name}/"
+        f"{config.meta_valume}/"
+        f"{reference}/"
+        f"schema"
+    )
+
+
+def create_bronze_table(spec: dict):
+    """Factory function to create bronze tables dynamically"""
+    @dp.table(
+        name=spec["config_name"],
+        comment=spec["comment"],
+        table_properties={"quality": "bronze"},
+    )
+    def _bronze_table():
+        schema_location = build_schema_location(spec["reference"])
+        return (
+            spark.readStream
+            .format("cloudFiles")
+            .option("cloudFiles.format", "json")
+            .option("multiLine", "true")
+            .option("cloudFiles.inferColumnTypes", "true")
+            .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+            .option("cloudFiles.schemaLocation", schema_location)
+            .load(spec["path"])
+            .withColumn("_source_file", col("_metadata.file_path"))
+            .withColumn("_ingested_at", current_timestamp())
+        )
+    
+    return _bronze_table
+
+
+# Dynamically create all tables
+for spec in config.table_specs:
+    globals()[spec["name"]] = create_bronze_table(spec)

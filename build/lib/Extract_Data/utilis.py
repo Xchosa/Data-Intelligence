@@ -12,6 +12,8 @@ import sys
 from pathlib import Path
 from databricks.sdk import WorkspaceClient
 
+
+
 def get_lufthansa_secret() -> str:
     try:
         w = WorkspaceClient()
@@ -19,6 +21,34 @@ def get_lufthansa_secret() -> str:
     except Exception:
         print("No secret found")
         pass
+
+def get_flight_departure_date() -> str:
+    """
+    Returns the date for the last complete 4-hour block.
+    
+    Examples:
+    - Current time 04:00 → "2026-03-23T00:00" (yesterday 00:00-04:00)
+    - Current time 08:00 → "2026-03-23T04:00" (today 04:00-08:00)
+    - Current time 12:00 → "2026-03-23T08:00" (today 08:00-12:00)
+    - Current time 20:00 → "2026-03-23T16:00" (today 16:00-20:00)
+    - Current time 00:15 → "2026-03-22T20:00" (yesterday 20:00-00:00)
+    """
+    now = datetime.now()
+    current_hour = now.hour
+    
+    # Calculate which 4-hour block we're in and get the start of the PREVIOUS block
+    block_hour = (current_hour // 4) * 4
+    start_of_previous_block = block_hour - 4
+    
+    # If start_of_previous_block is negative, we need yesterday's date
+    if start_of_previous_block < 0:
+        date = now - timedelta(days=1)
+        start_of_previous_block = 20  # 20:00 yesterday
+    else:
+        date = now
+    
+    return date.replace(hour=start_of_previous_block, minute=0, second=0, microsecond=0).strftime("%Y-%m-%dT%H:%M")
+
 
 def config_time() -> str:
     current_time = datetime.now()

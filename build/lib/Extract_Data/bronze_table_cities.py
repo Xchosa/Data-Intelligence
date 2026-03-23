@@ -21,12 +21,12 @@ import os
 from config import config
 
 
-def build_schema_location() -> str:
+def build_schema_location(directory:str ) -> str:
     return (
         f"/Volumes/{config.catalog_name}/"
         f"{config.schema_name}/"
         f"{config.meta_valume}/"
-        f"cities/"
+        f"{directory}/"
         f"schema"
     )
 
@@ -38,9 +38,8 @@ def build_schema_location() -> str:
     table_properties={"quality": "bronze"},
 )
 def build_stream():
-    # source_path = config.path_cities
-    schema_location = build_schema_location()
-    print(schema_location)
+    schema_location = build_schema_location(config.mds_reference[0])
+    
     # df = (
     #     spark.readStream
     #     .format("cloudFiles")

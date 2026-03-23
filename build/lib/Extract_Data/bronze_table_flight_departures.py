@@ -28,6 +28,16 @@ from config import config
 # erstmal nur mit 2 testen 
 
 
+def build_schema_location(reference: str) -> str:
+    """Build schema location for a given reference type"""
+    return (
+        f"/Volumes/{config.catalog_name}/"
+        f"{config.schema_name}/"
+        f"{config.meta_valume}/"
+        f"{reference}/"
+        f"schema"
+    )
+
 
 @dp.table(
     name=config.bronze_table_dep_a,
@@ -35,7 +45,7 @@ from config import config
     table_properties={"quality": "bronze"}, 
 )
 def departure_bronze():
-    
+    schema_location = build_schema_location(config.airport_code_a)
     df = (
         spark.readStream
         .format("cloudFiles")
@@ -44,6 +54,7 @@ def departure_bronze():
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
     #    .option("cloudFiles.schemaHints", "time int") collomn time as int
+        .option("cloudFiles.schemaLocation", schema_location)
         .load(config.path_depature_airport_a)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
@@ -60,7 +71,7 @@ def departure_bronze():
     table_properties={"quality": "bronze"}, 
 )
 def departure_bronze():
-    
+    schema_location = build_schema_location(config.airport_code_b)
     df = (
         spark.readStream
         .format("cloudFiles")
@@ -68,6 +79,7 @@ def departure_bronze():
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
        # .option("cloudFiles.schemaHints", "time int") collomn time as int
+        .option("cloudFiles.schemaLocation", schema_location)
         .load(config.path_depature_airport_b)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
