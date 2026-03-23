@@ -20,11 +20,11 @@ import os
 
 from config import config
 
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};"),
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};"),
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};"),
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};"),
+# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
+# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};"),
+# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};"),
+# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};"),
+# spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};"),
 
 @dp.table(
     # spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
@@ -38,6 +38,7 @@ def countries_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        # .option("cloudFiles.schemaHints", "time str")
         .load(config.path_cities)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())

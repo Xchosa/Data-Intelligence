@@ -88,3 +88,7 @@ class Config:
 
 config = Config()
 
+
+
+# @dataclass(frozen=True)
+# class Schema:

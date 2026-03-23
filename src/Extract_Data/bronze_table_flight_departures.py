@@ -40,7 +40,7 @@ def departure_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
-       # .option("cloudFiles.schemaHints", "time int") collomn time as int
+    #    .option("cloudFiles.schemaHints", "time int") collomn time as int
         .load(config.path_depature_airport_a)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
