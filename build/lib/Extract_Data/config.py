@@ -51,7 +51,7 @@ class Config:
     meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
     
-    Date=get_past_date(from_time_block=0),
+    Date=get_past_date(from_time_block=0)
     Time=config_time()
     
     operations="operations"

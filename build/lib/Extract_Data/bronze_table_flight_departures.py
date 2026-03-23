@@ -40,6 +40,7 @@ def departure_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
     #    .option("cloudFiles.schemaHints", "time int") collomn time as int

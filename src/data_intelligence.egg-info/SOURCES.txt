@@ -16,6 +16,7 @@ src/data_intelligence.egg-info/top_level.txt
 src/extract_data/bronze_table_flight_departures.py
 src/extract_data/bronze_table_resources.py
 src/extract_data/config.py
+src/extract_data/drop_tables.py
 src/extract_data/get_all_Recources.py
 src/extract_data/get_flight_departures.py
 src/extract_data/getterDepartures.py

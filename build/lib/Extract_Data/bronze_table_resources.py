@@ -68,6 +68,8 @@ def cities_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+
+        .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_countries)
@@ -92,6 +94,7 @@ def airports_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_airports)
@@ -116,6 +119,7 @@ def airlines_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
         .option("cloudFiles.interColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_airlines)
@@ -140,6 +144,8 @@ def aircraft_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+
+        .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_aircraft)
