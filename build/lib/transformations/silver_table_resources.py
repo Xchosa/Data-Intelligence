@@ -36,6 +36,7 @@ path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volu
         comment="Raw countries JSON from Lufthansa landing volume",
         table_properties={"quality": "bronze"}
 )
+@dp.expect_or_drop("non_negative_amount", "amount >=0")
 def cities_bronze():
     return (
         spark.readStream

@@ -14,7 +14,7 @@ class Config:
     catalog_name ="data_catalog"
     schema_name = "bronze"
     volume_name = "bronze_volume"
-    table_name_1 = "sample_cities"
+    meta_valume= "volume"
 
 
     base_url: str = "https://lh-proxy.onrender.com"
