@@ -24,7 +24,7 @@ class Config:
     meta_data_key = ["CountryResource", "CityResource", "AirportResource","AirlineResource", "AircraftResource"]
     local_folder = ["Countries", "Cities", "Airports","Airlines", "Aircrafts"]
     
-    Date=utilis.get_current_date(utilis.config_departure_time_blocks())
+    Date=utilis.get_current_date(utilis.config_time_blocks())
     Time=utilis.config_time()
     
     operations="operations"

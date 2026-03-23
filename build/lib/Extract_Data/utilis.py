@@ -10,10 +10,53 @@ import time
 from urllib.parse import urlparse, parse_qs
 import sys
 from pathlib import Path
-
 from databricks.sdk import WorkspaceClient
 
+def get_lufthansa_secret() -> str:
+    try:
+        w = WorkspaceClient()
+        return w.dbutils.secrets.get(scope="lufthansa-api", key="LUFTHANSA_SECRET")
+    except Exception:
+        print("No secret found")
+        pass
 
+def config_time() -> str:
+    current_time = datetime.now()
+    return current_time.strftime("%H:%M")
+
+def config_departure_time_blocks() -> str:
+    """
+    Returns the current time rounded down to the nearest 4-hour block.
+    Examples:
+    - 03:45 AM -> 00:00
+    - 07:30 AM -> 04:00
+    - 08:15 AM -> 08:00
+    - 15:45 PM -> 12:00
+    - 23:30 PM -> 20:00
+    """
+    current_time = datetime.now()
+    hour = current_time.hour
+    
+    # Round down to nearest 4-hour block
+    block_hour = (hour // 4) * 4
+    return f"{block_hour:02d}:00"
+
+def config_time_blocks() -> int:
+    """
+    Returns the current time rounded down to the nearest 4-hour block.
+    Examples:
+    - 03:45 AM -> 00:00
+    - 07:30 AM -> 04:00
+    - 08:15 AM -> 08:00
+    - 15:45 PM -> 12:00
+    - 23:30 PM -> 20:00
+    """
+    current_time = datetime.now()
+    hour = current_time.hour
+    
+    # Round down to nearest 4-hour block
+    block_hour = (hour // 4) * 4
+    return block_hour
 
 def get_past_date(from_time_block: int) -> str:
     """ takes the time paramter as the starting time 

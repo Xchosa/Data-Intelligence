@@ -11,3 +11,8 @@ databricks bundle deploy -t dev
 
 databricks bundle validate -t prod
 databricks bundle deploy -t prod
+
+
+
+every 4 hours the flight departures of FRA und MUC get extracted 
+since the data comes in 4 hours blocks 
