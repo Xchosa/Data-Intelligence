@@ -82,9 +82,19 @@ class Config:
     blocktime=config_depature_time_blocks()
     airport_code_a="FRA"
     airport_code_b="MUC"
-    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{airport_code_a}_{Date}_{blocktime}"
-    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{airport_code_b}_{Date}_{blocktime}"
+    # path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{airport_code_a}_{Date}_{blocktime}"
+    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{Date}/"
+    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{Date}/"
 
+
+    silver_table_cities=f"silver_table_cities"
+    silver_table_countries=f"silver_table_countries"
+    silver_table_airlines=f"silver_table_airlines"
+    silver_table_airports=f"silver_table_airports"
+    silver_table_aircrafts=f"silver_table_aircrafts"
+
+    silver_table_dep_a= f"silver_table_departures_FRA"
+    silver_table_dep_b= f"silver_table_depatures_MUC"
 
 config = Config()
 

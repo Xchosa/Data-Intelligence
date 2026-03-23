@@ -23,4 +23,4 @@ src/extract_data/getterResource.py
 src/extract_data/main.py
 src/extract_data/utilis.py
 src/extract_data/utilis_logs.py
-src/transformations/bronze_table_cities.py
+src/transformations/silver_table_resources.py

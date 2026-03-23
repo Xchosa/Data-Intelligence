@@ -27,7 +27,7 @@ if src_root not in sys.path:
 # Now you can import your utils
 
 
-from Extract_Data.config import config
+from extract_data.config import config
 
 path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/cities"
 #together a part of a pipile 

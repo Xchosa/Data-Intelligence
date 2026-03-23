@@ -40,6 +40,9 @@ def departure_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
     #    .option("cloudFiles.schemaHints", "time int") collomn time as int
         .load(config.path_depature_airport_a)
         .withColumn("_source_file", col("_metadata.file_path"))
@@ -62,6 +65,8 @@ def departure_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
        # .option("cloudFiles.schemaHints", "time int") collomn time as int
         .load(config.path_depature_airport_b)
         .withColumn("_source_file", col("_metadata.file_path"))

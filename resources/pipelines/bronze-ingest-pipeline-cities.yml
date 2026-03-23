@@ -1,10 +1,10 @@
 resources:
   pipelines:
-    bronze_ingest_pipeline_test:
-      name: bronze-ingest-pipeline-test
+    silver_ingest_pipeline_recources:
+      name: silver-ingest-pipeline-resources.yml
       libraries:
         - file:
-            path: ../../src/transformations/bronze_table_cities.py
+            path: ../../src/transformations/silver_table_resources.py
       schema: bronze
       catalog: data_catalog
       continuous: false

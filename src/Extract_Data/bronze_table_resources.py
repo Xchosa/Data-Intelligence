@@ -38,6 +38,10 @@ def countries_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+
+        .option("multiLine", "true") # only here
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         # .option("cloudFiles.schemaHints", "time str")
         .load(config.path_cities)
         .withColumn("_source_file", col("_metadata.file_path"))
@@ -64,6 +68,10 @@ def cities_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+
+        .option("multiLine", "true")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_countries)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
@@ -86,6 +94,9 @@ def airports_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_airports)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
@@ -108,6 +119,9 @@ def airlines_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
+        .option("cloudFiles.interColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_airlines)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
@@ -130,6 +144,10 @@ def aircraft_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+
+        .option("multiLine", "true")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .load(config.path_aircraft)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
