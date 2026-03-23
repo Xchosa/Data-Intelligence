@@ -1,7 +1,7 @@
 resources:
   pipelines:
-    bronze_ingest_pipeline:
-      name: bronze-ingest-pipeline
+    bronze_ingest_pipeline_test:
+      name: bronze-ingest-pipeline-test
       libraries:
         - file:
             path: ../../src/transformations/bronze_table_cities.py

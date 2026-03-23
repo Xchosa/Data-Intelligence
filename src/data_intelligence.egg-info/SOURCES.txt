@@ -15,4 +15,5 @@ src/data_intelligence.egg-info/dependency_links.txt
 src/data_intelligence.egg-info/requires.txt
 src/data_intelligence.egg-info/top_level.txt
 src/transformations/bronze_table_cities.py
-src/transformations/resource_table.py
+src/transformations/bronze_table_flight_departures.py
+src/transformations/bronze_table_resources.py

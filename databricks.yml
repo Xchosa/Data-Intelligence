@@ -46,3 +46,24 @@ targets:
     permissions:
       - user_name: paul.overbeck95@gmail.com
         level: CAN_MANAGE
+
+
+
+# if catalog names get managed to changed 
+
+# targets:
+#   dev:
+#     default: true
+#     mode: development
+#     variables:
+#       # catalog: data_catalog_dev
+#      # catalog: data_lufthansa
+#       schema: bronze_dev
+#       volume: bronze_volume_dev
+
+#   prod:
+#     mode: production
+#     variables:
+#       catalog: data_catalog_prod
+#       schema: bronze
+#       volume: bronze_volume

@@ -1,0 +1,19 @@
+resources:
+  pipelines:
+    bronze_ingest_pipeline_recources:
+      name: bronze-ingest-pipeline-resources.yml
+      libraries:
+        - file:
+            path: ../../src/transformations/bronze_table_resources.py
+      schema: bronze
+      catalog: data_catalog
+      continuous: false
+      development: true # false for production , true for developement
+      serverless: true
+
+# in databricks.yml
+targets: 
+  dev:
+    default: true
+  prod:
+    mode: production
