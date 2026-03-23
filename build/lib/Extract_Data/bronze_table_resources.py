@@ -20,22 +20,12 @@ import os
 
 from config import config
 
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};")
-
-
-
-
 @dp.table(
     name="countries_bronze",
     comment="Raw countries JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
 def countries_bronze():
-    
     df = (
         spark.readStream
         .format("cloudFiles")
@@ -51,15 +41,12 @@ def countries_bronze():
     return df
 
 
-
-
 @dp.table(
     name="cities_bronze",
     comment="Raw cities JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
 def cities_bronze():
-    
     df = (
         spark.readStream
         .format("cloudFiles")
