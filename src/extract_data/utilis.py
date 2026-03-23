@@ -23,6 +23,13 @@ def get_past_date(from_time_block: int) -> str:
     date = (datetime.now() - timedelta(1)).replace(hour=from_time_block, minute=0, second=0, microsecond=0)
     return date.strftime("%Y-%m-%dT%H:%M")
    
+def get_current_date(from_time_block: int) -> str:
+    """ takes the time paramter as the starting time 
+    e.g. 
+    get_past_date(1) → "2026-03-16T01:00" (1 AM)
+    """
+    date = (datetime.now() - timedelta(0)).replace(hour=from_time_block, minute=0, second=0, microsecond=0)
+    return date.strftime("%Y-%m-%dT%H:%M")
 
 
 def update_offset(recordLimit: int, offset: int, TotalCount: int)-> str: 

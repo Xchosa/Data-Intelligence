@@ -12,7 +12,7 @@ resources:
       tasks:
         - task_key: get_Reference_data_python
           spark_python_task:
-            python_file: ../../src/Extract_Data/getterResource.py
+            python_file: ../../src/extract_data/getterResource.py
             # parameters:
             #   - -- catalog
             #   - ${var.catalog}
