@@ -20,17 +20,12 @@ import os
 
 from config import config
 
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};")
-spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};")
-
 
 
 
 @dp.table(
-    name="countries_bronze",
+    spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_cities};"),
+    name=config.bronze_table_cities,
     comment="Raw countries JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
@@ -40,7 +35,7 @@ def countries_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
-        .load(config.path_countries)
+        .load(config.path_cities)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
     )
@@ -54,7 +49,8 @@ def countries_bronze():
 
 
 @dp.table(
-    name="cities_bronze",
+    spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_countries};"),
+    name=config.bronze_table_countries,
     comment="Raw cities JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
@@ -64,7 +60,7 @@ def cities_bronze():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
-        .load(config.path_cities)
+        .load(config.path_countries)
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
     )
@@ -76,7 +72,8 @@ def cities_bronze():
 
 
 @dp.table(
-    name="airports_bronze",
+    spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airports};"),
+    name=config.bronze_table_airports,
     comment="Raw airports JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
@@ -97,7 +94,8 @@ def airports_bronze():
 
 
 @dp.table(
-    name="airlines_bronze",
+    spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_airlines};"),
+    name=config.bronze_table_airlines,
     comment="Raw airlines JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
@@ -118,7 +116,8 @@ def airlines_bronze():
 
 
 @dp.table(
-    name="aircraft_bronze",
+    spark.sql(f"DROP TABLE IF EXISTS {config.bronze_table_aircrafts};"),
+    name=config.bronze_table_aircrafts,
     comment="Raw aircraft JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"},
 )
