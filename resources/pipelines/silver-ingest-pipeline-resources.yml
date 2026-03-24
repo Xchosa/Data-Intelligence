@@ -1,7 +1,7 @@
 resources:
   pipelines:
-    silver_ingest_pipeline_TEST:
-      name: silver-ingest-pipeline-resource_test.yml
+    silver_ingest_pipeline:
+      name: silver-ingest-pipeline-resource.yml
       libraries:
         - file:
             path: ../../src/transformations/silver_tables_resourcesTEST.py

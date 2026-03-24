@@ -1,9 +1,16 @@
 # all hard coded values try:
 import os
+import sys
 import time
 from datetime import datetime
 from databricks.sdk import WorkspaceClient
 from dataclasses import dataclass, field
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
+
 import utilis
 
 
@@ -64,18 +71,20 @@ class Config:
     path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
 
 
-    silver_table_cities=f"silver_cities"
-    silver_table_countries=f"silver_countries"
-    silver_table_airlines=f"silver_airlines"
-    silver_table_airports=f"silver_airports"
-    silver_table_aircrafts=f"silver_aircrafts"
+    silver_table_cities: str = "silver_cities"
+    silver_table_countries: str = "silver_countries"
+    silver_table_airlines: str = "silver_airlines"
+    silver_table_airports: str = "silver_airports"
+    silver_table_aircrafts: str = "silver_aircrafts"
 
-    silver_countries_comment="Cleaned countries dimension from bronze countries data",
-   
-
-
-    silver_table_dep_a= f"silver_table_departures_FRA"
-    silver_table_dep_b= f"silver_table_depatures_MUC"
+    silver_cities_comment: str = "Cleaned cities dimension from bronze cities data"
+    silver_countries_comment: str = "Cleaned countries dimension from bronze countries data"
+    silver_airlines_comment: str = "Cleaned airlines dimension from bronze airlines data"
+    silver_airports_comment: str = "Cleaned airports dimension from bronze airports data"
+    silver_aircrafts_comment: str = "Cleaned aircraft dimension from bronze aircraft data"
+    
+    silver_table_dep_a: str = "silver_table_departures_FRA"
+    silver_table_dep_b: str = "silver_table_depatures_MUC"
 
 
     table_specs: list = field(default_factory=lambda: [
