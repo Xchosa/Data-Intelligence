@@ -47,11 +47,11 @@ class Config:
     path_airlines = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/airlines"
     path_aircraft = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/aircraft"
 
-    bronze_table_cities=f"bronze_table_cities"
-    bronze_table_countries=f"bronze_table_countries"
-    bronze_table_airlines=f"bronze_table_airlines"
-    bronze_table_airports=f"bronze_table_airports"
-    bronze_table_aircrafts=f"bronze_table_aircrafts"
+    bronze_table_cities=f"bronze_cities"
+    bronze_table_countries=f"bronze_countries"
+    bronze_table_airlines=f"bronze_airlines"
+    bronze_table_airports=f"bronze_airports"
+    bronze_table_aircrafts=f"bronze_aircrafts"
 
     bronze_table_dep_a=f"bronze_table_depatures_FRA" 
     bronze_table_dep_b=f"bronze_table_depatures_MUC" 
@@ -60,15 +60,19 @@ class Config:
     airport_code_b="MUC"
 
     # wild card format for latest date
-    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{utilis.underscore_format(Date)}/*/"
-    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(Date)}/*/"
+    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
+    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
 
 
-    silver_table_cities=f"silver_table_cities"
-    silver_table_countries=f"silver_table_countries"
-    silver_table_airlines=f"silver_table_airlines"
-    silver_table_airports=f"silver_table_airports"
-    silver_table_aircrafts=f"silver_table_aircrafts"
+    silver_table_cities=f"silver_cities"
+    silver_table_countries=f"silver_countries"
+    silver_table_airlines=f"silver_airlines"
+    silver_table_airports=f"silver_airports"
+    silver_table_aircrafts=f"silver_aircrafts"
+
+    silver_countries_comment="Cleaned countries dimension from bronze countries data",
+   
+
 
     silver_table_dep_a= f"silver_table_departures_FRA"
     silver_table_dep_b= f"silver_table_depatures_MUC"

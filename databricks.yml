@@ -7,7 +7,7 @@ bundle:
 include:
   - resources/*.yml
   - resources/*/*.yml
-  data_catalog.bronze
+
 
 artifacts:
   python_artifact:

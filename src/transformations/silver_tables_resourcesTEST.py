@@ -3,12 +3,6 @@ from pyspark import pipelines as dp
 from pyspark.sql.functions import col
 from pyspark.sql.functions import current_timestamp
 
-
-
-from pyspark import pipelines as dp
-from pyspark.sql.functions import col
-from pyspark.sql.functions import current_timestamp
-
 from pyspark.sql.functions import col, explode_outer, current_timestamp, trim, upper
 
 import sys
@@ -29,6 +23,8 @@ src_root = os.path.abspath(os.path.join(current_dir, '..'))
 
 if src_root not in sys.path:
     sys.path.append(src_root)
+
+# Now you can import your utils
 
 
 
@@ -68,3 +64,34 @@ def countries_silver():
     return df
 
     
+
+
+
+# def create_bronze_table(spec: dict):
+#     """Factory function to create bronze tables dynamically"""
+#     @dp.table(
+#         name=spec["config_name"],
+#         comment=spec["comment"],
+#         table_properties={"quality": "bronze"},
+#     )
+#     def _bronze_table():
+#         schema_location = build_schema_location(spec["reference"])
+#         return (
+#             spark.readStream
+#             .format("cloudFiles")
+#             .option("cloudFiles.format", "json")
+#             .option("multiLine", "true")
+#             .option("cloudFiles.inferColumnTypes", "true")
+#             .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+#             .option("cloudFiles.schemaLocation", schema_location)
+#             .load(spec["path"])
+#             .withColumn("_source_file", col("_metadata.file_path"))
+#             .withColumn("_ingested_at", current_timestamp())
+#         )
+    
+#     return _bronze_table
+
+
+# # Dynamically create all tables
+# for spec in config.table_specs:
+#     globals()[spec["name"]] = create_bronze_table(spec)

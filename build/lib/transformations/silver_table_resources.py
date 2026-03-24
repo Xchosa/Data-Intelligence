@@ -32,9 +32,9 @@ from extract_data.config import config
 path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/cities"
 #together a part of a pipile 
 @dp.table(
-        name="cities_bronze",
-        comment="Raw countries JSON from Lufthansa landing volume",
-        table_properties={"quality": "bronze"}
+    name=config.silver_table_countries,
+    comment=config.silver_countries_comment,
+    table_properties={"quality": "silver"},
 )
 @dp.expect_or_drop("non_negative_amount", "amount >=0")
 def cities_bronze():

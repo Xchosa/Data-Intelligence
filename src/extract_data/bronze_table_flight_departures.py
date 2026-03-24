@@ -4,28 +4,8 @@ from pyspark.sql.functions import current_timestamp, input_file_name
 
 import sys
 import os
-# from src.Extract_Data.config import config
-# This file defines a sample transformation.
-# Edit the sample below or add new transformations
-# using "+ Add" in the file browser.
-          
-# if "__file__" in globals():
-#     current_dir = os.path.dirname(os.path.abspath(__file__))
-# else:
-#     current_dir = os.getcwd()
 
-# # Go up one level to reach 'src'
-# # This ensures that 'import utils.helpers' will work correctly
-# src_root = os.path.abspath(os.path.join(current_dir, '..'))
-
-# if src_root not in sys.path:
-#     sys.path.append(src_root)
-    
 from config import config
-
-
-# so formulieren, dass sie in configs beliebig erweiterbar ist 
-# erstmal nur mit 2 testen 
 
 
 def build_schema_location(reference: str) -> str:

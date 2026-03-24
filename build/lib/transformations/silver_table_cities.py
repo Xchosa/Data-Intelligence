@@ -27,38 +27,48 @@ if src_root not in sys.path:
 # Now you can import your utils
 
 
-from extract_data.config import config
-
-path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/cities"
-#together a part of a pipile 
-@dp.table(
-        name="cities_bronze",
-        comment="Raw countries JSON from Lufthansa landing volume",
-        table_properties={"quality": "bronze"}
-)
-@dp.expect_or_drop("non_negative_amount", "amount >=0")
-def cities_bronze():
+def build_schema_location(reference: str) -> str:
+    """Build schema location for a given reference type"""
     return (
-        spark.readStream
-            .format("cloudFiles")
-            .option("cloudFiles.format", "json")
-            .load(path_cities)
-            .withColumn("_source_file", col("_metadata.file_path"))
-            .withColumn("_ingested_at", current_timestamp())
-            # .toTable("cities_bronze")
+        f"/Volumes/{config.catalog_name}/"
+        f"{config.schema_name}/"
+        f"{config.meta_valume}/"
+        f"{reference}/"
+        f"schema"
     )
 
 
 
+from extract_data.config import config
 
-# def cities_bronze():
-#     spark.readStream( 
-#         .format("cloudFiles")
-#         .option("cloudFiles.format", "json")
-#         .load({path_cities})
-#         .withColumn("_source_file", col("_metadata.file_path"))
-#         .withColumn("_ingested_at", current_timestamp())
-#             # .toTable("cities_bronze")
-#     )
+
+
+
+@dp.table(
+    name=config.bronze_table_dep_a,
+    comment="Raw departures JSON from Lufthansa landing volume",
+    table_properties={"quality": "bronze"}, 
+)
+def departure_bronze_a():
+    schema_location = build_schema_location(config.airport_code_a)
+    df = (
+        spark.readStream
+        .format("cloudFiles")
+        .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+        .option("cloudFiles.schemaLocation", schema_location)
+       
+        .load(config.path_depature_airport_a)
+       
+        .withColumn("_source_file", col("_metadata.file_path"))
+        .withColumn("_ingested_at", current_timestamp())
+    )
+
+    # add country-specific transformations here
+    # df = df.withColumn(...)
+
+    return df
+
     
-
