@@ -5,6 +5,12 @@ from pyspark.sql.functions import current_timestamp
 
 
 
+from pyspark import pipelines as dp
+from pyspark.sql.functions import col
+from pyspark.sql.functions import current_timestamp
+
+from pyspark.sql.functions import col, explode_outer, current_timestamp, trim, upper
+
 import sys
 import os
 # This file defines a sample transformation.
@@ -24,41 +30,41 @@ src_root = os.path.abspath(os.path.join(current_dir, '..'))
 if src_root not in sys.path:
     sys.path.append(src_root)
 
-# Now you can import your utils
 
 
 from extract_data.config import config
 
-path_cities = f"/Volumes/{config.catalog_name}/{config.schema_name}/{config.volume_name}/cities"
-#together a part of a pipile 
+
+
+
+#handle dubliplate dropDuplicates 
 @dp.table(
     name=config.silver_table_countries,
     comment=config.silver_countries_comment,
     table_properties={"quality": "silver"},
 )
-@dp.expect_or_drop("non_negative_amount", "amount >=0")
-def cities_bronze():
-    return (
-        spark.readStream
-            .format("cloudFiles")
-            .option("cloudFiles.format", "json")
-            .load(path_cities)
-            .withColumn("_source_file", col("_metadata.file_path"))
-            .withColumn("_ingested_at", current_timestamp())
-            # .toTable("cities_bronze")
+def countries_silver():
+    df = (
+        spark.readStream.table("countries_bronze")
+        .select(
+            explode_outer(col("CountryResource.Countries.Country")).alias("country"),
+            col("_source_file"),
+            col("_ingested_at"),
+        )
+        .select(
+            upper(trim(col("country.CountryCode"))).alias("country_code"),
+            col("country.Names.Name").alias("country_name"),
+            col("_source_file"),
+            col("_ingested_at"),
+            current_timestamp().alias("silver_processed_at"),
+        )
+        .dropDuplicates(["country_code"])
     )
 
 
+    # add country-specific transformations here
+    # df = df.withColumn(...)
 
+    return df
 
-# def cities_bronze():
-#     spark.readStream( 
-#         .format("cloudFiles")
-#         .option("cloudFiles.format", "json")
-#         .load({path_cities})
-#         .withColumn("_source_file", col("_metadata.file_path"))
-#         .withColumn("_ingested_at", current_timestamp())
-#             # .toTable("cities_bronze")
-#     )
     
-

@@ -7,6 +7,7 @@ from pyspark.sql.functions import col, explode_outer, current_timestamp, trim, u
 
 import sys
 import os
+
 # This file defines a sample transformation.
 # Edit the sample below or add new transformations
 # using "+ Add" in the file browser.
