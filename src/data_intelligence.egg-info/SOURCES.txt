@@ -5,7 +5,6 @@ src/Extract_Data/get_all_Recources.py
 src/Extract_Data/get_flight_departures.py
 src/Extract_Data/getterDepartures.py
 src/Extract_Data/getterResource.py
-src/Extract_Data/main.py
 src/Extract_Data/utilis.py
 src/Extract_Data/utilis_logs.py
 src/data_intelligence.egg-info/PKG-INFO
@@ -21,7 +20,6 @@ src/extract_data/get_all_Recources.py
 src/extract_data/get_flight_departures.py
 src/extract_data/getterDepartures.py
 src/extract_data/getterResource.py
-src/extract_data/main.py
 src/extract_data/utilis.py
 src/extract_data/utilis_logs.py
 src/transformations/silver_table_cities.py

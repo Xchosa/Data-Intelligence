@@ -44,7 +44,7 @@ def build_schema_location(reference: str) -> str:
     comment="Raw departures JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"}, 
 )
-def departure_bronze():
+def departure_bronze_a():
     schema_location = build_schema_location(config.airport_code_a)
     df = (
         spark.readStream
@@ -53,9 +53,10 @@ def departure_bronze():
         .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-    #    .option("cloudFiles.schemaHints", "time int") collomn time as int
         .option("cloudFiles.schemaLocation", schema_location)
+       
         .load(config.path_depature_airport_a)
+       
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
     )
@@ -70,7 +71,7 @@ def departure_bronze():
     comment="Raw departures JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"}, 
 )
-def departure_bronze():
+def departure_bronze_b():
     schema_location = build_schema_location(config.airport_code_b)
     df = (
         spark.readStream

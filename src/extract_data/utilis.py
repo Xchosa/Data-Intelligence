@@ -50,6 +50,11 @@ def get_flight_departure_date() -> str:
     return date.replace(hour=start_of_previous_block, minute=0, second=0, microsecond=0).strftime("%Y-%m-%dT%H:%M")
 
 
+def underscore_format(Date: str)-> str:
+    underscore_date= Date.replace(":", "_")
+    return underscore_date
+
+
 def config_time() -> str:
     current_time = datetime.now()
     return current_time.strftime("%H:%M")

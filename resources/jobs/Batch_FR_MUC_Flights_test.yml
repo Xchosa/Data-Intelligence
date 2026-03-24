@@ -3,7 +3,7 @@ resources:
     Batch_FR_MUC_Flights:
       name: Batch_FR_MUC_Flights2
       schedule:
-        quartz_cron_expression: 0 0 0,4,8,12,16,20 * * ?
+        quartz_cron_expression: 27 1 0/4 * * ?
         timezone_id: Europe/Berlin
         pause_status: UNPAUSED
       tasks:
