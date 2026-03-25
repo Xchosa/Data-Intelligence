@@ -33,3 +33,5 @@ from extract_data.config import config
     comment="Cleaned FRA departure flight status data for downstream delay analysis",
     table_properties={"quality": "silver"},
 )
+
+
