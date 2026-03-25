@@ -1,17 +1,17 @@
 resources:
   pipelines:
-    silver_ingest_pipeline:
-      name: silver-ingest-pipeline-resources.yml
+    gold_ingest_pipeline_TEST:
+      name: gold-ingest-pipeline-test
       libraries:
         - file:
-            path: ../../src/transformations/silver_tables_resources.py
-      schema: silver
+            path: ../../src/analytics_ready/gold_tables_delays.py
+      schema: gold
       catalog: data_catalog
       continuous: false
       development: true
       serverless: true
 
-
+# in databricks.yml
 targets: 
   dev:
     default: true
