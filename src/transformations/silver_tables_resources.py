@@ -85,5 +85,61 @@ def aircraft_silver():
     # add country-specific transformations here
     # df = df.withColumn(...)
 
-  
+@dp.table(
+    name=config.silver_table_cities,
+    comment="Cleaned city master data",
+    table_properties={"quality": "silver"},
+)
+@dp.expect_or_drop("valid_city_code", "city_code IS NOT NULL AND trim(city_code) <> ''")
+@dp.expect_or_drop("valid_country_code", "country_code IS NOT NULL")
+@dp.expect("valid_time_zone_id", "time_zone_id IS NOT NULL")
+@dp.expect("valid_utc_offset_format", "utc_offset RLIKE '^[+-][0-9]{2}:[0-9]{2}$'")
+def cities_silver():
+    return (
+        spark.readStream.table("data_catalog.bronze.bronze_table_cities")
+        .select(
+            explode_outer(col("CityResource.Cities.City")).alias("city"),
+            col("_source_file"),
+            col("_ingested_at"),
+        )
+        .select(
+            upper(trim(col("city.CityCode"))).alias("city_code"),
+            upper(trim(col("city.CountryCode"))).alias("country_code"),
+            trim(col("city.Names.Name")).alias("city_name"),
+            trim(col("city.TimeZoneId")).alias("time_zone_id"),
+            trim(col("city.UtcOffset")).alias("utc_offset"),
+            col("city.Airports").alias("airports"),
+            col("_source_file"),
+            col("_ingested_at"),
+            current_timestamp().alias("silver_processed_at"),
+        )
+        .dropDuplicates(["city_code"])
+    )
+
+@dp.table(
+    name=config.silver_table_airlines,
+    comment="Cleaned airline master data",
+    table_properties={"quality": "silver"},
+)
+@dp.expect_or_drop("valid_airline_id", "airline_id IS NOT NULL AND trim(airline_id) <> ''")
+@dp.expect("valid_airline_id_icao", "airline_id_icao IS NOT NULL")
+def airlines_silver():
+    return (
+        spark.readStream.table("data_catalog.bronze.bronze_table_airlines")
+        .select(
+            explode_outer(col("AirlineResource.Airlines.Airline")).alias("airline"),
+            col("_source_file"),
+            col("_ingested_at"),
+        )
+        .select(
+            upper(trim(col("airline.AirlineID"))).alias("airline_id"),
+            upper(trim(col("airline.AirlineID_ICAO"))).alias("airline_id_icao"),
+            col("airline.Names.Name").alias("raw_name"),
+            col("_source_file"),
+            col("_ingested_at"),
+            current_timestamp().alias("silver_processed_at"),
+        )
+        .dropDuplicates(["airline_id"])
+    )
+
 #not tested
