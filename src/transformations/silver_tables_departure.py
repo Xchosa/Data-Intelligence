@@ -56,7 +56,7 @@ airport_list = [config.bronze_table_dep_a , config.bronze_table_dep_b]
 
 
 @dp.table(
-    name=config.silver_table_departures_fra,
+    name=config.silver_table_departures_a,
     comment="Cleaned FRA departure flight status data for delay analysis",
     table_properties={"quality": "silver"},
 )
