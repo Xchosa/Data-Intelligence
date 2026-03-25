@@ -22,5 +22,5 @@ src/extract_data/getterDepartures.py
 src/extract_data/getterResource.py
 src/extract_data/utilis.py
 src/extract_data/utilis_logs.py
-src/transformations/silver_table_resources.py
+src/transformations/silver_tables_resources.py
 src/transformations/silver_tables_resourcesTEST.py

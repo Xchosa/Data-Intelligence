@@ -4,7 +4,7 @@
        name: silver-ingest-pipeline-resource_test.yml
        libraries:
          - file:
-             path: ../../src/transformations/silver_tables_recourcesTest.py
+             path: ../../src/transformations/silver_tables_resources_test.py
        schema: silver
        catalog: data_catalog
        continuous: false
