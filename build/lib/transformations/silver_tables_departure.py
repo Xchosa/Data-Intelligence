@@ -56,8 +56,8 @@ airport_list = [config.bronze_table_dep_a , config.bronze_table_dep_b]
 
 
 @dp.table(
-    name=config.silver_table_dep_a,
-    comment="Cleaned FRA departure flight status data for downstream delay analysis",
+    name=config.silver_table_departures_a,
+    comment="Cleaned FRA departure flight status data for delay analysis",
     table_properties={"quality": "silver"},
 )
 @dp.expect_or_drop(
@@ -81,94 +81,303 @@ airport_list = [config.bronze_table_dep_a , config.bronze_table_dep_b]
     "dep_sched_utc_ts IS NOT NULL"
 )
 def departures_fra_silver():
-    flights = (
-        spark.readStream.table(f"data_catalog.bronze.{config.bronze_table_dep_a}")
-        .select(
-            explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
-            col("_source_file"),
-            col("_ingested_at"),
-        )
+    df = spark.readStream.table(config.bronze_table_dep_a)
+
+    df = df.withColumn(
+        "flight",
+        explode_outer(col("FlightStatusResource.Flights.Flight"))
     )
 
-    silver_df = (
-        flights
-        .select(
-            upper(trim(col("flight.Departure.AirportCode"))).alias("departure_airport_code"),
-            upper(trim(col("flight.Arrival.AirportCode"))).alias("arrival_airport_code"),
-
-            upper(trim(col("flight.MarketingCarrier.AirlineID"))).alias("marketing_airline_id"),
-            trim(col("flight.MarketingCarrier.FlightNumber")).alias("marketing_flight_number"),
-
-            upper(trim(col("flight.OperatingCarrier.AirlineID"))).alias("operating_airline_id"),
-            trim(col("flight.OperatingCarrier.FlightNumber")).alias("operating_flight_number"),
-
-            upper(trim(col("flight.ServiceType"))).alias("service_type"),
-
-            upper(trim(col("flight.Equipment.AircraftCode"))).alias("aircraft_code"),
-            upper(trim(col("flight.Equipment.AircraftRegistration"))).alias("aircraft_registration"),
-
-            trim(col("flight.Departure.Terminal.Name")).alias("dep_terminal_name"),
-            trim(col("flight.Departure.Terminal.Gate")).alias("dep_gate"),
-            trim(col("flight.Arrival.Terminal.Name")).alias("arr_terminal_name"),
-            trim(col("flight.Arrival.Terminal.Gate")).alias("arr_gate"),
-
-            trim(col("flight.Departure.TimeStatus.Code")).alias("dep_time_status_code"),
-            trim(col("flight.Departure.TimeStatus.Definition")).alias("dep_time_status_definition"),
-            trim(col("flight.Arrival.TimeStatus.Code")).alias("arr_time_status_code"),
-            trim(col("flight.Arrival.TimeStatus.Definition")).alias("arr_time_status_definition"),
-
-            trim(col("flight.FlightStatus.Code")).alias("flight_status_code"),
-            trim(col("flight.FlightStatus.Definition")).alias("flight_status_definition"),
-
-            to_timestamp(col("flight.Departure.ScheduledTimeLocal.DateTime")).alias("dep_sched_local_ts"),
-            to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime")).alias("dep_sched_utc_ts"),
-            to_timestamp(col("flight.Departure.EstimatedTimeLocal.DateTime")).alias("dep_est_local_ts"),
-            to_timestamp(col("flight.Departure.EstimatedTimeUTC.DateTime")).alias("dep_est_utc_ts"),
-            to_timestamp(col("flight.Departure.ActualTimeLocal.DateTime")).alias("dep_actual_local_ts"),
-            to_timestamp(col("flight.Departure.ActualTimeUTC.DateTime")).alias("dep_actual_utc_ts"),
-
-            to_timestamp(col("flight.Arrival.ScheduledTimeLocal.DateTime")).alias("arr_sched_local_ts"),
-            to_timestamp(col("flight.Arrival.ScheduledTimeUTC.DateTime")).alias("arr_sched_utc_ts"),
-            to_timestamp(col("flight.Arrival.EstimatedTimeLocal.DateTime")).alias("arr_est_local_ts"),
-            to_timestamp(col("flight.Arrival.EstimatedTimeUTC.DateTime")).alias("arr_est_utc_ts"),
-            to_timestamp(col("flight.Arrival.ActualTimeLocal.DateTime")).alias("arr_actual_local_ts"),
-            to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime")).alias("arr_actual_utc_ts"),
-            #to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime"), ).alias("arr_actual_utc_ts"), # utc = z at the end  , other one is fine 
-
-            col("_source_file"),
-            col("_ingested_at"),
-            current_timestamp().alias("silver_processed_at"),
-        )
-        .withColumn(
-            "flight_occurrence_key",
-            concat_ws(
-                "_",
-                col("departure_airport_code"),
-                col("marketing_airline_id"),
-                col("marketing_flight_number"),
-                col("dep_sched_utc_ts").cast("string"),
-            )
-        )
-        .withColumn(
-            "dep_delay_minutes_actual",
-            expr("timestampdiff(MINUTE, dep_sched_utc_ts, dep_actual_utc_ts)")
-        )
-        .withColumn(
-            "dep_delay_minutes_estimated",
-            expr("timestampdiff(MINUTE, dep_sched_utc_ts, dep_est_utc_ts)")
-        )
-        .withColumn(
-            "arr_delay_minutes_actual",
-            expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_actual_utc_ts)")
-        )
-        .withColumn(
-            "arr_delay_minutes_estimated",
-            expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_est_utc_ts)")
-        )
-        .dropDuplicates(["flight_occurrence_key"])
+    df = df.withColumn(
+        "departure_airport_code",
+        upper(trim(col("flight.Departure.AirportCode")))
+    ).withColumn(
+        "arrival_airport_code",
+        upper(trim(col("flight.Arrival.AirportCode")))
+    ).withColumn(
+        "marketing_airline_id",
+        upper(trim(col("flight.MarketingCarrier.AirlineID")))
+    ).withColumn(
+        "marketing_flight_number",
+        trim(col("flight.MarketingCarrier.FlightNumber"))
+    ).withColumn(
+        "operating_airline_id",
+        upper(trim(col("flight.OperatingCarrier.AirlineID")))
+    ).withColumn(
+        "operating_flight_number",
+        trim(col("flight.OperatingCarrier.FlightNumber"))
+    ).withColumn(
+        "service_type",
+        upper(trim(col("flight.ServiceType")))
+    ).withColumn(
+        "aircraft_code",
+        upper(trim(col("flight.Equipment.AircraftCode")))
+    ).withColumn(
+        "aircraft_registration",
+        upper(trim(col("flight.Equipment.AircraftRegistration")))
     )
 
-    return silver_df
+    df = df.withColumn(
+        "dep_terminal_name",
+        trim(col("flight.Departure.Terminal.Name"))
+    ).withColumn(
+        "dep_gate",
+        trim(col("flight.Departure.Terminal.Gate"))
+    ).withColumn(
+        "arr_terminal_name",
+        trim(col("flight.Arrival.Terminal.Name"))
+    ).withColumn(
+        "arr_gate",
+        trim(col("flight.Arrival.Terminal.Gate"))
+    )
+
+    df = df.withColumn(
+        "dep_time_status_code",
+        trim(col("flight.Departure.TimeStatus.Code"))
+    ).withColumn(
+        "dep_time_status_definition",
+        trim(col("flight.Departure.TimeStatus.Definition"))
+    ).withColumn(
+        "arr_time_status_code",
+        trim(col("flight.Arrival.TimeStatus.Code"))
+    ).withColumn(
+        "arr_time_status_definition",
+        trim(col("flight.Arrival.TimeStatus.Definition"))
+    ).withColumn(
+        "flight_status_code",
+        trim(col("flight.FlightStatus.Code"))
+    ).withColumn(
+        "flight_status_definition",
+        trim(col("flight.FlightStatus.Definition"))
+    )
+
+    df = df.withColumn(
+        "dep_sched_local_ts",
+        to_timestamp(col("flight.Departure.ScheduledTimeLocal.DateTime"))
+    ).withColumn(
+        "dep_sched_utc_ts",
+        to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime"))
+    ).withColumn(
+        "dep_est_local_ts",
+        to_timestamp(col("flight.Departure.EstimatedTimeLocal.DateTime"))
+    ).withColumn(
+        "dep_est_utc_ts",
+        to_timestamp(col("flight.Departure.EstimatedTimeUTC.DateTime"))
+    ).withColumn(
+        "dep_actual_local_ts",
+        to_timestamp(col("flight.Departure.ActualTimeLocal.DateTime"))
+    ).withColumn(
+        "dep_actual_utc_ts",
+        to_timestamp(col("flight.Departure.ActualTimeUTC.DateTime"))
+    ).withColumn(
+        "arr_sched_local_ts",
+        to_timestamp(col("flight.Arrival.ScheduledTimeLocal.DateTime"))
+    ).withColumn(
+        "arr_sched_utc_ts",
+        to_timestamp(col("flight.Arrival.ScheduledTimeUTC.DateTime"))
+    ).withColumn(
+        "arr_est_local_ts",
+        to_timestamp(col("flight.Arrival.EstimatedTimeLocal.DateTime"))
+    ).withColumn(
+        "arr_est_utc_ts",
+        to_timestamp(col("flight.Arrival.EstimatedTimeUTC.DateTime"))
+    ).withColumn(
+        "arr_actual_local_ts",
+        to_timestamp(col("flight.Arrival.ActualTimeLocal.DateTime"))
+    ).withColumn(
+        "arr_actual_utc_ts",
+        to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime"))
+    )
+
+    df = df.withColumn(
+        "silver_processed_at",
+        current_timestamp()
+    ).withColumn(
+        "flight_occurrence_key",
+        concat_ws(
+            "_",
+            col("departure_airport_code"),
+            col("marketing_airline_id"),
+            col("marketing_flight_number"),
+            col("dep_sched_utc_ts").cast("string"),
+        )
+    ).withColumn(
+        "dep_delay_minutes_actual",
+        expr("timestampdiff(MINUTE, dep_sched_utc_ts, dep_actual_utc_ts)")
+    ).withColumn(
+        "dep_delay_minutes_estimated",
+        expr("timestampdiff(MINUTE, dep_sched_utc_ts, dep_est_utc_ts)")
+    ).withColumn(
+        "arr_delay_minutes_actual",
+        expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_actual_utc_ts)")
+    ).withColumn(
+        "arr_delay_minutes_estimated",
+        expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_est_utc_ts)")
+    )
+
+    # Temporary debugging
+    # df.printSchema()
+
+    final_columns = [
+        "flight_occurrence_key",
+        "departure_airport_code",
+        "arrival_airport_code",
+        "marketing_airline_id",
+        "marketing_flight_number",
+        "operating_airline_id",
+        "operating_flight_number",
+        "service_type",
+        "aircraft_code",
+        "aircraft_registration",
+        "dep_terminal_name",
+        "dep_gate",
+        "arr_terminal_name",
+        "arr_gate",
+        "dep_time_status_code",
+        "dep_time_status_definition",
+        "arr_time_status_code",
+        "arr_time_status_definition",
+        "flight_status_code",
+        "flight_status_definition",
+        "dep_sched_local_ts",
+        "dep_sched_utc_ts",
+        "dep_est_local_ts",
+        "dep_est_utc_ts",
+        "dep_actual_local_ts",
+        "dep_actual_utc_ts",
+        "arr_sched_local_ts",
+        "arr_sched_utc_ts",
+        "arr_est_local_ts",
+        "arr_est_utc_ts",
+        "arr_actual_local_ts",
+        "arr_actual_utc_ts",
+        "dep_delay_minutes_actual",
+        "dep_delay_minutes_estimated",
+        "arr_delay_minutes_actual",
+        "arr_delay_minutes_estimated",
+        "_source_file",
+        "_ingested_at",
+        "silver_processed_at",
+    ]
+
+    return df.select(*final_columns).dropDuplicates(["flight_occurrence_key"])
+
+
+
+#@dp.table(
+#    name=config.silver_table_dep_a,
+#    comment="Cleaned FRA departure flight status data for downstream delay analysis",
+#    table_properties={"quality": "silver"},
+#)
+#@dp.expect_or_drop(
+#    "valid_departure_airport_code",
+#    "departure_airport_code IS NOT NULL AND trim(departure_airport_code) <> ''"
+#)
+#@dp.expect_or_drop(
+#    "valid_arrival_airport_code",
+#    "arrival_airport_code IS NOT NULL AND trim(arrival_airport_code) <> ''"
+#)
+#@dp.expect_or_drop(
+#    "valid_marketing_airline_id",
+#    "marketing_airline_id IS NOT NULL AND trim(marketing_airline_id) <> ''"
+#)
+#@dp.expect_or_drop(
+#    "valid_marketing_flight_number",
+#    "marketing_flight_number IS NOT NULL AND trim(marketing_flight_number) <> ''"
+#)
+## @dp.expect_or_drop(
+##     "valid_dep_sched_utc_ts",
+##     "dep_sched_utc_ts IS NOT NULL"
+## )
+#def departures_fra_silver():
+#    flights = (
+#        spark.readStream.table(f"data_catalog.bronze.{config.bronze_table_dep_a}")
+#        .select(
+#            explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
+#            col("_source_file"),
+#            col("_ingested_at"),
+#        )
+#    )
+
+#    silver_df = (
+#        flights
+#        .select(
+#            upper(trim(col("flight.Departure.AirportCode"))).alias("departure_airport_code"),
+#            upper(trim(col("flight.Arrival.AirportCode"))).alias("arrival_airport_code"),
+
+#            upper(trim(col("flight.MarketingCarrier.AirlineID"))).alias("marketing_airline_id"),
+#            trim(col("flight.MarketingCarrier.FlightNumber")).alias("marketing_flight_number"),
+
+#            upper(trim(col("flight.OperatingCarrier.AirlineID"))).alias("operating_airline_id"),
+#            trim(col("flight.OperatingCarrier.FlightNumber")).alias("operating_flight_number"),
+
+#            upper(trim(col("flight.ServiceType"))).alias("service_type"),
+
+#            upper(trim(col("flight.Equipment.AircraftCode"))).alias("aircraft_code"),
+#            upper(trim(col("flight.Equipment.AircraftRegistration"))).alias("aircraft_registration"),
+
+#            trim(col("flight.Departure.Terminal.Name")).alias("dep_terminal_name"),
+#            trim(col("flight.Departure.Terminal.Gate")).alias("dep_gate"),
+#            trim(col("flight.Arrival.Terminal.Name")).alias("arr_terminal_name"),
+#            trim(col("flight.Arrival.Terminal.Gate")).alias("arr_gate"),
+
+#            trim(col("flight.Departure.TimeStatus.Code")).alias("dep_time_status_code"),
+#            trim(col("flight.Departure.TimeStatus.Definition")).alias("dep_time_status_definition"),
+#            trim(col("flight.Arrival.TimeStatus.Code")).alias("arr_time_status_code"),
+#            trim(col("flight.Arrival.TimeStatus.Definition")).alias("arr_time_status_definition"),
+
+#            trim(col("flight.FlightStatus.Code")).alias("flight_status_code"),
+#            trim(col("flight.FlightStatus.Definition")).alias("flight_status_definition"),
+
+#            to_timestamp(col("flight.Departure.ScheduledTimeLocal.DateTime")).alias("dep_sched_local_ts"),
+#            to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime")).alias("dep_sched_utc_ts"),
+#            to_timestamp(col("flight.Departure.EstimatedTimeLocal.DateTime")).alias("dep_est_local_ts"),
+#            to_timestamp(col("flight.Departure.EstimatedTimeUTC.DateTime")).alias("dep_est_utc_ts"),
+#            to_timestamp(col("flight.Departure.ActualTimeLocal.DateTime")).alias("dep_actual_local_ts"),
+#            to_timestamp(col("flight.Departure.ActualTimeUTC.DateTime")).alias("dep_actual_utc_ts"),
+
+#            to_timestamp(col("flight.Arrival.ScheduledTimeLocal.DateTime")).alias("arr_sched_local_ts"),
+#            to_timestamp(col("flight.Arrival.ScheduledTimeUTC.DateTime")).alias("arr_sched_utc_ts"),
+#            to_timestamp(col("flight.Arrival.EstimatedTimeLocal.DateTime")).alias("arr_est_local_ts"),
+#            to_timestamp(col("flight.Arrival.EstimatedTimeUTC.DateTime")).alias("arr_est_utc_ts"),
+#            to_timestamp(col("flight.Arrival.ActualTimeLocal.DateTime")).alias("arr_actual_local_ts"),
+#            to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime")).alias("arr_actual_utc_ts"),
+#            #to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime"), ).alias("arr_actual_utc_ts"), # utc = z at the end  , other one is fine 
+
+#            col("_source_file"),
+#            col("_ingested_at"),
+#            current_timestamp().alias("silver_processed_at"),
+#        )
+#        .withColumn(
+#            "flight_occurrence_key",
+#            concat_ws(
+#                "_",
+#                col("departure_airport_code"),
+#                col("marketing_airline_id"),
+#                col("marketing_flight_number"),
+#                col("dep_sched_utc_ts").cast("string"),
+#            )
+#        )
+#        .withColumn(
+#            "dep_delay_minutes_actual",
+#            expr("timestampdiff(MINUTE, dep_sched_utc_ts, dep_actual_utc_ts)")
+#        )
+#        .withColumn(
+#            "dep_delay_minutes_estimated",
+#            expr("timestampdiff(MINUTE, dep_sched_utc_ts, dep_est_utc_ts)")
+#        )
+#        .withColumn(
+#            "arr_delay_minutes_actual",
+#            expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_actual_utc_ts)")
+#        )
+#        .withColumn(
+#            "arr_delay_minutes_estimated",
+#            expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_est_utc_ts)")
+#        )
+#        .dropDuplicates(["flight_occurrence_key"])
+#    )
+
+#    return silver_df
 
 
 

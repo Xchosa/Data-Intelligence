@@ -140,56 +140,58 @@ def aircraft_quarantine():
 
 
 
-# @dp.table(
-#     name=config.silver_table_cities,
-#     comment="Cleaned city master data",
-#     table_properties={"quality": "silver"},
-# )
-# def cities_silver():
-#     df = spark.readStream.table("data_catalog.bronze.bronze_table_cities")
+@dp.table(
+    name=config.silver_table_cities,
+    comment="Cleaned city master data",
+    table_properties={"quality": "silver"},
+)
+def cities_silver():
+    df = spark.readStream.table("data_catalog.bronze.bronze_table_cities")
     
-#     df = df.select(
-#         explode_outer(col("CityResource.Cities.City")).alias("city"),
-#         col("_source_file"),
-#         col("_ingested_at"),
-#     )
+    df = df.filter(~col("_source_file").contains("logs"))
     
-#     df = df.withColumn(
-#         "city_code",
-#         upper(trim(col("city.CityCode")))
-#     ).withColumn(
-#         "country_code",
-#         upper(trim(col("city.CountryCode")))
-#     ).withColumn(
-#         "city_name",
-#         trim(col("city.Names.Name"))
-#     ).withColumn(
-#         "time_zone_id",
-#         trim(col("city.TimeZoneId"))
-#     ).withColumn(
-#         "utc_offset",
-#         trim(col("city.UtcOffset"))
-#     ).withColumn(
-#         "airports",
-#         col("city.Airports")
-#     ).withColumn(
-#         "silver_processed_at",
-#         current_timestamp()
-#     )
+    df = df.select(
+        explode_outer(col("CityResource.Cities.City")).alias("city"),
+        col("_source_file"),
+        col("_ingested_at"),
+    )
     
-#     final_columns = [
-#         "city_code",
-#         "country_code",
-#         "city_name",
-#         "time_zone_id",
-#         "utc_offset",
-#         "airports",
-#         "_source_file",
-#         "_ingested_at",
-#         "silver_processed_at",
-#     ]
+    df = df.withColumn(
+        "city_code",
+        upper(trim(col("city.CityCode")))
+    ).withColumn(
+        "country_code",
+        upper(trim(col("city.CountryCode")))
+    ).withColumn(
+        "city_name",
+        trim(col("city.Names.Name"))
+    ).withColumn(
+        "time_zone_id",
+        trim(col("city.TimeZoneId"))
+    ).withColumn(
+        "utc_offset",
+        trim(col("city.UtcOffset"))
+    ).withColumn(
+        "airports",
+        col("city.Airports")
+    ).withColumn(
+        "silver_processed_at",
+        current_timestamp()
+    )
     
-#     return df.select(*final_columns).dropDuplicates(["city_code"])
+    final_columns = [
+        "city_code",
+        "country_code",
+        "city_name",
+        "time_zone_id",
+        "utc_offset",
+        "airports",
+        "_source_file",
+        "_ingested_at",
+        "silver_processed_at",
+    ]
+    
+    return df.select(*final_columns).dropDuplicates(["city_code"])
 
 
 # @dp.table(

@@ -4,7 +4,16 @@ resources:
       name: silver-ingest-pipeline-resources.yml
       libraries:
         - file:
-            path: ../../src/transformations/silver_tables_resources.py
+            path: ../../src/silver/silver_tables_cities.py
+        - file:
+            path: ../../src/silver/silver_tables_aircraft.py
+        - file:
+            path: ../../src/silver/silver_tables_airlines.py
+        - file:
+            path: ../../src/silver/silver_tables_airport.py
+        - file:
+            path: ../../src/silver/silver_tables_country.py
+
       schema: silver
       catalog: data_catalog
       continuous: false

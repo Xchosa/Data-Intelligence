@@ -1,11 +1,11 @@
  resources:
    pipelines:
-     silver_ingest_pipeline-departure:
-       name: silver-ingest-pipeline-departure.yml
+     gold-pipeline-logs:
+       name: gold-pipeline-logs.yml
        libraries:
          - file:
-             path: ../../src/silver/silver_tables_departure.py
-       schema: silver
+             path: ../../src/extract_data/log_tables_resources.py
+       schema: bronze
        catalog: data_catalog
        continuous: false
        development: true # false for production , true for developement

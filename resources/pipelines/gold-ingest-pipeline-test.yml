@@ -4,7 +4,7 @@ resources:
       name: gold-ingest-pipeline-test
       libraries:
         - file:
-            path: ../../src/analytics_ready/gold_tables_delays.py
+            path: ../../src/gold/gold_tables_delays.py
       schema: gold
       catalog: data_catalog
       continuous: false
