@@ -9,7 +9,8 @@ from pyspark.sql.functions import (
     expr,
     concat_ws,
     when,
-    lit
+    lit,
+    coalesce
 )
 import sys
 import os
@@ -30,13 +31,15 @@ if extract_data_root not in sys.path:
 from extract_data.config import config
 
 
+
+#loop different airports
 @dp.table(
-    name=config.silver_table_departures_a,
+    name=config.silver_table_dep_a,
     comment="Cleaned FRA departure flight status data for delay analysis",
     table_properties={"quality": "silver"},
 )
 def departures_fra_silver():
-    df = spark.readStream.table(config.bronze_table_dep_a)
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}")
     
     df = df.withColumn(
         "flight",
@@ -170,12 +173,16 @@ def departures_fra_silver():
         expr("timestampdiff(MINUTE, arr_sched_utc_ts, arr_est_utc_ts)")
     )
     
-    # Filter for valid records only
+    # Filter for valid records only - RELAXED filter
     df = df.filter(
-        (col("departure_airport_code").isNotNull()) & (trim(col("departure_airport_code")) != "") &
-        (col("arrival_airport_code").isNotNull()) & (trim(col("arrival_airport_code")) != "") &
-        (col("marketing_airline_id").isNotNull()) & (trim(col("marketing_airline_id")) != "") &
-        (col("marketing_flight_number").isNotNull()) & (trim(col("marketing_flight_number")) != "") &
+        (col("departure_airport_code").isNotNull()) & 
+        (trim(col("departure_airport_code")) != "") &
+        (col("arrival_airport_code").isNotNull()) & 
+        (trim(col("arrival_airport_code")) != "") &
+        (col("marketing_airline_id").isNotNull()) & 
+        (trim(col("marketing_airline_id")) != "") &
+        (col("marketing_flight_number").isNotNull()) & 
+        (trim(col("marketing_flight_number")) != "") &
         (col("dep_sched_utc_ts").isNotNull())
     )
     
@@ -231,7 +238,7 @@ def departures_fra_silver():
 )
 def departures_fra_quarantine():
     """Captures departure records that fail validation checks"""
-    df = spark.readStream.table(config.bronze_table_dep_a)
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}")
     
     df = df.withColumn(
         "flight",

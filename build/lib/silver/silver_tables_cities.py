@@ -34,7 +34,7 @@ from extract_data.config import config
     table_properties={"quality": "silver"},
 )
 def cities_silver():
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_cities")
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_cities}")
     
     df = df.select(
         explode_outer(col("CityResource.Cities.City")).alias("city"),
@@ -87,7 +87,8 @@ def cities_silver():
 )
 def cities_quarantine():
     """Captures records that don't pass data quality validations"""
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_cities")
+    """Captures records that don't pass data quality validations"""
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_cities}")
     
     df = df.select(
         explode_outer(col("CityResource.Cities.City")).alias("city"),

@@ -40,7 +40,8 @@ from extract_data.config import config
     table_properties={"quality": "silver"},
 )
 def countries_silver():
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_countries")
+    """Captures records that don't pass data quality validations"""
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_countries}")
     
     # Filter out log files
     df = df.filter(~col("_source_file").contains("logs"))
@@ -80,7 +81,8 @@ def countries_silver():
 )
 def countries_quarantine():
     """Captures records that don't have valid country data"""
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_countries")
+    """Captures records that don't pass data quality validations"""
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_countries}")
     
     # Filter out log files
     df = df.filter(~col("_source_file").contains("logs"))

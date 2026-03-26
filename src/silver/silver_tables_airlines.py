@@ -36,7 +36,8 @@ from extract_data.config import config
     table_properties={"quality": "silver"},
 )
 def airlines_silver():
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_airlines")
+    """Captures records that don't pass data quality validations"""
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_airlines}")
     
     df = df.select(
         explode_outer(col("AirlineResource.Airlines.Airline")).alias("airline"),
@@ -51,8 +52,11 @@ def airlines_silver():
         "airline_id_icao",
         upper(trim(col("airline.AirlineID_ICAO")))
     ).withColumn(
-        "raw_name",
-        col("airline.Names.Name")
+        "airline_name",
+        trim(col("airline.Names.Name.`$`"))
+     ).withColumn(
+        "language_code",
+        trim(col("airline.Names.Name.`@LanguageCode`"))
     ).withColumn(
         "silver_processed_at",
         current_timestamp()
@@ -61,7 +65,7 @@ def airlines_silver():
     final_columns = [
         "airline_id",
         "airline_id_icao",
-        "raw_name",
+        "airline_name",
         "_source_file",
         "_ingested_at",
         "silver_processed_at",
@@ -77,7 +81,8 @@ def airlines_silver():
 )
 def airlines_quarantine():
     """Captures records that don't pass data quality validations"""
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_airlines")
+    """Captures records that don't pass data quality validations"""
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_airlines}")
     
     df = df.select(
         explode_outer(col("AirlineResource.Airlines.Airline")).alias("airline"),

@@ -37,7 +37,7 @@ from extract_data.config import config
     table_properties={"quality": "silver"},
 )
 def aircraft_silver():
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_aircrafts")
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_aircrafts}")
     
     df = df.select(
         explode_outer(col("AircraftResource.AircraftSummaries.AircraftSummary")).alias("aircraft"),
@@ -82,7 +82,8 @@ def aircraft_silver():
 )
 def aircraft_quarantine():
     """Captures records that don't have valid AircraftResource data"""
-    df = spark.readStream.table("data_catalog.bronze.bronze_table_aircrafts")
+    """Captures records that don't pass data quality validations"""
+    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_aircrafts}")
 
     df = df.select(
         explode_outer(col("AircraftResource.AircraftSummaries.AircraftSummary")).alias("aircraft"),
