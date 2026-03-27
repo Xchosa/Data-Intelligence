@@ -27,33 +27,94 @@ if src_root not in sys.path:
 
 from extract_data.config import config
 
+
+
+
 # airport name destination auschreiben
-# airport departure ausschreiben  verknuepfen mit airport Names 
+# airport departure ausschreiben  verknuepfen mit airport Names silver tables 
 
 # Flight delays in minute 
 
 # unterschied zwischen Cargo und passenger 
 # Flight duration 
 
-
-# @dp.table(
-#     name="delays_cargo",
-#     comment="Cleaned FRA departure flight status data for downstream delay analysis",
-#     table_properties={"quality": "silver"},
-# )
-# def logs_gold():
-#     df = (
-#         spark.readStream
-#         .format("cloudFiles")
-#         .option("cloudFiles.format", "text")
-#         .load("/Volumes/data_catalog/bronze/bronze_volume/aircraft/logs/*/run_*/tmp_logs/")
-#         .withColumn("_source_file", input_file_name())
-#         .withColumn("_ingested_at", current_timestamp())
-#         .select(
-#             col("value").alias("log_content"),
-#             col("_source_file"),
-#             col("_ingested_at"),
-#         )
-#     )
+@dp.table(
+    name="gold_departures_delays",
+    comment="Departure delays enriched with airport and country names",
+    table_properties={"quality": "gold"},
+)
+def gold_departures_delays():
+    from pyspark.sql.functions import col
     
-#     return df
+    # Read silver departure data (streaming)
+    df_departures = spark.readStream.table(
+        f"{config.catalog_name}.silver.{config.silver_table_dep_a}"
+    )
+    
+    # Read silver airports (batch - dimension table)
+    df_airports = spark.read.table(
+        f"{config.catalog_name}.silver.{config.silver_table_airports}"
+    )
+    
+    # Read silver countries (batch - dimension table)
+    df_countries = spark.read.table(
+        f"{config.catalog_name}.silver.{config.silver_table_countries}"
+    )
+    
+    # Join departure airport details
+    df = df_departures.join(
+        df_airports.select(
+            col("airport_code").alias("dep_airport_code"),
+            col("airport_name").alias("departure_airport_name"),
+            col("country_code").alias("dep_country_code")
+        ),
+        on=col("departure_airport_code") == col("dep_airport_code"),
+        how="left"
+    )
+    
+    # Join arrival airport details
+    df = df.join(
+        df_airports.select(
+            col("airport_code").alias("arr_airport_code"),
+            col("airport_name").alias("arrival_airport_name"),
+            col("country_code").alias("arr_country_code")
+        ),
+        on=col("arrival_airport_code") == col("arr_airport_code"),
+        how="left"
+    )
+    
+    # Join departure country name
+    df = df.join(
+        df_countries.select(
+            col("country_code").alias("dep_country_code_lookup"),
+            col("country_name").alias("departure_country_name")
+        ),
+        on=col("dep_country_code") == col("dep_country_code_lookup"),
+        how="left"
+    )
+    
+    # Join arrival country name
+    df = df.join(
+        df_countries.select(
+            col("country_code").alias("arr_country_code_lookup"),
+            col("country_name").alias("arrival_country_name")
+        ),
+        on=col("arr_country_code") == col("arr_country_code_lookup"),
+        how="left"
+    )
+    
+    # Select final columns
+    final_columns = [
+        "departure_airport_code",
+        "departure_airport_name",
+        "departure_country_name",
+        "arrival_airport_code",
+        "arrival_airport_name",
+        "arrival_country_name",
+        "dep_delay_minutes_actual",
+        "marketing_airline_id",
+        "marketing_flight_number",
+        "_ingested_at",
+    ]
+    
+    return df.select(*final_columns)

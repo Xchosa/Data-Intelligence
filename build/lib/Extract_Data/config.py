@@ -43,7 +43,7 @@ class Config:
     airport_code=["FRA", "MUC"]
     meta_data_key_flight="FlightStatusResource"
     #analyzed airports a, b 
-    airport_code=["FRA", "MUC"]
+    airport_code=["FRA", "MUC", "BWM", "APH"]
     serviceType="all"
     headers = {"password": utilis.get_lufthansa_secret()}
 

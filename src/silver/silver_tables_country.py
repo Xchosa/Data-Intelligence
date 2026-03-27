@@ -9,6 +9,8 @@ from pyspark.sql.functions import (
     upper,
     trim,
     current_timestamp,
+    coalesce,
+    expr,
     regexp_like,
     lit,
     when
@@ -54,10 +56,40 @@ def countries_silver():
     
     df = df.withColumn(
         "country_code",
-        upper(trim(col("country.CountryCode")))
-    ).withColumn(
-        "country_name",
-        trim(col("country.Names.Name"))
+        upper(trim(col("country.CountryCode"))))
+    # ).withColumn(
+    #     "country_name",
+    #    trim(
+    #     coalesce(
+    #         expr("filter(from_json(country.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'), x -> x.`@LanguageCode` = 'EN')[0].`$`"),
+    #         expr("CASE WHEN country.Names.Name.`@LanguageCode` = 'EN' THEN country.Names.Name.`$` ELSE NULL END")
+    #     )
+    # )
+    df = df.withColumn(
+    "country_name",
+    trim(
+        expr("""
+            CASE 
+                WHEN country.Names.Name LIKE '[%' THEN
+                    element_at(
+                        filter(
+                            from_json(country.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                            x -> x.`@LanguageCode` = 'EN'
+                        ),
+                        1
+                    ).`$`
+                WHEN country.Names.Name LIKE '{%' THEN
+                    element_at(
+                        filter(
+                            from_json(concat('[', country.Names.Name, ']'), 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                            x -> x.`@LanguageCode` = 'EN'
+                        ),
+                        1
+                    ).`$`
+                ELSE NULL
+            END
+        """)
+    )
     ).withColumn(
         "silver_processed_at",
         current_timestamp()
@@ -98,8 +130,12 @@ def countries_quarantine():
         upper(trim(col("country.CountryCode")))
     ).withColumn(
         "country_name",
-        trim(col("country.Names.Name"))
-    )
+       trim(
+        coalesce(
+            expr("filter(from_json(country.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'), x -> x.`@LanguageCode` = 'EN')[0].`$`"),
+            expr("CASE WHEN country.Names.Name.`@LanguageCode` = 'EN' THEN country.Names.Name.`$` ELSE NULL END")
+        )
+    ))
     
     # Filter for invalid records
     df = df.filter(

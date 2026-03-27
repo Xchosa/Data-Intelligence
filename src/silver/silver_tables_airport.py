@@ -57,10 +57,16 @@ def airports_silver():
     ).withColumn(
         "location_type",
         trim(col("airport.LocationType"))
+    # ).withColumn(
+    #     "airport_name",
+    #     trim(col("airport.Names.Name"))
     ).withColumn(
-        "airport_name",
-        trim(col("airport.Names.Name"))
-    ).withColumn(
+    "airport_name_EN",
+    trim(
+        expr(
+            "filter(from_json(airport.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'), x -> x.`@LanguageCode` = 'EN')[0].`$`"
+        )
+    )).withColumn(
         "latitude",
         col("airport.Position.Coordinate.Latitude")
     ).withColumn(
@@ -82,7 +88,7 @@ def airports_silver():
         "city_code",
         "country_code",
         "location_type",
-        "airport_name",
+        "airport_name_EN",
         "latitude",
         "longitude",
         "time_zone_id",

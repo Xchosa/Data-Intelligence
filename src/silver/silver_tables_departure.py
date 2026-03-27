@@ -116,40 +116,40 @@ def departures_fra_silver():
     
     df = df.withColumn(
         "dep_sched_local_ts",
-        to_timestamp(col("flight.Departure.ScheduledTimeLocal.DateTime"))
+        to_timestamp(col("flight.Departure.ScheduledTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     ).withColumn(
         "dep_sched_utc_ts",
-        to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime"))
+        to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
     ).withColumn(
         "dep_est_local_ts",
-        to_timestamp(col("flight.Departure.EstimatedTimeLocal.DateTime"))
+        to_timestamp(col("flight.Departure.EstimatedTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     ).withColumn(
         "dep_est_utc_ts",
-        to_timestamp(col("flight.Departure.EstimatedTimeUTC.DateTime"))
+        to_timestamp(col("flight.Departure.EstimatedTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
     ).withColumn(
         "dep_actual_local_ts",
-        to_timestamp(col("flight.Departure.ActualTimeLocal.DateTime"))
+        to_timestamp(col("flight.Departure.ActualTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     ).withColumn(
         "dep_actual_utc_ts",
-        to_timestamp(col("flight.Departure.ActualTimeUTC.DateTime"))
+        to_timestamp(col("flight.Departure.ActualTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
     ).withColumn(
         "arr_sched_local_ts",
-        to_timestamp(col("flight.Arrival.ScheduledTimeLocal.DateTime"))
+        to_timestamp(col("flight.Arrival.ScheduledTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     ).withColumn(
         "arr_sched_utc_ts",
-        to_timestamp(col("flight.Arrival.ScheduledTimeUTC.DateTime"))
+        to_timestamp(col("flight.Arrival.ScheduledTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
     ).withColumn(
         "arr_est_local_ts",
-        to_timestamp(col("flight.Arrival.EstimatedTimeLocal.DateTime"))
+        to_timestamp(col("flight.Arrival.EstimatedTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     ).withColumn(
         "arr_est_utc_ts",
-        to_timestamp(col("flight.Arrival.EstimatedTimeUTC.DateTime"))
+        to_timestamp(col("flight.Arrival.EstimatedTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
     ).withColumn(
         "arr_actual_local_ts",
-        to_timestamp(col("flight.Arrival.ActualTimeLocal.DateTime"))
+        to_timestamp(col("flight.Arrival.ActualTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     ).withColumn(
         "arr_actual_utc_ts",
-        to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime"))
+        to_timestamp(col("flight.Arrival.ActualTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
     )
     
     df = df.withColumn(
@@ -271,20 +271,41 @@ def departures_fra_quarantine():
         trim(col("flight.MarketingCarrier.FlightNumber"))
     ).withColumn(
         "dep_sched_utc_ts",
-        to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime"))
+        to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
+    ).withColumn(
+        "dep_sched_local_ts",
+        to_timestamp(col("flight.Departure.ScheduledTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
+    ).withColumn(
+        "dep_est_utc_ts",
+        to_timestamp(col("flight.Departure.EstimatedTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
+    ).withColumn(
+        "dep_est_local_ts",
+        to_timestamp(col("flight.Departure.EstimatedTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
+    ).withColumn(
+        "arr_sched_utc_ts",
+        to_timestamp(col("flight.Arrival.ScheduledTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
+    ).withColumn(
+        "arr_sched_local_ts",
+        to_timestamp(col("flight.Arrival.ScheduledTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
+    ).withColumn(
+        "arr_est_utc_ts",
+        to_timestamp(col("flight.Arrival.EstimatedTimeUTC.DateTime"), "yyyy-MM-dd'T'HH:mmX")
+    ).withColumn(
+        "arr_est_local_ts",
+        to_timestamp(col("flight.Arrival.EstimatedTimeLocal.DateTime"), "yyyy-MM-dd'T'HH:mm")
     )
     
     # df.cache()
     # record_count = df.count()
     # print(f"Records before filter: {record_count}")
     # Filter for invalid records
-    df = df.filter(
-        (col("departure_airport_code").isNull() | (trim(col("departure_airport_code")) == "")) |
-        (col("arrival_airport_code").isNull() | (trim(col("arrival_airport_code")) == "")) |
-        (col("marketing_airline_id").isNull() | (trim(col("marketing_airline_id")) == "")) |
-        (col("marketing_flight_number").isNull() | (trim(col("marketing_flight_number")) == "") |
-        (col("dep_sched_utc_ts").isNull()))
-    )
+    # df = df.filter(
+    #     (col("departure_airport_code").isNull() | (trim(col("departure_airport_code")) == "")) |
+    #     (col("arrival_airport_code").isNull() | (trim(col("arrival_airport_code")) == "")) |
+    #     (col("marketing_airline_id").isNull() | (trim(col("marketing_airline_id")) == "") |
+    #     (col("marketing_flight_number").isNull() | (trim(col("marketing_flight_number")) == "") |
+    #     (col("dep_sched_utc_ts").isNull()))
+    # )
     
     df = df.withColumn(
         "quarantine_reason",
