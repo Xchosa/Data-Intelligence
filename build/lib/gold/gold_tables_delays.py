@@ -27,6 +27,14 @@ if src_root not in sys.path:
 
 from extract_data.config import config
 
+# airport name destination auschreiben
+# airport departure ausschreiben  verknuepfen mit airport Names 
+
+# Flight delays in minute 
+
+# unterschied zwischen Cargo und passenger 
+# Flight duration 
+
 
 # @dp.table(
 #     name="delays_cargo",

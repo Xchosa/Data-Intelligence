@@ -1,0 +1,22 @@
+resources:
+  jobs:
+    orchestrate_pipeline_bronze_to_gold:
+      name: orchestrate-pipeline-bronze-to-gold
+      tasks:
+        - task_key: bronze_ingest_task
+          pipeline_task:
+            pipeline_id: bronze_pipeline_flight_departures
+        
+        - task_key: silver_ingest_task
+          depends_on:
+            - task_key: bronze_ingest_task
+          pipeline_task:
+            pipeline_id: silver_ingest_pipeline-departure
+
+targets:
+  dev:
+    default: true
+  prod:
+    mode: production
+
+

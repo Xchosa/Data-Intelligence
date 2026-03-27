@@ -1,6 +1,8 @@
 from pyspark import pipelines as dp
 from pyspark.sql.functions import (
     col,
+    map_values,
+    explode,
     explode_outer,
     upper,
     trim,
@@ -35,15 +37,18 @@ from extract_data.config import config
 #loop different airports
 @dp.table(
     name=config.silver_table_dep_a,
-    comment="Cleaned FRA departure flight status data for delay analysis",
+    comment=f"Cleaned departure flight status data for delay analysis",
     table_properties={"quality": "silver"},
 )
 def departures_fra_silver():
     df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}")
     
-    df = df.withColumn(
-        "flight",
-        explode_outer(col("FlightStatusResource.Flights.Flight"))
+    df.printSchema()
+
+    df = df.select(
+        explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
+        col("_source_file"),
+        col("_ingested_at"),
     )
     
     df = df.withColumn(
@@ -174,17 +179,17 @@ def departures_fra_silver():
     )
     
     # Filter for valid records only - RELAXED filter
-    df = df.filter(
-        (col("departure_airport_code").isNotNull()) & 
-        (trim(col("departure_airport_code")) != "") &
-        (col("arrival_airport_code").isNotNull()) & 
-        (trim(col("arrival_airport_code")) != "") &
-        (col("marketing_airline_id").isNotNull()) & 
-        (trim(col("marketing_airline_id")) != "") &
-        (col("marketing_flight_number").isNotNull()) & 
-        (trim(col("marketing_flight_number")) != "") &
-        (col("dep_sched_utc_ts").isNotNull())
-    )
+    # df = df.filter(
+    #     (col("departure_airport_code").isNotNull()) & 
+    #     (trim(col("departure_airport_code")) != "") &
+    #     (col("arrival_airport_code").isNotNull()) & 
+    #     (trim(col("arrival_airport_code")) != "") &
+    #     (col("marketing_airline_id").isNotNull()) & 
+    #     (trim(col("marketing_airline_id")) != "") &
+    #     (col("marketing_flight_number").isNotNull()) & 
+    #     (trim(col("marketing_flight_number")) != "") &
+    #     (col("dep_sched_utc_ts").isNotNull())
+    # )
     
     final_columns = [
         "flight_occurrence_key",
@@ -228,7 +233,7 @@ def departures_fra_silver():
         "silver_processed_at",
     ]
     
-    return df.select(*final_columns).dropDuplicates(["flight_occurrence_key"])
+    return df.select(*final_columns)
 
 
 @dp.table(
@@ -240,10 +245,17 @@ def departures_fra_quarantine():
     """Captures departure records that fail validation checks"""
     df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}")
     
-    df = df.withColumn(
-        "flight",
-        explode_outer(col("FlightStatusResource.Flights.Flight"))
+    # df = df.withColumn(
+    #     "flight",
+    #     explode_outer(col("FlightStatusResource.Flights.Flight"))
+    # )
+    df = df.select(
+        explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
+        col("_source_file"),
+        col("_ingested_at"),
     )
+
+
     
     df = df.withColumn(
         "departure_airport_code",
@@ -262,13 +274,16 @@ def departures_fra_quarantine():
         to_timestamp(col("flight.Departure.ScheduledTimeUTC.DateTime"))
     )
     
+    # df.cache()
+    # record_count = df.count()
+    # print(f"Records before filter: {record_count}")
     # Filter for invalid records
     df = df.filter(
         (col("departure_airport_code").isNull() | (trim(col("departure_airport_code")) == "")) |
         (col("arrival_airport_code").isNull() | (trim(col("arrival_airport_code")) == "")) |
         (col("marketing_airline_id").isNull() | (trim(col("marketing_airline_id")) == "")) |
-        (col("marketing_flight_number").isNull() | (trim(col("marketing_flight_number")) == "")) |
-        (col("dep_sched_utc_ts").isNull())
+        (col("marketing_flight_number").isNull() | (trim(col("marketing_flight_number")) == "") |
+        (col("dep_sched_utc_ts").isNull()))
     )
     
     df = df.withColumn(
@@ -296,4 +311,14 @@ def departures_fra_quarantine():
         "quarantine_timestamp",
     ]
     
-    return df.select(*final_columns).dropDuplicates(["_ingested_at"])
+    return df.select(*final_columns)
+
+
+
+# df.cache()
+# record_count = df.count()
+# print(f"Records before filter: {record_count}")
+
+# df = df.filter((col("flight").isNotNull()))  # First ensure flight object exists
+
+# df_test = df.select("dep_sched_utc_ts").show()  # Check if parsing worked

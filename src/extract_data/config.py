@@ -54,14 +54,14 @@ class Config:
     path_airlines = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/airlines"
     path_aircraft = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/aircraft"
 
-    bronze_table_cities=f"bronze_cities"
-    bronze_table_countries=f"bronze_countries"
-    bronze_table_airlines=f"bronze_airlines"
-    bronze_table_airports=f"bronze_airports"
-    bronze_table_aircrafts=f"bronze_aircrafts"
+    bronze_table_cities=f"bronze_table_cities"
+    bronze_table_countries=f"bronze_table_countries"
+    bronze_table_airlines=f"bronze_table_airlines"
+    bronze_table_airports=f"bronze_table_airports"
+    bronze_table_aircrafts=f"bronze_table_aircrafts"
 
-    bronze_table_dep_a=f"bronze_table_depatures_FRA" 
-    bronze_table_dep_b=f"bronze_table_depatures_MUC" 
+    bronze_table_dep_a=f"bronze_table_departure_fra" 
+    bronze_table_dep_b=f"bronze_table_departure_muc" 
     blocktime=utilis.config_time_blocks()
     airport_code_a="FRA"
     airport_code_b="MUC"
