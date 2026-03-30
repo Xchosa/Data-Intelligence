@@ -7,7 +7,8 @@ from pyspark.sql.functions import (
     current_timestamp,
     regexp_like,
     lit,
-    when
+    when,
+    expr,
 )
 import sys
 import os
@@ -50,7 +51,29 @@ def cities_silver():
         upper(trim(col("city.CountryCode")))
     ).withColumn(
         "city_name",
-        trim(col("city.Names.Name"))
+        trim(
+            expr("""
+                CASE 
+                    WHEN city.Names.Name LIKE '[%' THEN
+                        element_at(
+                            filter(
+                                from_json(city.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                                x -> x.`@LanguageCode` = 'EN'
+                            ),
+                            1
+                        ).`$`
+                    WHEN city.Names.Name LIKE '{%' THEN
+                        element_at(
+                            filter(
+                                from_json(concat('[', city.Names.Name, ']'), 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                                x -> x.`@LanguageCode` = 'EN'
+                            ),
+                            1
+                        ).`$`
+                    ELSE NULL
+                END
+            """)
+        )
     ).withColumn(
         "time_zone_id",
         trim(col("city.TimeZoneId"))
@@ -102,6 +125,31 @@ def cities_quarantine():
     ).withColumn(
         "country_code",
         upper(trim(col("city.CountryCode")))
+    ).withColumn(
+        "city_name",
+        trim(
+            expr("""
+                CASE 
+                    WHEN city.Names.Name LIKE '[%' THEN
+                        element_at(
+                            filter(
+                                from_json(city.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                                x -> x.`@LanguageCode` = 'EN'
+                            ),
+                            1
+                        ).`$`
+                    WHEN city.Names.Name LIKE '{%' THEN
+                        element_at(
+                            filter(
+                                from_json(concat('[', city.Names.Name, ']'), 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                                x -> x.`@LanguageCode` = 'EN'
+                            ),
+                            1
+                        ).`$`
+                    ELSE NULL
+                END
+            """)
+        )
     ).withColumn(
         "time_zone_id",
         trim(col("city.TimeZoneId"))

@@ -56,7 +56,7 @@ def get_data_all_Reference(
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{mds_reference}/"
     endpoint = f"/v1/mds-references/{mds_reference}?limit={recordLimit}&offset={offset}"
 
-    if mds_reference is "airports":
+    if mds_reference == "airports":
         endpoint = f"/v1/mds-references/{mds_reference}?LHoperated=1"
 
     log_paths = create_log_run_paths(catalog_name, schema_name, volume_name, mds_reference)

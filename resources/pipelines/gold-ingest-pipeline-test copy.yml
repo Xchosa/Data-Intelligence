@@ -1,10 +1,10 @@
 resources:
   pipelines:
-    gold_ingest_pipeline:
-      name: gold-delays
+    gold_airlines:
+      name: gold-airlines-delays
       libraries:
         - file:
-            path: ../../src/gold/gold_tables_delays.py
+            path: ../../src/gold/gold_table_airlines.py
       schema: gold
       catalog: data_catalog
       continuous: false

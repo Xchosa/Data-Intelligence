@@ -61,7 +61,7 @@ def airports_silver():
     #     "airport_name",
     #     trim(col("airport.Names.Name"))
     ).withColumn(
-    "airport_name_EN",
+    "airport_name",
     trim(
         expr(
             "filter(from_json(airport.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'), x -> x.`@LanguageCode` = 'EN')[0].`$`"
@@ -88,7 +88,7 @@ def airports_silver():
         "city_code",
         "country_code",
         "location_type",
-        "airport_name_EN",
+        "airport_name",
         "latitude",
         "longitude",
         "time_zone_id",
@@ -130,7 +130,7 @@ def airports_quarantine():
     #     "airport_name_EN",
     #     trim(col("airport.Names.Name`@LanguageCode`EN, `$`"))
     ).withColumn(
-    "airport_name_EN",
+    "airport_name",
     trim(
         expr(
             "filter(from_json(airport.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'), x -> x.`@LanguageCode` = 'EN')[0].`$`"
@@ -149,7 +149,7 @@ def airports_quarantine():
         (col("airport_code").isNull() | (trim(col("airport_code")) == "")) |
         (col("city_code").isNull()) |
         (col("country_code").isNull()) |
-        (col("airport_name_EN").isNull()) |
+        (col("airport_name").isNull()) |
         (col("time_zone_id").isNull()) |
         (~(col("utc_offset").rlike( "^[+-][0-9]{2}:[0-9]{2}$")))
     )
@@ -160,7 +160,7 @@ def airports_quarantine():
         .when(col("airport_code").isNull() | (trim(col("airport_code")) == ""), "Invalid airport_code")
         .when(col("city_code").isNull(), "Invalid city_code")
         .when(col("country_code").isNull(), "Invalid country_code")
-        .when(col("airport_name_EN").isNull(), "Invalid airport_name")
+        .when(col("airport_name").isNull(), "Invalid airport_name")
         .when(col("time_zone_id").isNull(), "Invalid time_zone_id")
         .when(~col("utc_offset").rlike( "^[+-][0-9]{2}:[0-9]{2}$"), "Invalid utc_offset format")
         .otherwise("Unknown validation error")
@@ -173,7 +173,7 @@ def airports_quarantine():
         "airport_code",
         "city_code",
         "country_code",
-        "airport_name_EN",
+        "airport_name",
         "time_zone_id",
         "utc_offset",
         "quarantine_reason",

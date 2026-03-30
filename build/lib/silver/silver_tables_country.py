@@ -129,14 +129,30 @@ def countries_quarantine():
         "country_code",
         upper(trim(col("country.CountryCode")))
     ).withColumn(
-        "country_name",
-       trim(
-        coalesce(
-            expr("filter(from_json(country.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'), x -> x.`@LanguageCode` = 'EN')[0].`$`"),
-            expr("CASE WHEN country.Names.Name.`@LanguageCode` = 'EN' THEN country.Names.Name.`$` ELSE NULL END")
-        )
+    "country_name",
+    trim(
+        expr("""
+            CASE 
+                WHEN country.Names.Name LIKE '[%' THEN
+                    element_at(
+                        filter(
+                            from_json(country.Names.Name, 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                            x -> x.`@LanguageCode` = 'EN'
+                        ),
+                        1
+                    ).`$`
+                WHEN country.Names.Name LIKE '{%' THEN
+                    element_at(
+                        filter(
+                            from_json(concat('[', country.Names.Name, ']'), 'array<struct<`@LanguageCode`:string,`$`:string>>'),
+                            x -> x.`@LanguageCode` = 'EN'
+                        ),
+                        1
+                    ).`$`
+                ELSE NULL
+            END
+        """)
     ))
-    
     # Filter for invalid records
     df = df.filter(
         (col("country").isNull()) |

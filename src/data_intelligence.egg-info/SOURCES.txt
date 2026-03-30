@@ -23,6 +23,7 @@ src/extract_data/getterResource.py
 src/extract_data/log_tables_resources.py
 src/extract_data/utilis.py
 src/extract_data/utilis_logs.py
+src/gold/gold_table_airlines.py
 src/gold/gold_tables_delays.py
 src/silver/silver_table.py
 src/silver/silver_tables_aircraft.py

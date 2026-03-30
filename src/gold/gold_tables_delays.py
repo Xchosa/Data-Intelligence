@@ -44,7 +44,6 @@ from extract_data.config import config
     table_properties={"quality": "gold"},
 )
 def gold_departures_delays():
-    from pyspark.sql.functions import col
     
     # Read silver departure data (streaming)
     df_departures = spark.readStream.table(
@@ -70,8 +69,8 @@ def gold_departures_delays():
         ),
         on=col("departure_airport_code") == col("dep_airport_code"),
         how="left"
-    )
-    
+    ).drop("dep_airport_code")  # Drop the join key
+
     # Join arrival airport details
     df = df.join(
         df_airports.select(
@@ -81,8 +80,8 @@ def gold_departures_delays():
         ),
         on=col("arrival_airport_code") == col("arr_airport_code"),
         how="left"
-    )
-    
+    ).drop("arr_airport_code")  # Drop the join key
+
     # Join departure country name
     df = df.join(
         df_countries.select(
@@ -91,8 +90,8 @@ def gold_departures_delays():
         ),
         on=col("dep_country_code") == col("dep_country_code_lookup"),
         how="left"
-    )
-    
+    ).drop("dep_country_code_lookup")
+
     # Join arrival country name
     df = df.join(
         df_countries.select(
@@ -101,13 +100,13 @@ def gold_departures_delays():
         ),
         on=col("arr_country_code") == col("arr_country_code_lookup"),
         how="left"
-    )
+    ).drop("arr_country_code_lookup")
     
     # Select final columns
     final_columns = [
         "departure_airport_code",
-        "departure_airport_name",
-        "departure_country_name",
+        # "departure_airport_name",
+        # "departure_country_name",
         "arrival_airport_code",
         "arrival_airport_name",
         "arrival_country_name",
