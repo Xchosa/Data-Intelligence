@@ -61,7 +61,7 @@ def get_data_flight_depatures(
 
     ):
 
-    """ Get FRA departures only """
+    """ Get departures only """
 
     dic = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code}/{underscore_format(Date)}/"
     FileName_base = f"{operation_subtype}_{airport_code}_{config.blocktime}" # 3.56 wird zu 00 00 
