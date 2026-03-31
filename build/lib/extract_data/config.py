@@ -62,6 +62,11 @@ class Config:
 
     bronze_table_dep_a=f"bronze_table_departure_fra" 
     bronze_table_dep_b=f"bronze_table_departure_muc" 
+    
+    # New unified departure table and path
+    bronze_table_departures = "bronze_departures"
+    #path_departures = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/*/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
+    path_departures = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/*/*/*/"
     blocktime=utilis.config_time_blocks()
     airport_code_a="FRA"
     airport_code_b="MUC"
