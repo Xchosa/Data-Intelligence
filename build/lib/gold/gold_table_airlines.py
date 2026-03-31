@@ -61,7 +61,7 @@ def gold_departures_delays():
             col("airline_id").alias("airline_id_lookup"),
             col("airline_name")
         ),
-        on=col("marketing_airline_id") == col("airline_id_lookup"),
+        on=col("operating_airline_id") == col("airline_id_lookup"),
         how="left"
     ).drop("airline_id_lookup")
     

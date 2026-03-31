@@ -13,13 +13,6 @@ resources:
         - task_key: get_Reference_data_python
           spark_python_task:
             python_file: ../../src/extract_data/getterResource.py
-            # parameters:
-            #   - -- catalog
-            #   - ${var.catalog}
-            #   - -- schema
-            #   -  ${var.schema}
-            #   - --volume
-            #   -  ${var.volume}
 
           environment_key: Default
       queue:
