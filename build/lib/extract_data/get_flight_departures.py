@@ -104,7 +104,7 @@ def get_data_flight_depatures(
             if response.status_code != 200:
                 raise Exception(f"new error code: {response.status_code}")
             
-            
+            print(json_data)
             json_data = response.json()
             if check_for_error_in_json(json_data, meta_data_key):
                 log(f"API returned JSON error payload, Retry one time , did not get {meta_data_key}")
@@ -119,6 +119,7 @@ def get_data_flight_depatures(
             endpoint =get_next_endpoint_from_response(json_data, meta_data_key)
             
             if endpoint == "Done":
+                log(f"all files saved successfully")
                 return f"all files successfuly saved"
             
         except Exception as e:
