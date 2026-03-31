@@ -104,7 +104,7 @@ def get_data_flight_depatures(
             if response.status_code != 200:
                 raise Exception(f"new error code: {response.status_code}")
             
-            
+        
             json_data = response.json()
             if check_for_error_in_json(json_data, meta_data_key):
                 log(f"API returned JSON error payload, Retry one time , did not get {meta_data_key}")
