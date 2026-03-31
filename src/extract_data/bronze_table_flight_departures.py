@@ -70,6 +70,7 @@ def departure_bronze_b():
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .option("cloudFiles.schemaLocation", schema_location)

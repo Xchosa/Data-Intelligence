@@ -36,15 +36,20 @@ from extract_data.config import config
 
 #loop different airports
 @dp.table(
-    name=config.silver_table_dep_a,
-    comment=f"Cleaned departure flight status data for delay analysis",
+    name=config.silver_table_departures, # Use the new unified table name
+    comment="Cleaned departure flight status data for delay analysis from all airports",
     table_properties={"quality": "silver"},
 )
-def departures_fra_silver():
-    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}")
+def departures_silver():
+    # Read from both bronze tables as a single stream
+    bronze_table_a = f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}"
+    bronze_table_b = f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_b}"
     
-    df.printSchema()
-
+    #df = spark.readStream.table(f"{bronze_table_a}, {bronze_table_b}")
+    df_a = spark.readStream.table(bronze_table_a)
+    df_b = spark.readStream.table(bronze_table_b)
+    df = df_a.unionByName(df_b)
+    
     df = df.select(
         explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
         col("_source_file"),
@@ -237,24 +242,27 @@ def departures_fra_silver():
 
 
 @dp.table(
-    name="quarantine_departures_fra",
-    comment="Quarantine table for FRA departure records failing data quality checks",
-    table_properties={"quality": "quarantine"},
+    name=config.silver_table_departures_quarantine,
+    comment="Quarantined departure records with validation failures.",
+    table_properties={"quality": "silver"},
 )
-def departures_fra_quarantine():
+def departures_quarantine():
     """Captures departure records that fail validation checks"""
-    df = spark.readStream.table(f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}")
+    bronze_table_a = f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_a}"
+    bronze_table_b = f"{config.catalog_name}.{config.schema_name}.{config.bronze_table_dep_b}"
     
-    # df = df.withColumn(
-    #     "flight",
-    #     explode_outer(col("FlightStatusResource.Flights.Flight"))
-    # )
+    #df = spark.readStream.table(f"{bronze_table_a}, {bronze_table_b}")
+    df_a = spark.readStream.table(bronze_table_a)
+    df_b = spark.readStream.table(bronze_table_b)
+    df = df_a.unionByName(df_b)
+    #df = df_a.unionByName(df_b, allowMissingColumns=True)
+
+
     df = df.select(
         explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
         col("_source_file"),
         col("_ingested_at"),
     )
-
 
     
     df = df.withColumn(

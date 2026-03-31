@@ -47,7 +47,7 @@ def gold_departures_delays():
     
     # Read silver departure data (streaming)
     df_departures = spark.readStream.table(
-        f"{config.catalog_name}.silver.{config.silver_table_dep_a}"
+        f"{config.catalog_name}.silver.{config.silver_table_departures}"
     )
     
     # Read silver airports (batch - dimension table)

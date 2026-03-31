@@ -85,6 +85,9 @@ class Config:
     
     silver_table_dep_a: str = "silver_table_departures_FRA"
     silver_table_dep_b: str = "silver_table_depatures_MUC"
+    silver_table_departures: str = "silver_departures"
+    silver_table_departures_quarantine: str = "silver_departures_quarantine"
+
     silver_table_dep_a_comment: str = "Cleaned FRA departure flight status data for downstream delay analysis"
     silver_table_dep_b_comment: str = "Cleaned MUC departure flight status data for downstream delay analysis"
 
