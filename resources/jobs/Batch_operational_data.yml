@@ -1,7 +1,7 @@
 resources:
   jobs:
-    Batch_FR_MUC_Flights:
-      name: Batch_FR_MUC_Flights2
+    operational_data:
+      name: extract_operational_data
       schedule:
         quartz_cron_expression: 27 1 0/4 * * ?
         timezone_id: Europe/Berlin

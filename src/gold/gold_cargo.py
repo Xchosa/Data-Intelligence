@@ -29,15 +29,6 @@ from extract_data.config import config
 
 
 
-
-# airport name destination auschreiben
-# airport departure ausschreiben  verknuepfen mit airport Names silver tables 
-
-# Flight delays in minute 
-
-# unterschied zwischen Cargo und passenger 
-# Flight duration 
-
 @dp.table(
     name="gold_departures_delays",
     comment="Departure and arrival airports with delay information and airline names",
@@ -71,6 +62,7 @@ def gold_departures_delays():
         "arrival_airport_code",
         "airline_name",
         "dep_delay_minutes_actual",
+        "service_type",
     ]
     
     return df.select(*final_columns)

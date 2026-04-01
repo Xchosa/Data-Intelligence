@@ -1,19 +1,19 @@
- resources:
-   pipelines:
-     gold-pipeline-logs:
-       name: gold-pipeline-logs.yml
-       libraries:
-         - file:
-             path: ../../src/extract_data/log_tables_resources.py
-       schema: bronze
-       catalog: data_catalog
-       continuous: false
-       development: true # false for production , true for developement
-       serverless: true
+# resources:
+#   pipelines:
+#     gold-pipeline-logs:
+#       name: gold-pipeline-logs.yml
+#       libraries:
+#         - file:
+#             path: ../../src/bronze/log_tables_resources.py
+#       schema: bronze
+#       catalog: data_catalog
+#       continuous: false
+#       development: true # false for production , true for developement
+#       serverless: true
 
- # in databricks.yml
- targets: 
-   dev:
-     default: true
-   prod:
-     mode: production
+# # in databricks.yml
+# targets: 
+#   dev:
+#     default: true
+#   prod:
+#     mode: production

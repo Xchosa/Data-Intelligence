@@ -1,26 +1,26 @@
-resources:
-  pipelines:
-    gold_flight_tables:
-      name: gold_flight_tables.yml
-      libraries:
-        - file:
-            path: ../../src/gold/gold_services_and_more.py
-        - file:
-            path: ../../src/gold/gold_tables_delays.py
-        - file:
-            path: ../../src/gold/gold_service_by_country.py
-        - file:
-            path: ../../src/gold/gold_table_airlines.py
+#resources:
+#  pipelines:
+#    gold_flight_tables:
+#      name: gold_flight_tables.yml
+#      libraries:
+#        - file:
+#            path: ../../src/gold/gold_services_and_more.py
+#        - file:
+#            path: ../../src/gold/gold_tables_delays.py
+#        - file:
+#            path: ../../src/gold/gold_service_by_country.py
+#        - file:
+#            path: ../../src/gold/gold_table_airlines.py
 
-      schema: gold
-      catalog: data_catalog
-      continuous: false
-      development: true
-      serverless: true
+#      schema: gold
+#      catalog: data_catalog
+#      continuous: false
+#      development: true
+#      serverless: true
 
-# in databricks.yml
-targets: 
-  dev:
-    default: true
-  prod:
-    mode: production
+## in databricks.yml
+#targets: 
+#  dev:
+#    default: true
+#  prod:
+#    mode: production

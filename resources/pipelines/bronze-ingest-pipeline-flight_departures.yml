@@ -4,7 +4,7 @@ resources:
       name: bronze-pipeline-departures.yml
       libraries:
         - file:
-            path: ../../src/extract_data/bronze_table_flight_departures.py
+            path: ../../src/bronze/bronze_table_flight_departures.py
       schema: bronze
       catalog: data_catalog
       continuous: false
