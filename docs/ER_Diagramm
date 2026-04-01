@@ -1,0 +1,166 @@
+erDiagram
+	FlightStatusResource ||--|| Flights : contains
+	Flights ||--o{ Flight : has
+
+	Flight ||--|| Arrival : has
+	Flight ||--|| Departure : has
+	Flight ||--|| Equipment : uses
+	Flight ||--|| FlightStatus : has
+	Flight ||--|| MarketingCarrier : marketed_by
+	Flight ||--|| OperatingCarrier : operated_by
+
+	Arrival ||--|| ActualTimeLocal : has
+	Arrival ||--|| ActualTimeUTC : has
+	Arrival ||--|| EstimatedTimeLocal : has
+	Arrival ||--|| EstimatedTimeUTC : has
+	Arrival ||--|| ScheduledTimeLocal : has
+	Arrival ||--|| ScheduledTimeUTC : has
+	Arrival ||--|| Terminal : has
+	Arrival ||--|| TimeStatus : has
+
+	Departure ||--|| ActualTimeLocal : has
+	Departure ||--|| ActualTimeUTC : has
+	Departure ||--|| EstimatedTimeLocal : has
+	Departure ||--|| EstimatedTimeUTC : has
+	Departure ||--|| ScheduledTimeLocal : has
+	Departure ||--|| ScheduledTimeUTC : has
+	Departure ||--|| Terminal : has
+	Departure ||--|| TimeStatus : has
+
+	ActualTimeLocal {
+		string DateTime
+	}
+	ActualTimeUTC {
+		string DateTime
+	}
+	EstimatedTimeLocal {
+		string DateTime
+	}
+	EstimatedTimeUTC {
+		string DateTime
+	}
+	ScheduledTimeLocal {
+		string DateTime
+	}
+	ScheduledTimeUTC {
+		string DateTime
+	}
+
+	Terminal {
+		string Gate
+		string Name
+	}
+
+	TimeStatus {
+		string Code
+		string Definition
+	}
+
+	Arrival {
+		string AirportCode
+	}
+
+	Departure {
+		string AirportCode
+	}
+
+	Equipment {
+		string AircraftCode
+		string AircraftRegistration
+	}
+
+	FlightStatus {
+		string Code
+		string Definition
+	}
+
+	MarketingCarrier {
+		string AirlineID
+		string FlightNumber
+	}
+
+	OperatingCarrier {
+		string AirlineID
+		string FlightNumber
+	}
+
+	Flight {
+		string ServiceType
+	}
+
+	CountryResource ||--|| Countries : contains
+	Countries ||--o{ Country : has
+	Country ||--|| Names : has
+
+	Country {
+		string CountryCode
+	}
+
+	Names {
+		string Name
+	}
+
+	CityResource ||--|| Cities : contains
+	Cities ||--o{ City : has
+	City ||--|| Names : has
+	City ||--o{ CityAirport : airports
+	CityAirport {
+		string AirportCode
+	}
+	City {
+		string CityCode
+		string CountryCode
+		string TimeZoneId
+		string UtcOffset
+	}
+
+	AirportResource ||--|| Airports : contains
+	Airports ||--o{ Airport : has
+	Airport ||--|| Names : has
+	Airport ||--|| Position : has
+	Position ||--|| Coordinate : has
+	Coordinate {
+		double Latitude
+		double Longitude
+	}
+	Airport {
+		string AirportCode
+		string CityCode
+		string CountryCode
+		string LocationType
+		string TimeZoneId
+		string UtcOffset
+	}
+
+	AirlineResource ||--|| Airlines : contains
+	Airlines ||--o{ Airline : has
+	Airline ||--o{ AirlineName : names
+	AirlineName {
+		string Value
+		string LanguageCode
+	}
+	Airline {
+		string AirlineID
+		string AirlineID_ICAO
+	}
+
+	AircraftResource ||--|| AircraftSummaries : contains
+	AircraftSummaries ||--o{ AircraftSummary : has
+	AircraftSummary ||--o{ AircraftName : names
+	AircraftName {
+		string Value
+		string LanguageCode
+	}
+	AircraftSummary {
+		string AircraftCode
+		string AirlineEquipCode
+	}
+
+	%% cross-resource links
+	Country ||--o{ City : has
+	City ||--o{ Airport : has
+	Airline ||--o{ MarketingCarrier : referenced_by
+	Airline ||--o{ OperatingCarrier : referenced_by
+	AircraftSummary ||--o{ Equipment : referenced_by
+
+		
