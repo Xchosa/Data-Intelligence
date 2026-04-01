@@ -66,14 +66,16 @@ class Config:
     # New unified departure table and path
     bronze_table_departures = "bronze_departures"
     #path_departures = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/*/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
-    path_departures = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/*/*/*/"
+
     blocktime=utilis.config_time_blocks()
     airport_code_a="FRA"
     airport_code_b="MUC"
 
     # wild card format for latest date
-    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
-    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
+    #path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
+    #path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
+    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/*/*/"
+    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/*/*/"
 
 
     silver_table_cities: str = "silver_cities"

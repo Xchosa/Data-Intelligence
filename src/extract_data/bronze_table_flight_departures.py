@@ -33,83 +33,83 @@ def build_schema_location(reference: str) -> str:
 
 
 @dp.table(
-    name=config.bronze_table_departures,
-    comment="Raw departures JSON from all airports in Lufthansa landing volume",
+    name="bronze_table_departure_fra",
+    comment="Raw departures JSON from Lufthansa landing volume",
     table_properties={"quality": "bronze"}, 
 )
-def departures_bronze():
-    # A single schema location for the unified table
-    schema_location = build_schema_location("departures")
-    
-    return (
+def departure_bronze_a():
+    schema_location = build_schema_location(config.airport_code_a)
+    df = (
         spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", "json")
         .option("multiLine", "true")
         .option("cloudFiles.inferColumnTypes", "true")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-        #.option("cloudfiles.allowEmptyDirectory", "true")
         .option("cloudFiles.schemaLocation", schema_location)
-        # Load from the path with a wildcard for the airport code
-        .load(config.path_departures)
+       
+        .load(config.path_depature_airport_a)
+       
         .withColumn("_source_file", col("_metadata.file_path"))
         .withColumn("_ingested_at", current_timestamp())
     )
 
+    # add country-specific transformations here
+    # df = df.withColumn(...)
+
+    return df
+
+@dp.table(
+    name="bronze_table_departure_muc",
+    comment="Raw departures JSON from Lufthansa landing volume",
+    table_properties={"quality": "bronze"}, 
+)
+def departure_bronze_b():
+    schema_location = build_schema_location(config.airport_code_b)
+    df = (
+        spark.readStream
+        .format("cloudFiles")
+        .option("cloudFiles.format", "json")
+        .option("multiLine", "true")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+        .option("cloudFiles.schemaLocation", schema_location)
+        .load(config.path_depature_airport_b)
+        .withColumn("_source_file", col("_metadata.file_path"))
+        .withColumn("_ingested_at", current_timestamp())
+    )
+
+    # add country-specific transformations here
+    # df = df.withColumn(...)
+
+    return df
+
+
+
 #@dp.table(
-#    name="bronze_table_departure_fra",
-#    comment="Raw departures JSON from Lufthansa landing volume",
+#    name=config.bronze_table_departures,
+#    comment="Raw departures JSON from all airports in Lufthansa landing volume",
 #    table_properties={"quality": "bronze"}, 
 #)
-#def departure_bronze_a():
-#    schema_location = build_schema_location(config.airport_code_a)
-#    df = (
+#def departures_bronze():
+#    # A single schema location for the unified table
+#    schema_location = build_schema_location("departures")
+    
+#    return (
 #        spark.readStream
 #        .format("cloudFiles")
 #        .option("cloudFiles.format", "json")
 #        .option("multiLine", "true")
 #        .option("cloudFiles.inferColumnTypes", "true")
 #        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+#        .option("cloudFiles.useIncrementalListing", "true")
+#        #.option("cloudfiles.allowEmptyDirectory", "true")
 #        .option("cloudFiles.schemaLocation", schema_location)
-       
-#        .load(config.path_depature_airport_a)
-       
+        
+#        .load(config.path_departures)
 #        .withColumn("_source_file", col("_metadata.file_path"))
 #        .withColumn("_ingested_at", current_timestamp())
 #    )
-
-#    # add country-specific transformations here
-#    # df = df.withColumn(...)
-
-#    return df
-
-#@dp.table(
-#    name="bronze_table_departure_muc",
-#    comment="Raw departures JSON from Lufthansa landing volume",
-#    table_properties={"quality": "bronze"}, 
-#)
-#def departure_bronze_b():
-#    schema_location = build_schema_location(config.airport_code_b)
-#    df = (
-#        spark.readStream
-#        .format("cloudFiles")
-#        .option("cloudFiles.format", "json")
-#        .option("multiLine", "true")
-#        .option("cloudFiles.inferColumnTypes", "true")
-#        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
-#        .option("cloudFiles.schemaLocation", schema_location)
-#        .load(config.path_depature_airport_b)
-#        .withColumn("_source_file", col("_metadata.file_path"))
-#        .withColumn("_ingested_at", current_timestamp())
-#    )
-
-#    # add country-specific transformations here
-#    # df = df.withColumn(...)
-
-#    return df
-
-
-
 
 
 

@@ -1,4 +1,3 @@
-Extract_Data
 extract_data
 gold
 silver

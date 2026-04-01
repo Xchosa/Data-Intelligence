@@ -48,7 +48,7 @@ def departures_silver():
     #df = spark.readStream.table(f"{bronze_table_a}, {bronze_table_b}")
     df_a = spark.readStream.table(bronze_table_a)
     df_b = spark.readStream.table(bronze_table_b)
-    df = df_a.unionByName(df_b)
+    df = df_a.unionByName(df_b, allowMissingColumns=True)
     
     df = df.select(
         explode_outer(col("FlightStatusResource.Flights.Flight")).alias("flight"),
@@ -254,8 +254,8 @@ def departures_quarantine():
     #df = spark.readStream.table(f"{bronze_table_a}, {bronze_table_b}")
     df_a = spark.readStream.table(bronze_table_a)
     df_b = spark.readStream.table(bronze_table_b)
-    df = df_a.unionByName(df_b)
-    #df = df_a.unionByName(df_b, allowMissingColumns=True)
+    #df = df_a.unionByName(df_b)
+    df = df_a.unionByName(df_b, allowMissingColumns=True)
 
 
     df = df.select(
