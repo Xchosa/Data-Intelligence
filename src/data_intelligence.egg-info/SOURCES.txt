@@ -17,6 +17,9 @@ src/extract_data/getterResource.py
 src/extract_data/utilis.py
 src/extract_data/utilis_logs.py
 src/gold/gold_cargo.py
+src/gold/gold_cargo_passenger.py
+src/gold/gold_delay_by_service_type.py
+src/gold/gold_delay_comparison_fra_muc.py
 src/gold/gold_service_by_country.py
 src/gold/gold_services_and_more.py
 src/gold/gold_table_airlines.py

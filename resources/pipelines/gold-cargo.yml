@@ -5,6 +5,14 @@ resources:
       libraries:
         - file:
             path: ../../src/gold/gold_cargo.py
+        - file:
+            path: ../../src/gold/gold_cargo_passenger.py
+        - file:
+            path: ../../src/gold/gold_service_by_country.py
+        - file:
+            path: ../../src/gold/gold_delay_by_service_type.py
+        - file:
+            path: ../../src/gold/gold_delay_comparison_fra_muc.py
       schema: gold
       catalog: data_catalog
       continuous: false

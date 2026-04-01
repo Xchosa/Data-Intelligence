@@ -30,7 +30,7 @@ from extract_data.config import config
 
 
 @dp.table(
-    name="gold_departures_delays",
+    name="gold_departures_cargo_delays",
     comment="Departure and arrival airports with delay information and airline names",
     table_properties={"quality": "gold"},
 )
