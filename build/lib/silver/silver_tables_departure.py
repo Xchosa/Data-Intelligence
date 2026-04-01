@@ -307,13 +307,12 @@ def departures_quarantine():
     # record_count = df.count()
     # print(f"Records before filter: {record_count}")
     # Filter for invalid records
-    # df = df.filter(
-    #     (col("departure_airport_code").isNull() | (trim(col("departure_airport_code")) == "")) |
-    #     (col("arrival_airport_code").isNull() | (trim(col("arrival_airport_code")) == "")) |
-    #     (col("marketing_airline_id").isNull() | (trim(col("marketing_airline_id")) == "") |
-    #     (col("marketing_flight_number").isNull() | (trim(col("marketing_flight_number")) == "") |
-    #     (col("dep_sched_utc_ts").isNull()))
-    # )
+    df = df.filter(
+         (col("departure_airport_code").isNull() | (trim(col("departure_airport_code")) == "")) |
+         (col("arrival_airport_code").isNull() | (trim(col("arrival_airport_code")) == "")) |
+         (col("marketing_airline_id").isNull() | (trim(col("marketing_airline_id")) == "") |
+         (col("marketing_flight_number").isNull() | (trim(col("marketing_flight_number")) == "")
+     )))
     
     df = df.withColumn(
         "quarantine_reason",

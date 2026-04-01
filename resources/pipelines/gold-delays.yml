@@ -1,0 +1,19 @@
+resources:
+  pipelines:
+    gold_delays_countrys:
+      name: gold-delays_countrys.yml
+      libraries:
+        - file:
+            path: ../../src/gold/gold_tables_delays.py
+      schema: gold
+      catalog: data_catalog
+      continuous: false
+      development: true
+      serverless: true
+
+# in databricks.yml
+targets: 
+  dev:
+    default: true
+  prod:
+    mode: production

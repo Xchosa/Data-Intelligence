@@ -39,7 +39,7 @@ from extract_data.config import config
 # Flight duration 
 
 @dp.table(
-    name="gold_departures_delays",
+    name="gold_flights_delays",
     comment="Departure delays enriched with airport and country names",
     table_properties={"quality": "gold"},
 )
@@ -105,8 +105,8 @@ def gold_departures_delays():
     # Select final columns
     final_columns = [
         "departure_airport_code",
-        # "departure_airport_name",
-        # "departure_country_name",
+        "departure_airport_name",
+        "departure_country_name",
         "arrival_airport_code",
         "arrival_airport_name",
         "arrival_country_name",
