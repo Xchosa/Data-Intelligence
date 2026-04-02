@@ -72,10 +72,8 @@ class Config:
     airport_code_b="MUC"
 
     # wild card format for latest date
-    #path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
-    #path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
-    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/*/*/"
-    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/*/*/"
+    path_depature_airport_a=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_a}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
+    path_depature_airport_b=f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/{operations}/{operation_type}/{operation_subtype}/{airport_code_b}/{utilis.underscore_format(utilis.get_flight_departure_date())}/*/"
 
 
     silver_table_cities: str = "silver_cities"

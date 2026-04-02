@@ -15,7 +15,7 @@ if src_root not in sys.path:
 from extract_data.config import config
 
 @dp.table(
-    name="gold_service_by_arrival_country",
+    name="gold_service_by_departure",
     comment="Aggregated flight counts by service type for each arrival country.",
     table_properties={"quality": "gold"}
 )
@@ -38,10 +38,12 @@ def gold_service_by_arrival_country():
         col("dep_cc.country_code") == col("country.country_code"),
         "left"
     )
-    
+    filtered_df = departures_with_country_name.filter(
+        col("country.country_name").isNotNull()
+    )
 
     # Aggregate to get the counts
-    agg_df = departures_with_country_name.groupBy(
+    agg_df = filtered_df.groupBy(
         col("country.country_name").alias("arrival_country_name"),
         col("dep_cc.service_type")
     ).agg(
